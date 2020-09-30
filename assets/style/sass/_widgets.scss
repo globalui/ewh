@@ -1,0 +1,460 @@
+/*Home*/
+
+.welcome-text:before,
+.blog-branding:before{
+  position: absolute;
+  left: 0px;
+  content: "";
+  top: 0px;
+  @include wh(100%, 50%);
+  min-height:300px;
+}
+.welcome-text:before{
+   background-color:$c-info;
+}
+.blog-branding:before{
+   background-color: #fff;
+}
+
+.bg-absolute-orange {
+  position: relative;
+  &:after {
+    background-color: $ewh-color1;
+    position: absolute;
+    left: 0px;
+    content: "";
+    top: 0px;
+    @include wh(100%, 100%);
+    z-index: -1;
+  }
+}
+
+
+
+
+//owl custom
+.owl-theme .owl-nav {
+  position: absolute;
+  width: 100%;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+  right: 0px;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+  left: 0px;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev { 
+  width: 30px;
+  height: 30px;
+  background-color: #fff !important;
+  border-radius: 50%;
+
+  @media(min-width:992px){ 
+  width: 50px;
+  height: 50px;
+  }
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+  background: #fff;
+  color: $color-textH !important;
+  text-decoration: none;
+}
+
+.owl-theme .owl-stage{
+  padding-left:0px !important;
+}
+
+//Map
+.nepal {
+  fill: #ee4c4a
+}
+
+.india {
+  fill: #f8a03c
+}
+
+.australia {
+  fill: #aad048
+}
+
+.peru {
+  fill: #52c0bd
+}
+
+.china {
+  fill: #52c0bd
+}
+
+.sri-lanka {
+  fill: #9e8705
+}
+
+.thailand {
+  fill: #409ac1
+}
+
+.vietnam {
+  fill: #e99b2f
+}
+
+.cambodia {
+  fill: #066e6d
+}
+
+.philippines {
+  fill: #99a64a
+}
+
+.singapore {
+  fill: #4caf50
+}
+
+.south-africa {
+  fill: #ef504a
+}
+
+.ecuador {
+  fill: #865ea4
+}
+
+.ghana {
+  fill: #865ea4
+}
+
+.morocco {
+  fill: #50b595
+}
+
+.tanzania {
+  fill: #7ba6ef
+}
+
+.kenya {
+  fill: #1a715e
+}
+
+.uganda {
+  fill: #f84848
+}
+
+.spain {
+  fill: #b24854
+}
+
+.costa-rica {
+  fill: #f63
+}
+
+.guatemala {
+  fill: #f3962e
+}
+
+.indonesia {
+  fill: #4191cf
+}
+
+.indonesia, .nepal, .india, .australia, .peru, .china, .sri-lanka, .thailand, .vietnam, .cambodia, .philippines, .singapore, .south-africa, .ecuador, .ghana, .morocco, .tanzania, .kenya, .uganda, .spain, .costa-rica, .guatemala {
+  -moz-transition: all .2s;
+  -o-transition: all .2s;
+  -webkit-transition: all .2s;
+  transition: all .2s
+}
+
+.nepal:hover, indonesia:hover, .india:hover, .australia:hover, .peru:hover, .china:hover, .sri-lanka:hover, .thailand:hover, .vietnam:hover, .cambodia:hover, .philippines:hover, .singapore:hover, .south-africa:hover, .ecuador:hover, .ghana:hover, .morocco:hover, .tanzania:hover, .kenya:hover, .uganda:hover, .spain:hover, .costa-rica:hover, .guatemala:hover {
+  -moz-transition: all .2s;
+  -o-transition: all .2s;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  stroke: #FFF;
+  stroke-width: .8
+}
+
+path.cursor{
+  cursor: pointer;
+}
+path{
+  position: relative;
+&:before{
+  position: absolute;
+  content: '';
+  background-color: #000;
+}
+}
+
+.bt-2{
+  border-top:2px solid $ewh-color1;
+}
+
+.owl-section{
+    [class*="radius-"]{
+    -webkit-border-radius:0px;
+    -moz-border-radius:0px;
+    border-radius:0px;
+  }
+}
+@media (min-width: 992px) {
+  .owl-section{
+    [class*="radius-"]{
+      -webkit-border-radius:3px;
+      -moz-border-radius:3px;
+      border-radius:3px;
+    }
+  }
+}
+
+
+.btn-wishlist{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 99;
+  background: transparent;
+  border: 0px;
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.4);
+  transition: all 0.2s ease;
+  &:focus{
+    outline: none;
+  }
+  &.added{
+    color: var(--danger);
+    -webkit-animation: bubble-motion  0.2s ease; /* Safari 4.0 - 8.0 */
+    animation: bubble-motion 0.2s ease ;
+  }
+}
+
+
+.costing-table{
+  max-height: 400px;
+  td{
+    padding:5px;
+  }
+}
+@media (min-width: 1200px)  {
+  .costing-table {
+    max-height: unset;
+  }
+}
+
+.check_mark {
+  width: 80px;
+  height: 130px;
+  margin: 0 auto;
+}
+
+
+
+.sa-icon.sa-success {
+  border-color: transparent \9;
+}
+.sa-icon.sa-success {
+  border-color: #4CAF50;
+}
+.sa-icon {
+  width: 80px;
+  height: 80px;
+  border: 4px solid gray;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+  border-radius: 50%;
+  margin: 20px auto;
+  padding: 0;
+  position: relative;
+  box-sizing: content-box;
+}
+
+
+.sa-icon.sa-success::before {
+  -webkit-border-radius: 120px 0 0 120px;
+  border-radius: 120px 0 0 120px;
+  top: -7px;
+  left: -33px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform-origin: 60px 60px;
+  transform-origin: 60px 60px;
+}
+.sa-icon.sa-success.animate::after {
+  -webkit-animation: rotatePlaceholder 4.25s ease-in;
+  animation: rotatePlaceholder 4.25s ease-in;
+}
+
+.sa-icon.sa-success::after {
+  -webkit-border-radius: 0 120px 120px 0;
+  border-radius: 0 120px 120px 0;
+  top: -11px;
+  left: 30px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform-origin: 0px 60px;
+  transform-origin: 0px 60px;
+}
+.sa-icon.sa-success::before, .sa-icon.sa-success::after {
+  content: '';
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+  border-radius: 50%;
+  position: absolute;
+  width: 60px;
+  height: 120px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.sa-icon.sa-success .sa-line.sa-long {
+  width: 47px;
+  right: 8px;
+  top: 38px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.sa-icon.sa-success .sa-line.sa-tip {
+  width: 25px;
+  left: 14px;
+  top: 46px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.sa-icon.sa-success .sa-line.sa-long {
+  -ms-transform: rotate(-45deg) \9;
+}
+.sa-icon.sa-success .sa-line {
+  height: 5px;
+  background-color: #4CAF50;
+  display: block;
+  border-radius: 2px;
+  position: absolute;
+  z-index: 2;
+}
+.animateSuccessLong {
+  -webkit-animation: animateSuccessLong 0.75s;
+  animation: animateSuccessLong 0.75s;
+}
+
+.sa-icon.sa-success .sa-placeholder {
+  width: 80px;
+  height: 80px;
+  border: 4px solid rgba(76, 175, 80, 0.5);
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+  border-radius: 50%;
+  box-sizing: content-box;
+  position: absolute;
+  left: -4px;
+  top: -4px;
+  z-index: 2;
+}
+
+.sa-icon.sa-success .sa-fix {
+  width: 5px;
+  height: 90px;
+  position: absolute;
+  left: 28px;
+  top: 8px;
+  z-index: 1;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+
+
+//video section
+.video-box {
+  figure{ 
+    overflow:hidden;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    }
+   img.video-icon {
+      position: absolute;
+      width: 2rem;
+      @media (min-width: 992px) {
+        width: 5rem;
+      }
+  }
+  img:not(.video-icon) { 
+    width: 100%;
+}
+}
+[role=button] {
+  cursor: pointer;
+}
+.video-close {
+  width: 30px !important;
+  height: 30px;
+  border-radius: 50px;
+  background: red !important;
+  opacity: 1;
+  color: #fff;
+  z-index: 9;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+iframe.embed-responsive-item{
+  width:100%;
+  height:220px;
+
+  @media (min-width: 992px) { 
+    height:480px;
+  }
+}
+
+//blog-section
+.blog-section{
+  article{ 
+    figure{
+      overflow:hidden;
+      border-radius: 10px;
+      margin-bottom:0px;
+      height:100px;
+
+      @media (min-width: 992px) { 
+        height:250px;
+      }
+      img{ 
+        width:100%;
+      }
+    }
+  }
+}
+
+//Newsletter
+.bg-picture-banner picture {
+  width: 100%;
+  height: 100%;
+  top: 0;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0)), color-stop(0%, rgba(0, 0, 0, 0.7)));
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 0%);
+}
+}
+.z-index-1 {
+  z-index: 1;
+}
+
+
+.footer-link{
+  a{
+    color:$c-links;
+    padding:10px;
+    text-decoration: underline;
+  }
+}
+
+
+

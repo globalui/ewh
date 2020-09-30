@@ -1,0 +1,61 @@
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+$nav-shadow:0 0 30px rgba(0, 0, 0, 0.09);
+//transition-base;
+$ewh-transition-base: all .5s ease !default;
+$ewh-transition-base2s: all .2s ease !default;
+
+$facebook: #00aeff;
+$instagram: #0b8acb;
+$twitter: #00d2ff;
+$linkedin: #0b8acb;
+
+//form
+$form-border:#efefef !default;
+
+$icon-color:23a645;
+
+//theme color
+$c-orange:#e40a1f;
+$c-info:#00538d;
+$c-links:#333333; 
+$c-green:#28a745;
+$c-orange-light: #fce4d2;
+$c-grady: rgba(158, 158, 158, 1);
+$c-gray-light: rgb(229, 229, 229);
+$c-red: #d94d46;
+$c-red-light: #f89e98;
+$c-star:#ff8a00;
+
+.text-star{
+  color:$c-star;
+}
+
+body{
+  color: #4e4e4e !important;
+}
+.text-decoration{
+  text-decoration: underline;
+}
+.btn{
+  cursor: pointer;
+}
+[disabled]{
+  cursor: not-allowed;
+}
+.sticky_form-top{
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+  z-index: 9999;
+}
+.bg-orange-light{
+  background-color: $c-orange-light;
+}
+.underline{
+  text-decoration: underline;
+}

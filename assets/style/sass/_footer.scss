@@ -1,0 +1,19 @@
+.footer{
+  background-color: $color-bgFooter2;
+}
+
+.footer a{
+  color: $color-textP;
+  line-height: 15px;
+  font-size:12px;
+}
+
+
+.footer {
+  .form-control{
+    border: 2px solid #ffffff;
+  }
+  .btn{
+    padding: 0.3rem 0.75rem;
+  }
+}

@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>Explore world Holiday</title>
+
+        <link rel="stylesheet" href="assets/vendors/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="assets/vendors/fontawesone/css/all.min.css">
+        <link rel="stylesheet" href="assets/style/dist/css/theme.css">
+    </head>
+
+    <body>
+
+        <header class="ewh_header bg-white shadow fixedheader">
+            <section class="bg-primary py-2 subheader secondary-nav">
+                <div class="container">
+                    <div class="row justify-content-end px-3">
+                        <ul class="list-inline mb-0 small top_navbar">
+                            <!--Top Navigation nav-->
+                            <li class="list-inline-item">
+                                <a href="tel:+91-9022718677">
+                                    <i class="fa fa-phone"></i>
+                                    +91-9022718677
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="mailto:sales@exploreworldholidays">
+                                    <i class="fa fa-envelope"></i>
+                                    sales@exploreworldholidays
+                                </a>
+                            </li>
+                            <li class="list-inline-item dropdown">
+                                <!--Currency Dropdown-->
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">USD</a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
+                                    <a class="dropdown-item" href="#">
+                                        INR
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        EUR
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul
+                            class="list-inline mb-0 social-media smedia1 border-left pl-2 ml-2 d-none d-lg-inline-block">
+                            <!--Social media Top nav-->
+                            <li class="list-inline-item">Follow us</li>
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i> </a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i> </a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i> </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <div class="container px-0">
+                <nav class="navbar navbar-expand-lg primary-navbar py-lg-0">
+                    <!--Navigation Btn showing in mobile layout-->
+                    <button class="navbar-toggler ewh_nav_trigger mr-auto collapsed" type="button"
+                        data-toggle="collapse" data-target="#ewhNavigataion" aria-controls="ewhNavigataion"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="trigger_btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </button>
+
+                    <!--Logo col with 2 logos -->
+                    <div class="ewh_header_navbar-brand-wrapper ml-auto ml-lg-0">
+                        <a class="navbar-brand" href="#link" aria-label="Space">
+                            <img src="assets/images/logo.svg" class="log_size" alt="Logo" width="120">
+                        </a>
+                    </div>
+
+                    <ul class="navbar-nav mobile-signup-nav ml-auto order-lg-1">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-lock"></i> <span>Login</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-primary" href="#" data-toggle="modal"
+                                data-target="#signUpModel">
+                                <b>
+                                    <i class="fa fa-user-plus"></i>
+                                    <span>Sign up</span>
+                                </b>
+                            </a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn text-primary" href="#" data-toggle="modal"
+                                data-target="#signUpModel">
+                                <b>
+                                    <i class="fa fa-search"></i>
+                                </b>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!--Navigation container-->
+                    <div class="collapse order-lg-0 navbar-collapse menu-bg-hero navbar_custom_style  justify-content-lg-end"
+                        id="ewhNavigataion" data-nav-type="js-navbar">
+                        <ul class="primary-nav navbar navbar-nav py-0" data-nabigation="primary">
+                            <li class="nav-item dropdown   position-relative">
+                                <a class="nav-link dropdown-toggle" href="#" role="button">
+                                    Destinations
+                                </a>
+                                <div class="dropdown-menu border-0 submenu">
+                                    <div class="w-100 py-3">
+                                        <!--  <h5 class="menu-heading">Destinations</h5> -->
+                                        <ul class="list-unstyled text-dark">
+                                            <li>
+                                                <a class="nav-link" href="#/volunteer-in-bali">
+                                                    <span class="flag flag-id"></span>Bali
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link" href="#/volunteer-in-cambodia">
+                                                    <span class="flag flag-kh"></span>Cambodia
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link" href="#/volunteer-in-china">
+                                                    <span class="flag flag-cn"></span>China
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link" href="#/volunteer-in-india">
+                                                    <span class="flag flag-in"></span>India
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link" href="#/volunteer-in-malaysia">
+                                                    <span class="flag flag-my"></span>Malaysia
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link" href="#/volunteer-in-nepal">
+                                                    <span class="flag flag-np"></span>Nepal
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link" href="#/volunteer-in-philippines">
+                                                    <span class="flag flag-ph"></span>Philippines
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link" href="#/volunteer-in-sri-lanka">
+                                                    <span class="flag flag-lk"></span>Sri
+                                                    Lanka
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link" href="#/volunteer-in-thailand">
+                                                    <span class="flag flag-th"></span>Thailand
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link" href="#/volunteer-in-vietnam">
+                                                    <span class="flag flag-vn"></span>Vietnam
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" role="button">Concept Tours</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" role="button">Reviews</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="aboutus.html" role="button">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="faq.html" role="button">FAQ’s</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+
+            <section class="hero banner-bg">
+                <div class="owl-carousel owl-theme hero-owl" id="owlHeroBanner">
+                    <div class="item">
+                        <div class="w-100 d-flex justify-content-center align-items-center">
+                            <img src="dump/hero/banner.jpg" alt="">
+                            <div
+                                class="hero-caption  d-flex justify-content-center align-items-center position-absolute text-white text-center flex-wrap">
+                                <h5 class="t-large w-100">Udaipur</h5>
+                                <p class="t-small w-100">Vanice of the east</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="w-100 d-flex justify-content-center align-items-center">
+                            <img src="dump/hero/banner2.jpg" alt="">
+                            <div
+                                class="hero-caption  d-flex justify-content-center align-items-center position-absolute text-white text-center flex-wrap">
+                                <h5 class="t-large w-100">Meghalaya</h5>
+                                <p class="t-small w-100">Scotland of the east</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Banner Section-->
+
+
+            <section class="py-lg-5 py-3 owl-section">
+                <div class="container">
+                    <div class="row mb-5">
+                        <div class="col-12">
+                            <h3 class="title-4">
+                                Trending Indian Destinations
+                            </h3>
+                            <p>
+                                exclusive collection of sanitised properties offer a safe and hassle-free travel
+                                experience near you.
+                            </p>
+                        </div>
+                        <div class="col-12">
+                            <div class="owl-carousel owl-theme owlCommon">
+
+                                <div class="item">
+                                    <a href="#" class="card w-100">
+                                        <img src="dump/card/1.jpg" alt="">
+                                        <div class="card-body">
+                                            <h5 class="title-5">Goa</h5>
+                                            <div class="cs-card-footer title-5">
+                                                <small>Starting from</small>
+                                                <p>₹ 8,199/-</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="item">
+                                    <a href="#" class="card w-100">
+                                        <img src="dump/card/2.jpg" alt="">
+                                        <div class="card-body">
+                                            <h5 class="title-5">Kerala</h5>
+                                            <div class="cs-card-footer title-5">
+                                                <small>Starting from</small>
+                                                <p>₹ 8,199/-</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#" class="card w-100">
+                                        <img src="dump/card/3.jpg" alt="">
+                                        <div class="card-body">
+                                            <h5 class="title-5">Uttarakhand</h5>
+                                            <div class="cs-card-footer title-5">
+                                                <small>Starting from</small>
+                                                <p>₹ 8,199/-</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+
+                                <div class="item">
+                                    <a href="#" class="card w-100">
+                                        <img src="dump/card/4.jpg" alt="">
+                                        <div class="card-body">
+                                            <h5 class="title-5">Rajasthan</h5>
+                                            <div class="cs-card-footer title-5">
+                                                <small>Starting from</small>
+                                                <p>₹ 8,199/-</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="item">
+                                    <a href="#" class="card w-100">
+                                        <img src="dump/card/5.jpg" alt="">
+                                        <div class="card-body">
+                                            <h5 class="title-5">Himachal</h5>
+                                            <div class="cs-card-footer title-5">
+                                                <small>Starting from</small>
+                                                <p>₹ 8,199/-</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#" class="card w-100">
+                                        <img src="dump/card/1.jpg" alt="">
+                                        <div class="card-body">
+                                            <h5 class="title-5">Goa</h5>
+                                            <div class="cs-card-footer title-5">
+                                                <small>Starting from</small>
+                                                <p>₹ 8,199/-</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-12">
+                            <h3 class="title-4">
+                                Trending International Destinations
+                            </h3>
+                            <p>
+                                exclusive collection of sanitised properties offer a safe and hassle-free travel
+                                experience near you.
+                            </p>
+                        </div>
+                        <div class="col-12">
+                            <div class="owl-carousel owl-theme owlCommon">
+
+                                <div class="item">
+                                    <a href="#" class="card w-100">
+                                        <img src="dump/card/6.jpg" alt="">
+                                        <div class="card-body">
+                                            <h5 class="title-5">Bali</h5>
+                                            <div class="cs-card-footer title-5">
+                                                <small>Starting from</small>
+                                                <p>₹ 15,199/-</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="item">
+                                    <a href="#" class="card w-100">
+                                        <img src="dump/card/7.jpg" alt="">
+                                        <div class="card-body">
+                                            <h5 class="title-5">Dubai</h5>
+                                            <div class="cs-card-footer title-5">
+                                                <small>Starting from</small>
+                                                <p>₹ 15,199/-</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#" class="card w-100">
+                                        <img src="dump/card/8.jpg" alt="">
+                                        <div class="card-body">
+                                            <h5 class="title-5">Bangkok</h5>
+                                            <div class="cs-card-footer title-5">
+                                                <small>Starting from</small>
+                                                <p>₹ 18,199/-</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+
+                                <div class="item">
+                                    <a href="#" class="card w-100">
+                                        <img src="dump/card/9.jpg" alt="">
+                                        <div class="card-body">
+                                            <h5 class="title-5">Vietnam</h5>
+                                            <div class="cs-card-footer title-5">
+                                                <small>Starting from</small>
+                                                <p>₹ 18,199/-</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="item">
+                                    <a href="#" class="card w-100">
+                                        <img src="dump/card/10.jpg" alt="">
+                                        <div class="card-body">
+                                            <h5 class="title-5">Mauritius</h5>
+                                            <div class="cs-card-footer title-5">
+                                                <small>Starting from</small>
+                                                <p>₹ 18,199/-</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#" class="card w-100">
+                                        <img src="dump/card/6.jpg" alt="">
+                                        <div class="card-body">
+                                            <h5 class="title-5">Bali</h5>
+                                            <div class="cs-card-footer title-5">
+                                                <small>Starting from</small>
+                                                <p>₹ 8,199/-</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-5">
+                        <div class="col-12">
+                            <h3 class="title-4">
+                                Explore World Holidays Specials
+                            </h3>
+                            <p>
+                                exclusive collection of sanitised properties offer a safe and hassle-free travel
+                                experience near you.
+                            </p>
+                        </div>
+                        <div class="col-12">
+                            <div class="owl-carousel owl-theme owlCommon">
+
+                                <div class="item">
+                                    <a href="#" class="card w-100">
+                                        <img src="dump/card/1.jpg" alt="">
+                                        <div class="card-body">
+                                            <h5 class="title-5">Honeymoon Holidays</h5>
+                                            <div class="cs-card-footer title-5">
+                                                <small>Starting from</small>
+                                                <p>₹ 8,199/-</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="item">
+                                    <a href="#" class="card w-100">
+                                        <img src="dump/card/2.jpg" alt="">
+                                        <div class="card-body">
+                                            <h5 class="title-5">Romantic Holidays</h5>
+                                            <div class="cs-card-footer title-5">
+                                                <small>Starting from</small>
+                                                <p>₹ 8,199/-</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#" class="card w-100">
+                                        <img src="dump/card/3.jpg" alt="">
+                                        <div class="card-body">
+                                            <h5 class="title-5">Family Holidaysx</h5>
+                                            <div class="cs-card-footer title-5">
+                                                <small>Starting from</small>
+                                                <p>₹ 8,199/-</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+
+                                <div class="item">
+                                    <a href="#" class="card w-100">
+                                        <img src="dump/card/4.jpg" alt="">
+                                        <div class="card-body">
+                                            <h5 class="title-5">Corporate Tours</h5>
+                                            <div class="cs-card-footer title-5">
+                                                <small>Starting from</small>
+                                                <p>₹ 8,199/-</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="item">
+                                    <a href="#" class="card w-100">
+                                        <img src="dump/card/5.jpg" alt="">
+                                        <div class="card-body">
+                                            <h5 class="title-5">Food & Wine Tours</h5>
+                                            <div class="cs-card-footer title-5">
+                                                <small>Starting from</small>
+                                                <p>₹ 8,199/-</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#" class="card w-100">
+                                        <img src="dump/card/1.jpg" alt="">
+                                        <div class="card-body">
+                                            <h5 class="title-5">Honeymoon Holidays</h5>
+                                            <div class="cs-card-footer title-5">
+                                                <small>Starting from</small>
+                                                <p>₹ 8,199/-</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Slide FOr Programs and destinations-->
+
+            <section class="py-lg-5 py-4 welcome-text position-relative overflow-hidden">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-10 mx-auto text-white text-center mb-3">
+                            <h2 class="title-4 text-white">Why Choose Explore World Holidays?</h2>
+                            <p>
+                                We have expertise to help you to choose your Holiday packages as per your liking, tour
+                                type, budget, Weather condition, purpose etc. Within a destination, we provide you
+                                several options for Stay, Sightseeing, Excursions, Meal Plans and others. Though we
+                                cover all the famous and preferred destinations, we even encourage Authentic, Uncommon,
+                                and Unexplored locations giving you plenty of choices creating memories that last.
+                            </p>
+                        </div>
+                        <div class="m-auto position-relative col-10 col-lg-8 video-box ">
+                            <figure data-toggle="modal" role="button" data-target="#welcomeVideo">
+                                <img class="video-icon" src="assets/images/icons/video-play-btn.svg">
+                                <img src="dump/video.jpg" alt="" class="img-fluid">
+                            </figure>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!--End Welcome Text Section-->
+
+            <section class="py-lg-5 py-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-10 mx-auto text-white text-center">
+                            <div class="f-flex justify-content-center text-star mb-3">
+                                <i class="fa fa-star fa-2x"></i>
+                                <i class="fa fa-star fa-2x"></i>
+                                <i class="fa fa-star fa-2x"></i>
+                                <i class="fa fa-star fa-2x"></i>
+                                <i class="fa fa-star fa-2x"></i>
+                            </div>
+                            <h5 class="title-5">
+                                "I have had the best time ever on the Thailand Island Hopper tour! it made travelling
+                                alone less scary and would definitely do it all again!"
+                            </h5>
+                            <p class="text-muted my-4 title-6">
+                                Monica Nievandt, Australia
+                            </p>
+                            <div>
+                                <img src="dump/review/user-1.jpg" alt="user" width="100" class="rounded-circle" >
+                            </div>
+                        </div>
+                        
+                        <div class="col-12 text-center mt-5">
+                            <a href="#" class="btn btn-outline-primary"><b>Read More</b></a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!--End Review Text Section-->
+
+            <section class="position-relative py-lg-5 py-4 blog-section">
+                <!-- "blog-branding" Class for 2 Column layout-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="title-4 mb-4">Popular Blog Posts From Explore World Holidays</h3>
+                            <div class="grid  grid-col-xs-1 grid-col-md-2 grid-col-lg-3">
+
+                                <article class="d-flex overflow-hidden flex-wrap">
+                                    <figure class="col-5 col-lg-12 px-0">
+                                        <img src="dump/blog/1.jpg" alt="" class="img-fluid">
+                                    </figure>
+                                    <div class="col-7 col-lg-12 py-lg-3 px-lg-0">
+                                        <h5 class="title-5"><a href="#" class="text-dark">The Best Food and Drink Tours
+                                                in
+                                                Queensland, Australia</a></h5>
+                                    </div>
+                                </article>
+                                <article class="d-flex overflow-hidden flex-wrap">
+                                    <figure class="col-5 col-lg-12 px-0">
+                                        <img src="dump/blog/2.jpg" alt="" class="img-fluid">
+                                    </figure>
+                                    <div class="col-7 col-lg-12 py-lg-3 px-lg-0">
+                                        <h5 class="title-5"><a href="#" class="text-dark">Top sights in Sunshine
+                                                Coast</a></h5>
+                                    </div>
+                                </article>
+                                <article class="d-flex overflow-hidden flex-wrap">
+                                    <figure class="col-5 col-lg-12 px-0">
+                                        <img src="dump/blog/3.jpg" alt="" class="img-fluid">
+                                    </figure>
+                                    <div class="col-7 col-lg-12 py-lg-3 px-lg-0">
+                                        <h5 class="title-5"><a href="#" class="text-dark">The Most Incredible Bucket
+                                                List
+                                                Experiences</a></h5>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="clearfix text-center mt-3">
+                                <a href="#" class="btn btn-link underline"><b>View More Blogs</b></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Organizations and From The Blog-->
+
+            <section class="bg-picture-banner py-lg-5 py-4 position-relative overflow-hidden">
+                <div class="container position-relative z-index-1 pt-3 text-center">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="title-3 mt-3 text-white">Join us for News, Deals &amp; More! </h3>
+                        </div>
+                        <div class="col-12 col-lg-10 mx-auto my-3 my-lg-4 px-lg-6">
+                            <form class="d-flex flex-wrap flex-lg-nowrap mb-3" action="">
+                                <input type="text" class="form-control mr-lg-2 mb-1 mb-lg-0" placeholder="Your Name">
+                                <input type="text" class="form-control mr-lg-2 mb-2 mb-lg-0" placeholder="Your Email Id">
+                                <button class="btn btn-primary px-lg-5 btn-block col-lg-3">Subscribe</button>
+                            </form>
+                            <p class="title-info-text light-peragraph text-white">
+                                By subscribing to our mailing list you are agreeing to our
+                                <a href="#" class="text-white font-weight-bold text-underline">Privacy Policy</a>.
+                                You can unsubscribe at any time
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        
+                <picture class="position-absolute position-left-top-0 shadow-on-element">
+                    <source media="(min-width: 768px)" srcset="dump/newletter.jpg"> 
+                    <img src="dump/newletter-sm.jpg" alt="hero" width="100%">
+                </picture>
+            </section>
+
+        </main>
+
+
+        <footer class="py-lg-6 py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 mb-5">
+                        <div class="w-100 d-flex align-items-center flex-wrap flex-lg-nowrap">
+                            <a href="index.html">
+                                <img src="assets/images/logo.svg" alt="logo" height="130">
+                            </a>
+                            <p class="mb-">
+                                Our Management team has over 15 years’ experience in the Tourism industry. Our
+                                experience and knowledge allow us to provide you with the best customer service
+                                possible….. <a href="#">Read more</a>
+                            </p>
+                        </div>
+                        <div class="w-100">
+                            <div class="d-flex w-75 justify-content-start mt-4">
+                                <a href="#" class="mr-3 text-dark">
+                                    <i class="fab fa-facebook fa-3x mr-3"></i>
+                                </a>
+                                <a href="#" class="mr-3 text-dark">
+                                    <i class="fab fa-instagram fa-3x mr-3"></i>
+                                </a>
+                                <a href="#" class="mr-3 text-dark">
+                                    <i class="fab fa-twitter fa-3x mr-3"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-5 offset-lg-1 mb-3">
+
+                        <h5 class="title-5">RESOURCES</h5>
+                        <ul class="list-unstyled d-flex flex-wrap footer-link">
+                            <li class="nav-item">
+                                <a href="#">Home</a>
+                            </li> 
+                            <li class="nav-item">
+                                <a href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Concept Tours</a>
+                            </li> 
+                            <li class="nav-item">
+                                <a href="#">Tour</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Domestic Destinations</a>
+                            </li> 
+                            <li class="nav-item">
+                                <a href="#">International Destinations</a>
+                            </li> 
+                            <li class="nav-item">
+                                <a href="#">Contact Us</a>
+                            </li> 
+                        </ul>
+                    </div> 
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center mt-3">
+                        <img src="assets/images/footer-trusted-badges.png" class="img-fluid" alt="footer">
+                    </div>
+                    <div class="col-12 text-center mt-2 small text-muted">
+                        <p> © 2020 exploreworldholidays..com. All Rights Reserved. CIN:U77777 XXXXXX******
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="assets/vendors/jquery/jquery.min.js"></script>
+        <script src="assets/vendors/bootstrap/dist/js/popper.min.js"></script>
+        <script async src="assets/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/style/dist/js/custom.js"></script>
+
+
+        <!--Owl Library-->
+        <link rel="stylesheet" href="assets/vendors/flag/flags.css">
+        <link rel="stylesheet" href="assets/vendors/owl/dist/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/vendors/owl/dist/assets/owl.theme.default.min.css">
+
+        <script src="assets/vendors/owl/dist/owl.carousel.min.js"></script>
+        <script>
+            $(document).ready(function () {
+
+                //Owl Slide using for program
+                $('#owlHeroBanner').owlCarousel({
+                    stagePadding: 0,
+                    margin: 0,
+                    loop: true,
+                    nav: true,
+                    navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+                    dots: true,
+                    items: 1,
+                    autoplay: true,
+                    autoplayTimeout: 3000,
+                    autoplayHoverPause: false
+                });
+
+                //Owl Slide using for program
+                $('.owlCommon').owlCarousel({
+                    loop: false,
+                    margin: 15,
+                    nav: true,
+                    navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+                    dots: false,
+                    responsive: {
+                        0: {
+                            stagePadding: 50,
+                            items: 1
+                        },
+                        600: {
+                            stagePadding: 50,
+                            items: 2
+                        },
+                        900: {
+                            items: 3
+                        },
+                        1000: {
+                            margin: 20,
+                            items: 5
+                        }
+                    }
+                })
+            });
+        </script>
+
+
+        <div id="signUpModel" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content overflow-hidden">
+                    <div class="signin_container shadow w-100 d-flex flex-wrap login_bg">
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <!--SignUp tab Container-->
+                            <div id="signup" class="container tab-pane fade active show"><br>
+
+                                <h1 class="title-3 text-center w-100 mb-0">
+                                    Welcome!
+                                </h1>
+                                <form action="#" class="d-flex flex-wrap custom_form">
+                                    <div class="col-12 mb-3">
+                                        <input type="email" class="form-control" placeholder="Your Full Name *" value=""
+                                            required="" autofocus="">
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <input type="email" class="form-control error" id="yourEmailid"
+                                            placeholder="Your Email Id *" value="" required="">
+                                        <div class="form_alert text-danger small">
+                                            email id is required.
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <input type="email" class="form-control" id="Password" placeholder="Password *"
+                                            value="" required="">
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <input type="email" class="form-control" id="ConfPassword"
+                                            placeholder="Confirm Password *" value="" required="">
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <label class="small">By clicking Sign Up, you agree to our <a href="#">Privacy
+                                                Policy</a>.</label>
+                                    </div>
+                                    <div class="col-12 btn-steps_row">
+                                        <button class="btn btn-primary my-3 w-100" type="submit">
+                                            SIGN UP
+                                        </button>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <a type="button" href="#" class="underline">Already have an account</a>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!--SignIn tab Container-->
+                            <div id="signin" class="container tab-pane fade">
+
+
+                                <h1 class="title-3 text-center w-100 my-3">
+                                    Welcome!
+                                </h1>
+                                <!--Signin Form-->
+                                <form action="#" class="d-flex flex-wrap custom_form">
+                                    <div class="col-12 mb-3">
+                                        <input type="email" class="form-control error" placeholder="Your Email Id *"
+                                            value="" required="">
+                                        <div class="form_alert text-danger small">
+                                            email id is required.
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <input type="email" class="form-control" placeholder="Password *" value=""
+                                            required="">
+                                    </div>
+                                    <div class="col-12 btn-steps_row">
+                                        <button class="btn btn-primary my-3 w-100" type="submit">
+                                            Login
+                                        </button>
+                                    </div>
+
+
+                                    <div class="col-12 d-flex justify-content-lg-between flex-wrap">
+                                        <a type="button" href="#" class="underline text-dark" id="forgot_pwd">
+                                            Forgot Password
+                                        </a>
+                                        <a type="button" href="#" class="underline" >Create An Account</a>
+                                    </div> 
+                                </form>
+                                <!--FOrget PWD tab Container-->
+                                <div id="forgot_pwd_container" class="forgot_pwd_container d-none">
+                                    <h1 class="rwd_title text-center w-100 mb-3">
+                                        Forgot Password
+                                    </h1>
+
+                                    <!--Forgot Form-->
+                                    <form action="#" class="d-flex flex-wrap custom_form">
+                                        <div class="col-12 mb-3">
+                                            <input type="email" class="form-control error" placeholder="Your Email Id *"
+                                                value="" required="">
+                                            <div class="form_alert text-danger small">
+                                                email id is required.
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 btn-steps_row">
+                                            <button class="btn btn_custom my-3 w-100" type="submit">
+                                                Submit
+                                            </button>
+                                        </div>
+                                    </form>
+                                    <span class="close_form">X</span>
+                                </div>
+                            </div>
+
+                            <hr>
+                            <div class="container p-3 my-4 text-center">
+                               <div class="col-12">
+                                <button class="btn rwd-font btn-facebook mb-3 btn-block">
+                                    <i class="fab fa-facebook-f title-5 text-white"></i> Login with Facebook
+                                </button>
+
+                                <button class="btn rwd-font btn-google mb-3 btn-block">
+                                    <i class="fab fa-google title-5 text-white"></i> Login with Google
+                                </button>
+                               </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Video Model Box -->
+        <div class="modal fade" id="welcomeVideo" tabindex="-1" role="dialog" aria-labelledby="welcomeVideotitle"
+            aria-hidden="false">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-body" style="padding:0px;">
+                        <div class="embed-responsive embed-responsive-16by9">
+
+                            <button type="button" class="video-close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FvMsoHe2_Tk"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>

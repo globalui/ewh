@@ -1,0 +1,13 @@
+@media (max-width: 992px) {
+  .listing-view,.map-view{
+    display: none !important;
+  }
+  .listing-view.active{
+    display: grid !important;
+  }
+  .map-view.active{
+    display: block !important;
+  }
+}
+
+#mapid { height: 480px; }

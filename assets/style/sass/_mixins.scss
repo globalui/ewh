@@ -1,0 +1,30 @@
+@mixin ewh-transition(){
+  transition: $ewh-transition-base;
+}
+
+//width height
+@mixin wh($w,$h){
+  width: $w;
+  height:$h;
+}
+
+@mixin flex(){
+  align-items: center;
+  display: flex;
+}
+@mixin flex-center(){
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+@mixin beforeAfter($wh,$position){
+  width:$wh;
+  height:$wh;
+  left:$position;
+  top:$position;
+  content: "";
+  position: absolute;
+}
+
+

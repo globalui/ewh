@@ -1,0 +1,30 @@
+//body
+
+
+html {
+  font-family: sans-serif;}
+
+body {
+  font-family:$themeFont;
+  font-size:var(--systemFont);
+}
+
+body a{
+  color: $ewh-color1;
+  text-decoration: none;
+}
+body a:hover,
+body a:focus{
+  color: $ewh-color1;
+  text-decoration: none;
+}
+
+.bg-hero{
+  background-color: #eef2fa;
+}
+
+.btn-primary:focus, .btn-primary.focus{
+  color: #fff !important;
+}
+
+
