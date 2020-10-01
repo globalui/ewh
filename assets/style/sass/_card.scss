@@ -27,15 +27,17 @@
   .card-caption {
     position: relative;
     width: 100%;
-    padding-top: 10px;
-    padding-bottom: 60px;
+    padding-top: 10px; 
+    height: fit-content;
     .caption-header {
       padding-left: 10px;
       padding-right: 10px;
 
     }
-    .caption-footer {
-      position: absolute;
+    p{
+      line-height: normal;
+    }
+    .caption-footer { 
       bottom: 0px;
       width: 100%;
       border-top: 1px solid #efefef;
@@ -84,10 +86,7 @@
       width: 40%;
     }
     .card-caption {
-      width: 70%;
-      .caption-footer {
-        position: absolute;
-      }
+      width: 70%; 
     }
   }
 }
@@ -97,7 +96,7 @@
   position: absolute;
   z-index: 99;
   left: 10px;
-  bottom: 10px;
+  top: 10px;
   .cmpny-logo {
     width: 60px;
     height: 60px;
@@ -171,11 +170,11 @@
   }
 }
 
-.icons-slag {
-  font-size: var(--card-icon);
+.icons-slag { 
   li {
     padding-right: 10px;
-    margin-bottom: 6px;
+    margin-bottom: 10px;
+    width: 25%; 
     @include flex();
     color: #6c757d !important;
     i {
@@ -188,8 +187,7 @@
       padding-right: 10px;
       margin-bottom: 6px;
       display: inline-block;
-      text-align: center;
-      float: left;
+      text-align: center; 
       color: #6c757d !important;
       i {
         margin-right: 5px;

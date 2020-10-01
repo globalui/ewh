@@ -78,3 +78,29 @@
      border:2px solid $c-orange;
    }
  }
+
+ .hero.inner-banner{
+   position: relative;
+   overflow: hidden;
+
+   .container{
+     z-index: 1;
+   }
+
+   picture{ 
+    @include wh(100%,100%);
+    top:0;
+    left:0;
+    z-index: 0;
+
+     &:before{
+       @include wh(100%,100%);
+       background-color: $c-cyan-light;
+       top:0;
+       left:0;
+       content:"";
+       position: absolute;
+       opacity:75%;
+     }
+   }
+ }
