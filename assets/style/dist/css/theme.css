@@ -269,6 +269,7 @@ html {
 body {
   font-family: "soleil", sans-serif;
   font-size: var(--systemFont);
+  overflow-x: hidden;
 }
 
 body a {
@@ -417,7 +418,7 @@ body a:focus {
 }
 
 .log_size {
-  display: none;
+  width: 60px;
 }
 
 .log_xs_size {
@@ -509,7 +510,7 @@ a.nav-link {
     line-height: 4rem;
   }
   .ewh_header .log_size {
-    display: block;
+    width: 120px;
   }
   .ewh_header .log_xs_size {
     display: none;
