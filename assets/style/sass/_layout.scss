@@ -2,35 +2,52 @@
 
 
 html {
-  font-family: sans-serif;}
+  font-family: sans-serif;
+}
 
 body {
-  font-family:$themeFont;
-  font-size:var(--systemFont);
+  font-family: $themeFont;
+  font-size: var(--systemFont);
 
   overflow-x: hidden;
 }
 
-body a{
-  color: $ewh-color1;
-  text-decoration: none;
-}
-body a:hover,
-body a:focus{
+body a {
   color: $ewh-color1;
   text-decoration: none;
 }
 
-.bg-hero{
+body a:hover,
+body a:focus {
+  color: $ewh-color1;
+  text-decoration: none;
+}
+
+.bg-hero {
   background-color: #eef2fa;
 }
 
-.btn-primary:focus, .btn-primary.focus{
+.btn-primary:focus,
+.btn-primary.focus {
   color: #fff !important;
 }
 
-.badge-custom-price{ 
+.badge-custom-price {
   color: #e40a1f;
-  background-color: rgba(255, 244, 245,1);
+  background-color: rgba(255, 244, 245, 1);
   border: 1px solid #edddde;
+}
+
+.discount-badge {
+  width: 30px;
+  height: 30px;
+
+  @media(min-width:992px) { 
+    width: 40px;
+    height: 40px;
+  }
+
+  background-color: #e40a1f;
+  color: #fff !important;
+  border-radius:50px;
 }

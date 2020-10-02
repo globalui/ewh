@@ -12,7 +12,8 @@
         <link rel="stylesheet" href="assets/style/dist/css/theme.css">
 
         <style>
-            .fixedheader{
+            .fixedheader,
+            .default-header {
                 position: static !important;
             }
         </style>
@@ -295,10 +296,35 @@
                                         </li>
                                     </ul>
                                 </div>
+
+                                <div class="col-12 my-4 d-block d-lg-none">
+                                    <div class="d-block badge badge-custom-price p-3">
+
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div
+                                                class="d-flex justify-content-between align-items-center justify-content-lg-start">
+                                                <div class="text-left">
+                                                    <del class="d-block title-6 text-danger">₹ 74,074</del>
+                                                    <span class="title-5 "> ₹ 71,074</span>
+                                                    <span class="d-block d-lg-inline mt-1 mt-lg-0">Per Person Cost</span>
+                                                </div>
+                                                <span
+                                                    class="discount-badge d-flex justify-content-center align-items-center mx-4">
+                                                    25%
+                                                </span> 
+                                            </div>
+
+                                            <div class="mr-lg-3 radius-30 bg-info-dark text-white px-3 py-2">
+                                                2 Days · 1 Night
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div class="col-12 mt-3">
                                     <h3 class="title-7">Highlights</h3>
                                     <ul
-                                        class="border py-3 icons-slag style2 list-unstyled w-100 grid grid-col-xs-4 grid-col-sm-5">
+                                        class="border py-3 icons-slag style2 list-unstyled w-100 grid grid-col-xs-3 grid-col-sm-5">
                                         <li>
                                             <i class="fa fa-hamburger fa-2x"></i>
                                             <span>Meals</span>
@@ -416,11 +442,11 @@
                                             <div id="Reviews" class="collapse" data-parent="#custom-accordion">
                                                 <div class="card-body">
                                                     <div class="row">
-                                                        <div class="col-12">
-                                                            <div class="review-block shadow">
+                                                        <div class="col-12 px-0">
+                                                            <div class="review-block">
 
-                                                                <div class="row">
-                                                                    <div class="col-3 col-lg-2">
+                                                                <div class="row mx-0  border p-3">
+                                                                    <div class="col-3 col-lg-2 px-0">
                                                                         <img src="dump/review/user-1.jpg"
                                                                             class="img-fluid">
                                                                     </div>
@@ -552,7 +578,8 @@
                             <div class="w-100" style="position: sticky; top:100px">
                                 <form action="#" class="shadow bg-white p-3" data-form-type="filter-form">
                                     <div class="form-group">
-                                        <div class="d-block badge badge-custom-price p-3 d-flex justify-content-between">
+                                        <div
+                                            class="d-block badge badge-custom-price p-3 d-flex justify-content-between">
 
                                             <div class="text-left">
                                                 <del class="d-block title-6 text-danger">₹ 74,074</del>
@@ -560,7 +587,8 @@
                                                 <small>Per Person Cost</small>
                                             </div>
 
-                                            <span class="radius-30 bg-primary text-white d-flex justify-content-center align-items-center">
+                                            <span
+                                                class="radius-30 bg-primary text-white d-flex justify-content-center align-items-center">
                                                 <b class="h6 m-0 px-3">25%</b>
                                             </span>
 
@@ -673,7 +701,6 @@
                 </div>
             </section>
 
-
             <section class="bg-picture-banner py-lg-5 py-4 position-relative overflow-hidden">
                 <div class="container position-relative z-index-1 pt-3 text-center">
                     <div class="row">
@@ -701,6 +728,14 @@
                     <img src="dump/newletter-sm.jpg" alt="hero" width="100%">
                 </picture>
             </section>
+
+            <div class="col-12 bg-white shadow fixed-mb-bottom p-2 z-index-1">
+                <div class="d-flex justify-content-start">
+                    <a href="#" data-apply="true" class="btn btn-success w-100 mr-1"><span>Apply Now</span> <i
+                            class="fa fa-paper-plane"></i></a>
+                    <button class="btn btn-info"><i class="fa fa-question"></i></button>
+                </div>
+            </div>
 
         </main>
 

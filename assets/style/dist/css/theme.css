@@ -287,7 +287,8 @@ body a:focus {
   background-color: #eef2fa;
 }
 
-.btn-primary:focus, .btn-primary.focus {
+.btn-primary:focus,
+.btn-primary.focus {
   color: #fff !important;
 }
 
@@ -295,6 +296,21 @@ body a:focus {
   color: #e40a1f;
   background-color: #fff4f5;
   border: 1px solid #edddde;
+}
+
+.discount-badge {
+  width: 30px;
+  height: 30px;
+  background-color: #e40a1f;
+  color: #fff !important;
+  border-radius: 50px;
+}
+
+@media (min-width: 992px) {
+  .discount-badge {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .right-sidebar {
