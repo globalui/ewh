@@ -1,0 +1,124 @@
+
+  //proram details Gallery
+  .gallery{
+    margin-bottom: 0px;
+    &.owl-carousel .owl-nav button.owl-next,
+    &.owl-carousel .owl-nav button.owl-prev{
+      top: -100px;
+    }
+  
+    &.glry-with-info{
+  
+      li:last-child{
+        position: relative;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+        &:before{
+          content:"View " attr(data-TotlImg) "+ Photos";
+          position: absolute;
+          background: #191717b8;
+          border-radius: 50px;
+          padding: 6px 10px;
+          text-align: center;
+          line-height: 13px;
+          font-size: 80%;
+          width: 80%;
+          color: #fff;
+        }
+      }
+    }
+  }
+  
+  .gallery {
+    width: 1170px;
+    margin: 0 auto;
+  
+    .magnific-img{
+      min-height: 120px;
+      display: none;
+      position: relative;
+      transition: $ewh-transition-base2s;
+      .image-popup-vertical-fit{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: $ewh-transition-base2s;
+        position: relative;
+  
+        .fa-search-plus{
+          position: absolute;
+          opacity: 0;
+          font-size: 1.6rem;
+          color: #fff;
+          z-index: -99;
+          transition: $ewh-transition-base2s;
+        }
+  
+      }
+      &:hover{
+        .image-popup-vertical-fit:before{
+          position: absolute;
+          background-color: rgba(0, 0, 0, 0.26);
+          width: 100%;
+          height: 100%;
+          content: " ";
+          z-index: 9;
+          transition: $ewh-transition-base2s;
+        }
+        .fa-search-plus{
+          opacity: 1;
+          z-index: 99;
+          transition: $ewh-transition-base2s;
+        }
+      }
+    }
+  
+    .magnific-img:nth-child(4n){
+      .image-popup-vertical-fit:before{
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        height: 100%;
+        content: " ";
+        z-index: 1;
+        transition: $ewh-transition-base2s;
+      }
+    }
+    img{
+      width: 100%;
+    }
+  
+    .more-photo{
+      position: absolute;
+      z-index: 199;
+      background:rgba(0, 0, 0, 0.58);
+      padding: 5px 10px 5px 5px;
+      border-radius: 50px;
+      color: #fff;
+  
+      .img-icon{
+       @include wh(40px,35px);
+        background-repeat: no-repeat;
+        background-image: url("data:image/svg+xml,%3Csvg version='1.2' baseProfile='tiny' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 77.5 76.7' xml:space='preserve'%3E%3Ccircle fill='%23dc3545' cx='38.8' cy='38.2' r='34.9'/%3E%3Cg%3E%3Cpath fill='%23FFFFFF' d='M60.2,19.1H17.4c-1.7,0-3.1,1.4-3.1,3.1v32c0,1.7,1.4,3.1,3.1,3.1h42.9c1.7,0,3.1-1.4,3.1-3.1v-32 C63.3,20.5,61.9,19.1,60.2,19.1z M60.2,22.2v22.7l-6.1-5.6c-0.9-0.8-2.3-0.8-3.2,0.1l-6.2,6.2L32.4,31c-0.9-1.1-2.6-1.1-3.6,0 L17.4,44.2v-22H60.2z M47,30.4c0-2.4,1.9-4.3,4.3-4.3c2.4,0,4.3,1.9,4.3,4.3s-1.9,4.3-4.3,4.3C48.9,34.7,47,32.8,47,30.4z'/%3E%3C/g%3E%3C/svg%3E");
+      }
+      span:last-child{
+        b{
+          font-size: var(--systemFont);
+          margin-top: 4px;
+        }
+        em{
+          font-size: var(--smllFont)
+        }
+        &>*{
+          display: block;
+          line-height: 16px;
+        }
+      }
+    }
+  }
+  
+  
+  

@@ -173,12 +173,11 @@
 .icons-slag { 
   li {
     padding-right: 10px;
-    margin-bottom: 10px;
-    width: 25%; 
-    @include flex();
-    color: #6c757d !important;
+    margin-bottom: 10px; 
+    @include flex(); 
     i {
       margin-right: 5px;
+      margin-bottom:10px;
     }
   }
 
@@ -187,8 +186,7 @@
       padding-right: 10px;
       margin-bottom: 6px;
       display: inline-block;
-      text-align: center; 
-      color: #6c757d !important;
+      text-align: center;  
       i {
         margin-right: 5px;
       }
@@ -197,6 +195,7 @@
         text-align: center;
         line-height: 12px;
         font-size:var(--smllFont);
+        font-weight:bold;
       }
     }
   }

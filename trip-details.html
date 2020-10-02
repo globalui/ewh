@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>Explore World Holiday | Trip Details</title>
+
+        <link rel="stylesheet" href="assets/vendors/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="assets/vendors/fontawesone/css/all.min.css">
+        <link rel="stylesheet" href="assets/style/dist/css/theme.css">
+
+        <style>
+            .fixedheader{
+                position: static !important;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <header class="ewh_header bg-white shadow fixedheader">
+            <section class="bg-primary py-2 subheader secondary-nav">
+                <div class="container">
+                    <div class="row justify-content-end px-3">
+                        <ul class="list-inline mb-0 small top_navbar">
+                            <!--Top Navigation nav-->
+                            <li class="list-inline-item">
+                                <a href="tel:+91-9022718677">
+                                    <i class="fa fa-phone"></i>
+                                    +91-9022718677
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="mailto:sales@exploreworldholidays">
+                                    <i class="fa fa-envelope"></i>
+                                    sales@exploreworldholidays
+                                </a>
+                            </li>
+                            <li class="list-inline-item dropdown">
+                                <!--Currency Dropdown-->
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">INR</a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
+                                    <a class="dropdown-item" href="#">
+                                        USD
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        EUR
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul
+                            class="list-inline mb-0 social-media smedia1 border-left pl-2 ml-2 d-none d-lg-inline-block">
+                            <!--Social media Top nav-->
+                            <li class="list-inline-item">Follow us</li>
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i> </a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i> </a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i> </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <div class="container px-0">
+                <nav class="navbar navbar-expand-lg primary-navbar py-lg-0">
+                    <!--Navigation Btn showing in mobile layout-->
+                    <button class="navbar-toggler ewh_nav_trigger mr-auto collapsed" type="button"
+                        data-toggle="collapse" data-target="#ewhNavigataion" aria-controls="ewhNavigataion"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="trigger_btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </button>
+
+                    <!--Logo col with 2 logos -->
+                    <div class="ewh_header_navbar-brand-wrapper ml-auto ml-lg-0">
+                        <a class="navbar-brand" href="index.html" aria-label="Space">
+                            <img src="assets/images/logo.svg" class="log_size" alt="Logo" width="120">
+                        </a>
+                    </div>
+
+                    <ul class="navbar-nav mobile-signup-nav ml-auto order-lg-1">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-lock"></i> <span>Login</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-primary" href="#" data-toggle="modal"
+                                data-target="#signUpModel">
+                                <b>
+                                    <i class="fa fa-user-plus"></i>
+                                    <span>Sign up</span>
+                                </b>
+                            </a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn text-primary" href="#" data-toggle="modal"
+                                data-target="#signUpModel">
+                                <b>
+                                    <i class="fa fa-search"></i>
+                                </b>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!--Navigation container-->
+                    <div class="collapse order-lg-0 navbar-collapse menu-bg-hero navbar_custom_style  justify-content-lg-end"
+                        id="ewhNavigataion" data-nav-type="js-navbar">
+                        <ul class="primary-nav navbar navbar-nav py-0" data-nabigation="primary">
+                            <li class="nav-item dropdown   position-relative">
+                                <a class="nav-link dropdown-toggle" href="#" role="button">
+                                    Destinations
+                                </a>
+                                <div class="dropdown-menu border-0 submenu">
+                                    <div class="w-100 py-3">
+                                        <!--  <h5 class="menu-heading">Destinations</h5> -->
+                                        <ul class="list-unstyled text-dark">
+                                            <li>
+                                                <a class="nav-link" href="destination.html">
+                                                    <span class="flag flag-id"></span>Bali
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link" href="destination.html">
+                                                    <span class="flag flag-kh"></span>Cambodia
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link" href="destination.html">
+                                                    <span class="flag flag-cn"></span>China
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link" href="destination.html">
+                                                    <span class="flag flag-in"></span>India
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link" href="destination.html">
+                                                    <span class="flag flag-my"></span>Malaysia
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link" href="destination.html">
+                                                    <span class="flag flag-np"></span>Nepal
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link" href="destination.html">
+                                                    <span class="flag flag-ph"></span>Philippines
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link" href="destination.html">
+                                                    <span class="flag flag-lk"></span>Sri
+                                                    Lanka
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link" href="destination.html">
+                                                    <span class="flag flag-th"></span>Thailand
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link" href="destination.html">
+                                                    <span class="flag flag-vn"></span>Vietnam
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" role="button">Concept Tours</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" role="button">Reviews</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="aboutus.html" role="button">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="faq.html" role="button">FAQ’s</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+
+            <section class="hero inner-banner py-lg-5 py-3">
+                <div class="container position-relative d-flex order-1 order-lg-0  text-white">
+                    <div class="row">
+                        <div class="col-12 col-lg-8  my-5">
+                            <h1 class="title-3 text-white">Seclude, Kasauli</h1>
+                            <p> A Holiday Package suitable for friends and family with Perfect Blend of Fun and
+                                Relaxation|Live Like a Local Tour experience included|
+                            </p>
+                            <strong class="title-6 radius-30 bg-white px-3 py-2">Duration: 7 Days - 6 Nights</strong>
+                        </div>
+                    </div>
+                </div>
+                <picture class="position-absolute shadow-on-element">
+                    <source media="(min-width: 992px)" srcset="dump/hero/innerbanner.jpg">
+                    <img src="dump/blog/1.jpg" alt="hero" width="100%">
+                </picture>
+            </section>
+            <!--Banner Section-->
+
+            <section class="py-3 py-lg-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-8">
+                            <div class="row">
+                                <div class="col-12">
+                                    <ul class="breadcrumb ewh_custom_breadcrumb col-12 mb-3">
+                                        <li class="breadcrumb-item" itemscope="" itemtype="#">
+                                            <a href="#" itemprop="url"><span itemprop="title">Home</span></a>
+                                        </li>
+                                        <li class="breadcrumb-item">
+                                            <a href="#" itemprop="url">Vietnam</span></a>
+                                        </li>
+                                        <li class="active breadcrumb-item">Super Saver Vietnam - 6 Nights</li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 gallery">
+                                    <h3 class="title-7">Program - Gallery</h3>
+                                    <ul class="list-unstyled grid grid-col-xs-2 grid-col-sm-4 img-gallery-magnific">
+                                        <li class="magnific-img" style="display: block">
+                                            <a class="image-popup-vertical-fit" href="dump/card/1.jpg"
+                                                title="Australia">
+                                                <img src="dump/card/1.jpg" alt="9.jpg">
+                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li class="magnific-img" style="display: block">
+                                            <a class="image-popup-vertical-fit" href="dump/card/2.jpg" title="Bali">
+                                                <img src="dump/card/2.jpg" alt="9.jpg">
+                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li class="magnific-img" style="display: block">
+                                            <a class="image-popup-vertical-fit" href="dump/card/3.jpg" title="nepal">
+                                                <img src="dump/card/3.jpg" alt="9.jpg">
+                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li class="magnific-img" style="display: block">
+                                            <a class="image-popup-vertical-fit" href="dump/card/4.jpg" title="Thailand">
+                                                <img src="dump/card/4.jpg" alt="thailand.jpg">
+                                                <span class="more-photo d-inline-flex pr-3">
+                                                    <span class="img-icon"></span>
+                                                    <span>
+                                                        <b>View</b>
+                                                        <small>10+ Photos</small>
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="magnific-img">
+                                            <a class="image-popup-vertical-fit" href="dump/card/5.jpg"
+                                                title="Australia">
+                                                <img src="dump/card/5.jpg" alt="9.jpg">
+                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li class="magnific-img">
+                                            <a class="image-popup-vertical-fit" href="dump/card/6.jpg" title="india">
+                                                <img src="dump/card/6.jpg" alt="9.jpg">
+                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li class="magnific-img">
+                                            <a class="image-popup-vertical-fit" href="dump/card/7.jpg" title="cambodia">
+                                                <img src="dump/card/7.jpg" alt="9.jpg">
+                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li class="magnific-img">
+                                            <a class="image-popup-vertical-fit" href="dump/card/8.jpg" title="vietnam">
+                                                <img src="dump/card/8.jpg" alt="9.jpg">
+                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li class="magnific-img">
+                                            <a class="image-popup-vertical-fit" href="dump/card/9.jpg" title="peru">
+                                                <img src="dump/card/9.jpg" alt="9.jpg">
+                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <h3 class="title-7">Highlights</h3>
+                                    <ul
+                                        class="border py-3 icons-slag style2 list-unstyled w-100 grid grid-col-xs-4 grid-col-sm-5">
+                                        <li>
+                                            <i class="fa fa-hamburger fa-2x"></i>
+                                            <span>Meals</span>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-user-shield fa-2x"></i>
+                                            <span>Safe to Travel</span>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-mountain fa-2x"></i>
+                                            <span>Hill Station</span>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-percent fa-2x"></i>
+                                            <span>Unbeatable deal</span>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-calendar-check fa-2x"></i>
+                                            <span>Flexible bookings</span>
+                                        </li>
+                                    </ul>
+
+                                    <h3 class="title-7">Why should you book this deal?</h3>
+                                    <ul class="c-list-style animate-check-o">
+                                        <li> Unbeatable deals: Book this deal anytime till 31 August 2020. The voucher
+                                            is applicable for a maximum of two adults sharing a room.
+                                        </li>
+                                        <li>Flexibility: Travel on a date of your choice till 31 March, 2021
+                                        </li>
+                                        <li> Convenience: Enjoy crowd-free locations at a drivable distance
+                                        </li>
+                                        <li>Safety: The properties follow all corona safety standards
+                                        </li>
+                                        <li> Experiences: Make the most of your vacation with memorable experiences</li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <div id="custom-accordion" class="c-style-accordion">
+
+                                        <div class="card">
+                                            <div class="card-header" data-toggle="collapse" href="#collapseOne"
+                                                aria-expanded="false">
+                                                <h3 class="title-7" data-getwidth="200">Overview</h3>
+                                            </div>
+                                            <div id="collapseOne" class="collapse" data-parent="#custom-accordion">
+                                                <div class="card-body">
+                                                    <p>
+                                                        What sets this gorgeous property apart is an unmistakable air of
+                                                        serenity and the location. A five-hour drive whisks you away to
+                                                        this haven that is located in the small village of Dochi. You
+                                                        can treat yourself to splendid views, a romantic dinner, guided
+                                                        trekking tours, bird watching sessions and relaxed barbeque
+                                                        evenings.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card">
+                                            <div class="card-header" data-toggle="collapse" href="#Amenities"
+                                                aria-expanded="false">
+                                                <h3 class="title-7" ?="">Amenities</h3>
+                                            </div>
+                                            <div id="Amenities" class="collapse" data-parent="#custom-accordion">
+                                                <div class="card-body">
+                                                    <ul class="c-list-style animate-check small">
+                                                        <li> Light & Shadows: </li>
+                                                        <li> Common dining room </li>
+                                                        <li> Private balcony </li>
+                                                        <li> A television </li>
+                                                        <li> Running hot and cold water </li>
+                                                        <li> A tea/coffee maker </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card">
+                                            <div class="card-header" data-toggle="collapse" href="#Included"
+                                                aria-expanded="false">
+                                                <h3 class="title-7">Included Services</h3>
+                                            </div>
+                                            <div id="Included" class="collapse" data-parent="#custom-accordion">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-12 col-lg-6 mb-4">
+                                                            <h4 class="title-6">What's Include?</h4>
+                                                            <ul class="c-list-style animate-check small">
+                                                                <li> All meals </li>
+                                                                <li> Candlelight dinner </li>
+                                                                <li> Room decor </li>
+                                                                <li> Access to an outdoor seating area </li>
+                                                                <li> Access to the common dining area </li>
+                                                                <li> Barbeque and bonfire in the evening </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-12 col-lg-6 mb-4">
+                                                            <h4 class="title-6">What's Not-Include?</h4>
+                                                            <ul class="c-list-style animate-close small">
+                                                                <li> All expenses of personal nature</li>
+                                                                <li> Anything not mentioned above</li>
+
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card">
+                                            <div class="card-header" data-toggle="collapse" href="#Reviews"
+                                                aria-expanded="false">
+                                                <h3 class="title-7">Reviews</h3>
+                                            </div>
+                                            <div id="Reviews" class="collapse" data-parent="#custom-accordion">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="review-block shadow">
+
+                                                                <div class="row">
+                                                                    <div class="col-3 col-lg-2">
+                                                                        <img src="dump/review/user-1.jpg"
+                                                                            class="img-fluid">
+                                                                    </div>
+                                                                    <div class="col-9 col-lg-10">
+                                                                        <div class="review-block-rate text-warning">
+                                                                            <i class="fa fa-star"></i>
+                                                                            <i class="fa fa-star"></i>
+                                                                            <i class="fa fa-star"></i>
+                                                                            <i class="fa fa-star"></i>
+                                                                            <i class="fa fa-star-half-alt"></i>
+                                                                        </div>
+
+                                                                        <div class="review-block-name">
+                                                                            <a href="#">Sujoy Das</a> |
+                                                                            <span><i class="fa fa-map-marker-alt"></i>
+                                                                                Delhi</span>
+                                                                            |
+                                                                            <span>July 7, 2019</span>
+                                                                        </div>
+                                                                        <div class="review-block-description">
+                                                                            We drove in from Jaipur for a night. Nice
+                                                                            and neat property that is located close to
+                                                                            the Park. The front desk was polite and
+                                                                            helpful. Rooms were comfortable and clean.
+                                                                            Housekeeping was prompt in attending room
+                                                                            heater problem. The two Indian meals we had
+                                                                            were well cooked and well served. Overall, a
+                                                                            satisfactory experience worth my
+                                                                            recommendation
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card">
+                                            <div class="card-header" data-toggle="collapse" href="#TermsandConditions"
+                                                aria-expanded="false">
+                                                <h3 class="title-7">Terms and Conditions</h3>
+                                            </div>
+                                            <div id="TermsandConditions" class="collapse"
+                                                data-parent="#custom-accordion">
+                                                <div class="card-body">
+
+                                                    <p>This Holiday Voucher is valid for purchases made from tripoto.com
+                                                        only and is valid till 31 March, 2021. (Except dates: 15-16
+                                                        August, 24-25 December in 2020 and 30-31 January in 2021)</p>
+                                                    <p>Products and services are subject to availability, you can
+                                                        suggest three preferred dates and finalise with the hotel based
+                                                        on room availability.</p>
+                                                    <p>The reservation needs to be confirmed at least 30 days prior to
+                                                        the date of travel. Once a reservation is confirmed, amendments
+                                                        or modifications to it will be based on the hotel’s policies.
+                                                    </p>
+                                                    <p>Each voucher is applicable for a minimum of 1 (one) and / or a
+                                                        maximum of 2 (two) adults sharing a room, depending on the
+                                                        hotel’s terms and conditions. Additional occupants shall be
+                                                        allowed as per hotel policies and at an additional price payable
+                                                        as deemed by the hotel.</p>
+                                                    <p>The Holiday Voucher can also be booked through the Tripoto mobile
+                                                        app.</p>
+                                                    <p>In case of transaction failures, the amount would be
+                                                        automatically refunded to the same cards as per the bank’s
+                                                        policy.</p>
+                                                    <p>Multiple Holiday Vouchers can be bought and combined and used on
+                                                        one transaction. There is no cap on the number of vouchers an
+                                                        individual can purchase.</p>
+                                                    <p>The Holiday Voucher cannot be cancelled or exchanged for cash.
+                                                    </p>
+                                                    <p>The Holiday Voucher validity cannot be extended under any
+                                                        circumstances.</p>
+                                                    <p>The Holiday Voucher to be produced at the time of check-in along
+                                                        with an ID proof (or online via email with the hotel prior to
+                                                        the visit) for the redemption.</p>
+                                                    <p>Tripoto is not responsible if the Holiday Voucher is used without
+                                                        your permission.</p>
+                                                    <p>Tripoto is the final authority on the interpretation of these
+                                                        rules.</p>
+                                                    <p>In no event, the liability of Tripoto for any claims shall exceed
+                                                        the value of the Holiday Voucher.</p>
+                                                    <p>In the event of any dispute, parties agree to the exclusive
+                                                        jurisdiction of courts of New Delhi.</p>
+                                                    <p>This is for individual use only, travel agents found using these
+                                                        would lead to cancellation of the booking and no refund would be
+                                                        made.</p>
+                                                    <p>Tripoto further expressly disclaims any warranties or
+                                                        representations in respect of quality, suitability, accuracy,
+                                                        reliability, completeness, timeliness, performance, safety, or
+                                                        legality of the services listed or displayed or transacted or
+                                                        the content on the website.</p>
+                                                    <p>Use of hotel facilities as per house rules.</p>
+                                                    <p>Any additional activity consumed at the hotel apart from the
+                                                        inclusions (like an additional meal, extra adult, extra child,
+                                                        room upgrade, etc.) has to be paid directly at the hotel.</p>
+                                                    <p>Tripoto shall neither be liable nor responsible for any actions
+                                                        or inactions of service providers nor any breach of conditions,
+                                                        representations or warranties by the suppliers or service
+                                                        provider and hereby expressly disclaim any and all
+                                                        responsibility and liability in that regard.</p>
+                                                    <p>Documents to Carry: Govt ID Proof (PAN Card, Driving License,
+                                                        Passport, etc.)</p>
+                                                    <p>Check-in time is 2:00 pm and check-out time is 12:00 pm.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card">
+                                            <div class="card-header" data-toggle="collapse" href="#Cancellation"
+                                                aria-expanded="false">
+                                                <h3 class="title-7">Cancellation Policy</h3>
+                                            </div>
+                                            <div id="Cancellation" class="collapse" data-parent="#custom-accordion">
+                                                <div class="card-body">
+                                                    Once a voucher is purchased, it cannot be cancelled or refunded. Any
+                                                    and all reservations are non-refundable.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 d-lg-block right-sidebar">
+                            <div class="w-100" style="position: sticky; top:100px">
+                                <form action="#" class="shadow bg-white p-3" data-form-type="filter-form">
+                                    <div class="form-group">
+                                        <div class="d-block badge badge-custom-price p-3 d-flex justify-content-between">
+
+                                            <div class="text-left">
+                                                <del class="d-block title-6 text-danger">₹ 74,074</del>
+                                                <span class="title-5"> ₹ 71,074</span>
+                                                <small>Per Person Cost</small>
+                                            </div>
+
+                                            <span class="radius-30 bg-primary text-white d-flex justify-content-center align-items-center">
+                                                <b class="h6 m-0 px-3">25%</b>
+                                            </span>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="bookingDate">Traveling on</label>
+                                        <input type="date" id="bookingDate" class="form-control">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <a class="btn btn-block btn-success btn-md" href="#">Apply Now </a>
+                                        <span class="small text-primary d-block">Take less than 5 minutes. You won't be
+                                            charged
+                                            yet.</span>
+                                    </div>
+                                </form>
+
+                                <div class="form-group mt-5">
+                                    <button class="btn btn-block btn-outline-info">Ask a Question</button>
+                                </div>
+                                <div class="w-100 d-inline-block mb-4 shadow bg-info-dark p-4 radius-4">
+                                    <form class="w-100 form-label-placeholder" action="" method="post">
+                                        <h4 class="title-5 text-white mb-4">Have a Question?</h4>
+                                        <div class="w-100">
+                                            <div class="form-group error-input">
+                                                <div class="custom-bdr">
+                                                    <input type="text" id="yourName"
+                                                        class="form-control form-control-lg">
+                                                    <label for="yourName"> Your Full Name</label>
+                                                </div>
+                                                <span class="error">Please fill this feild</span>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class=" custom-bdr">
+                                                    <input type="email" id="yourEmail"
+                                                        class="form-control form-control-lg">
+                                                    <label for="yourEmail">Email Address</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class=" custom-bdr">
+                                                    <input type="number" id="yourNumber"
+                                                        class="form-control form-control-lg">
+                                                    <label for="yourNumber">Phone Number</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class=" custom-bdr">
+                                                    <input type="date" id="yourDate"
+                                                        class="form-control form-control-lg">
+                                                    <label for="yourDate">Travel Date</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class=" custom-bdr">
+                                                    <textarea name="" id="Query" cols="30" rows="3"
+                                                        class="form-control form-control-lg"></textarea>
+                                                    <label for="Query">Query <small> (Optional) </small></label>
+                                                </div>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="PrivacyPolicy">
+                                                <label class="form-check-label text-white" for="PrivacyPolicy">I agree
+                                                    to
+                                                    Privacy Policy</label>
+                                            </div>
+                                            <div class="form-group mt-3 text-center mt-5">
+                                                <button class="btn  btn-success px-lg-6">Submit Your Query</button>
+                                            </div>
+                                        </div>
+
+                                    </form>
+                                </div>
+
+                                <div class="w-100 shadow">
+                                    <div
+                                        class="d-flex flex-wrap text-center justify-content-center align-items-center p-3 bg_lightblue bg_lightblue_bdr1">
+                                        <div class="col-12 text-center ">
+                                            <div class="check_mark">
+                                                <div class="sa-icon sa-success animate">
+                                                    <span class="sa-line sa-tip animateSuccessTip"></span>
+                                                    <span class="sa-line sa-long animateSuccessLong"></span>
+                                                    <div class="sa-placeholder"></div>
+                                                    <div class="sa-fix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3 class="h5">
+                                            <strong>Team Explore World Holidays would get back to you within
+                                                One working day.</strong>
+                                        </h3>
+                                        <p>If you are using <strong>Gmail</strong>, do not forget to check your<strong>
+                                                spam
+                                                folder</strong>. Put the email in inbox or create a
+                                            filter for Volunteering Solutions to stay updated. <br> <br> If your query
+                                            is
+                                            urgent, you may<br> call us at :- <a
+                                                href="tel:+91-9022718677">+91-9022718677</a> <br> Email us
+                                            at :- <a
+                                                href="mailto:sales@exploreworldholidays">sales@exploreworldholidays</a>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="bg-picture-banner py-lg-5 py-4 position-relative overflow-hidden">
+                <div class="container position-relative z-index-1 pt-3 text-center">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="title-3 mt-3 text-white">Join us for News, Deals &amp; More! </h3>
+                        </div>
+                        <div class="col-12 col-lg-8 mx-auto my-3 my-lg-4 px-lg-6">
+                            <form class="d-flex flex-wrap flex-lg-nowrap mb-3" action="">
+                                <input type="text" class="form-control mr-lg-2 mb-1 mb-lg-0" placeholder="Your Name">
+                                <input type="text" class="form-control mr-lg-2 mb-2 mb-lg-0"
+                                    placeholder="Your Email Id">
+                                <button class="btn btn-primary px-lg-5 btn-block col-lg-3">Subscribe</button>
+                            </form>
+                            <p class="title-info-text light-peragraph text-white">
+                                By subscribing to our mailing list you are agreeing to our
+                                <a href="#" class="text-white font-weight-bold text-underline">Privacy Policy</a>.
+                                You can unsubscribe at any time
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <picture class="position-absolute position-left-top-0 shadow-on-element">
+                    <source media="(min-width: 768px)" srcset="dump/newletter.jpg">
+                    <img src="dump/newletter-sm.jpg" alt="hero" width="100%">
+                </picture>
+            </section>
+
+        </main>
+
+
+        <footer class="py-lg-6 py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 mb-5">
+                        <div class="w-100 d-flex align-items-center flex-wrap flex-lg-nowrap">
+                            <a href="index.html">
+                                <img src="assets/images/logo.svg" alt="logo" height="130">
+                            </a>
+                            <p class="mb-">
+                                Our Management team has over 15 years’ experience in the Tourism industry. Our
+                                experience and knowledge allow us to provide you with the best customer service
+                                possible….. <a href="#">Read more</a>
+                            </p>
+                        </div>
+                        <div class="w-100">
+                            <div class="d-flex w-75 justify-content-start mt-4">
+                                <a href="#" class="mr-3 text-dark">
+                                    <i class="fab fa-facebook fa-3x mr-3"></i>
+                                </a>
+                                <a href="#" class="mr-3 text-dark">
+                                    <i class="fab fa-instagram fa-3x mr-3"></i>
+                                </a>
+                                <a href="#" class="mr-3 text-dark">
+                                    <i class="fab fa-twitter fa-3x mr-3"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-5 offset-lg-1 mb-3">
+
+                        <h5 class="title-5">RESOURCES</h5>
+                        <ul class="list-unstyled d-flex flex-wrap footer-link">
+                            <li class="nav-item">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Concept Tours</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Tour</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Domestic Destinations</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">International Destinations</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center mt-3">
+                        <img src="assets/images/footer-trusted-badges.png" class="img-fluid" alt="footer">
+                    </div>
+                    <div class="col-12 text-center mt-2 small text-muted">
+                        <p> © 2020 exploreworldholidays..com. All Rights Reserved. CIN:U77777 XXXXXX******
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="assets/vendors/jquery/jquery.min.js"></script>
+        <script src="assets/vendors/bootstrap/dist/js/popper.min.js"></script>
+        <script async src="assets/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/style/dist/js/custom.js"></script>
+
+
+        <!--Owl Library-->
+        <link rel="stylesheet" href="assets/vendors/flag/flags.css">
+        <link rel="stylesheet" href="assets/vendors/owl/dist/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/vendors/owl/dist/assets/owl.theme.default.min.css">
+
+        <script src="assets/vendors/owl/dist/owl.carousel.min.js"></script>
+
+
+
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+        <script src="assets/vendors/owl/dist/owl.carousel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js">
+        </script>
+        <script>
+            $(document).ready(function () {
+                $('.image-popup-vertical-fit' +
+                    '' +
+                    '').magnificPopup({
+                    type: 'image',
+                    mainClass: 'mfp-with-zoom',
+                    gallery: {
+                        enabled: true
+                    },
+
+                    zoom: {
+                        enabled: true,
+
+                        duration: 300, // duration of the effect, in milliseconds
+                        easing: 'ease-in-out', // CSS transition easing function
+
+                        opener: function (openerElement) {
+
+                            return openerElement.is('img') ? openerElement : openerElement.find(
+                                'img');
+                        }
+                    },
+
+                });
+
+            });
+        </script>
+
+
+
+
+        <div id="signUpModel" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content overflow-hidden">
+                    <div class="signin_container shadow w-100 d-flex flex-wrap login_bg">
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <!--SignUp tab Container-->
+                            <div id="signup" class="container tab-pane fade active show"><br>
+
+                                <h1 class="title-3 text-center w-100 mb-0">
+                                    Welcome!
+                                </h1>
+                                <form action="#" class="d-flex flex-wrap custom_form">
+                                    <div class="col-12 mb-3">
+                                        <input type="email" class="form-control" placeholder="Your Full Name" value=""
+                                            required="" autofocus="">
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <input type="email" class="form-control error" id="yourEmailid"
+                                            placeholder="Your Email Id" value="" required="">
+                                        <div class="form_alert text-danger small">
+                                            email id is required.
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <input type="email" class="form-control" id="Password" placeholder="Password"
+                                            value="" required="">
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <input type="email" class="form-control" id="ConfPassword"
+                                            placeholder="Confirm Password" value="" required="">
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <label class="small">By clicking Sign Up, you agree to our <a href="#">Privacy
+                                                Policy</a>.</label>
+                                    </div>
+                                    <div class="col-12 btn-steps_row">
+                                        <button class="btn btn-primary my-3 w-100" type="submit">
+                                            SIGN UP
+                                        </button>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <a type="button" href="#" class="underline">Already have an account</a>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!--SignIn tab Container-->
+                            <div id="signin" class="container tab-pane fade">
+
+
+                                <h1 class="title-3 text-center w-100 my-3">
+                                    Welcome!
+                                </h1>
+                                <!--Signin Form-->
+                                <form action="#" class="d-flex flex-wrap custom_form">
+                                    <div class="col-12 mb-3">
+                                        <input type="email" class="form-control error" placeholder="Your Email Id"
+                                            value="" required="">
+                                        <div class="form_alert text-danger small">
+                                            email id is required.
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <input type="email" class="form-control" placeholder="Password" value=""
+                                            required="">
+                                    </div>
+                                    <div class="col-12 btn-steps_row">
+                                        <button class="btn btn-primary my-3 w-100" type="submit">
+                                            Login
+                                        </button>
+                                    </div>
+
+
+                                    <div class="col-12 d-flex justify-content-lg-between flex-wrap">
+                                        <a type="button" href="#" class="underline text-dark" id="forgot_pwd">
+                                            Forgot Password
+                                        </a>
+                                        <a type="button" href="#" class="underline">Create An Account</a>
+                                    </div>
+                                </form>
+                                <!--FOrget PWD tab Container-->
+                                <div id="forgot_pwd_container" class="forgot_pwd_container d-none">
+                                    <h1 class="rwd_title text-center w-100 mb-3">
+                                        Forgot Password
+                                    </h1>
+
+                                    <!--Forgot Form-->
+                                    <form action="#" class="d-flex flex-wrap custom_form">
+                                        <div class="col-12 mb-3">
+                                            <input type="email" class="form-control error" placeholder="Your Email Id"
+                                                value="" required="">
+                                            <div class="form_alert text-danger small">
+                                                email id is required.
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 btn-steps_row">
+                                            <button class="btn btn_custom my-3 w-100" type="submit">
+                                                Submit
+                                            </button>
+                                        </div>
+                                    </form>
+                                    <span class="close_form">X</span>
+                                </div>
+                            </div>
+
+                            <hr>
+                            <div class="container p-3 my-4 text-center">
+                                <div class="col-12">
+                                    <button class="btn rwd-font btn-facebook mb-3 btn-block">
+                                        <i class="fab fa-facebook-f title-5 text-white"></i> Login with Facebook
+                                    </button>
+
+                                    <button class="btn rwd-font btn-google mb-3 btn-block">
+                                        <i class="fab fa-google title-5 text-white"></i> Login with Google
+                                    </button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </body>
+
+</html>
