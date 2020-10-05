@@ -29,7 +29,7 @@
                             <li class="list-inline-item">
                                 <a href="mailto:sales@exploreworldholidays">
                                     <i class="fa fa-envelope"></i>
-                                    sales@exploreworldholidays
+                                    sales@exploreworldholidays.com
                                 </a>
                             </li>
                             <li class="list-inline-item dropdown">
@@ -91,8 +91,7 @@
                         </li>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn text-primary" href="#" data-toggle="modal"
-                                data-target="#signUpModel">
+                            <a class="nav-link btn px-3" href="#" data-toggle="modal" data-target="#searchUpModel">
                                 <b>
                                     <i class="fa fa-search"></i>
                                 </b>
@@ -544,10 +543,10 @@
                                 Monica Nievandt, Australia
                             </p>
                             <div>
-                                <img src="dump/review/user-1.jpg" alt="user" width="100" class="rounded-circle" >
+                                <img src="dump/review/user-1.jpg" alt="user" width="100" class="rounded-circle">
                             </div>
                         </div>
-                        
+
                         <div class="col-12 text-center mt-5">
                             <a href="#" class="btn btn-outline-primary"><b>Read More</b></a>
                         </div>
@@ -613,7 +612,8 @@
                         <div class="col-12 col-lg-8 mx-auto my-3 my-lg-4 px-lg-6">
                             <form class="d-flex flex-wrap flex-lg-nowrap mb-3" action="">
                                 <input type="text" class="form-control mr-lg-2 mb-1 mb-lg-0" placeholder="Your Name">
-                                <input type="text" class="form-control mr-lg-2 mb-2 mb-lg-0" placeholder="Your Email Id">
+                                <input type="text" class="form-control mr-lg-2 mb-2 mb-lg-0"
+                                    placeholder="Your Email Id">
                                 <button class="btn btn-primary px-lg-5 btn-block col-lg-3">Subscribe</button>
                             </form>
                             <p class="title-info-text light-peragraph text-white">
@@ -624,9 +624,9 @@
                         </div>
                     </div>
                 </div>
-        
+
                 <picture class="position-absolute position-left-top-0 shadow-on-element">
-                    <source media="(min-width: 768px)" srcset="dump/newletter.jpg"> 
+                    <source media="(min-width: 768px)" srcset="dump/newletter.jpg">
                     <img src="dump/newletter-sm.jpg" alt="hero" width="100%">
                 </picture>
             </section>
@@ -668,27 +668,27 @@
                         <ul class="list-unstyled d-flex flex-wrap footer-link">
                             <li class="nav-item">
                                 <a href="#">Home</a>
-                            </li> 
+                            </li>
                             <li class="nav-item">
                                 <a href="#">About Us</a>
                             </li>
                             <li class="nav-item">
                                 <a href="#">Concept Tours</a>
-                            </li> 
+                            </li>
                             <li class="nav-item">
                                 <a href="#">Tour</a>
                             </li>
                             <li class="nav-item">
                                 <a href="#">Domestic Destinations</a>
-                            </li> 
+                            </li>
                             <li class="nav-item">
                                 <a href="#">International Destinations</a>
-                            </li> 
+                            </li>
                             <li class="nav-item">
                                 <a href="#">Contact Us</a>
-                            </li> 
+                            </li>
                         </ul>
-                    </div> 
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col-12 text-center mt-3">
@@ -727,7 +727,7 @@
                     dots: true,
                     items: 1,
                     autoplay: true,
-                    autoplayTimeout:5000,
+                    autoplayTimeout: 5000,
                     autoplayHoverPause: false
                 });
 
@@ -740,7 +740,7 @@
                     dots: false,
                     responsive: {
                         0: {
-                            items:2
+                            items: 2
                         },
                         600: {
                             items: 2
@@ -764,6 +764,9 @@
 
                 <!-- Modal content-->
                 <div class="modal-content overflow-hidden">
+                    <span class="close position-absolute" style="right: 6px; font-size: 2rem; z-index: 1;" data-dismiss="modal" aria-label="Close">
+                        ×
+                    </span>
                     <div class="signin_container shadow w-100 d-flex flex-wrap login_bg">
                         <!-- Tab panes -->
                         <div class="tab-content">
@@ -839,8 +842,8 @@
                                         <a type="button" href="#" class="underline text-dark" id="forgot_pwd">
                                             Forgot Password
                                         </a>
-                                        <a type="button" href="#" class="underline" >Create An Account</a>
-                                    </div> 
+                                        <a type="button" href="#" class="underline">Create An Account</a>
+                                    </div>
                                 </form>
                                 <!--FOrget PWD tab Container-->
                                 <div id="forgot_pwd_container" class="forgot_pwd_container d-none">
@@ -870,20 +873,101 @@
 
                             <hr>
                             <div class="container p-3 my-4 text-center">
-                               <div class="col-12">
-                                <button class="btn rwd-font btn-facebook mb-3 btn-block">
-                                    <i class="fab fa-facebook-f title-5 text-white"></i> Login with Facebook
-                                </button>
+                                <div class="col-12">
+                                    <button class="btn rwd-font btn-facebook mb-3 btn-block">
+                                        <i class="fab fa-facebook-f title-5 text-white"></i> Login with Facebook
+                                    </button>
 
-                                <button class="btn rwd-font btn-google mb-3 btn-block">
-                                    <i class="fab fa-google title-5 text-white"></i> Login with Google
-                                </button>
-                               </div>
+                                    <button class="btn rwd-font btn-google mb-3 btn-block">
+                                        <i class="fab fa-google title-5 text-white"></i> Login with Google
+                                    </button>
+                                </div>
                             </div>
 
 
                         </div>
                     </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="searchUpModel" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+
+                <!-- Modal content-->
+                <div class="modal-content bg-white">
+                    <span class="close position-absolute" style="right: 6px; font-size: 2rem; z-index: 1;" data-dismiss="modal" aria-label="Close">
+                        ×
+                    </span>
+                    <div class="modal-body">
+                        <div class="col-12 col-md-12 my-5">
+                            <h3 class="title-5">Where Would You Like to Go?</h3>
+                            <form action="">
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control-lg" placeholder="Search" name=""
+                                        id="">
+                                </div>
+                            </form>
+                        </div>
+                        <hr class="row">
+                        <div class="col-12 col-md-12 my-5">
+                            <h3 class="title-5">Our Popular Destinations</h3>
+                            <div class="grid grid-col-xs-2 grid-col-lg-4 style_text_on_img custom-card-with-caption">
+
+                                <div class="item">
+                                    <a href="#" class="card w-100">
+                                        <img src="dump/card/1.jpg" alt="1">
+                                        <div class="card-body">
+                                            <h5 class="title-6">Goa</h5>
+                                            <div class="cs-card-footer title-5">
+                                                <small>Starting from</small>
+                                                <p>₹ 8,199/-</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#" class="card w-100">
+                                        <img src="dump/card/2.jpg" alt="2">
+                                        <div class="card-body">
+                                            <h5 class="title-6">Kerala</h5>
+                                            <div class="cs-card-footer title-5">
+                                                <small>Starting from</small>
+                                                <p>₹ 8,199/-</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#" class="card w-100">
+                                        <img src="dump/card/3.jpg" alt="3">
+                                        <div class="card-body">
+                                            <h5 class="title-6">Uttarakhand</h5>
+                                            <div class="cs-card-footer title-5">
+                                                <small>Starting from</small>
+                                                <p>₹ 8,199/-</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#" class="card w-100">
+                                        <img src="dump/card/4.jpg" alt="3">
+                                        <div class="card-body">
+                                            <h5 class="title-6">Rajasthan</h5>
+                                            <div class="cs-card-footer title-5">
+                                                <small>Starting from</small>
+                                                <p>₹ 8,199/-</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>

@@ -29,7 +29,7 @@
                             <li class="list-inline-item">
                                 <a href="mailto:sales@exploreworldholidays">
                                     <i class="fa fa-envelope"></i>
-                                    sales@exploreworldholidays
+                                    sales@exploreworldholidays.com
                                 </a>
                             </li>
                             <li class="list-inline-item dropdown">
@@ -91,8 +91,8 @@
                         </li>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn text-primary" href="#" data-toggle="modal"
-                                data-target="#signUpModel">
+                            <a class="nav-link btn px-3" href="#" data-toggle="modal"
+                                data-target="#searchUpModel">
                                 <b>
                                     <i class="fa fa-search"></i>
                                 </b>
@@ -622,11 +622,15 @@
 
 
 
+       
         <div id="signUpModel" class="modal fade" role="dialog">
             <div class="modal-dialog">
 
                 <!-- Modal content-->
                 <div class="modal-content overflow-hidden">
+                    <span class="close position-absolute" style="right: 6px; font-size: 2rem; z-index: 1;" data-dismiss="modal" aria-label="Close">
+                        ×
+                    </span>
                     <div class="signin_container shadow w-100 d-flex flex-wrap login_bg">
                         <!-- Tab panes -->
                         <div class="tab-content">
@@ -638,23 +642,23 @@
                                 </h1>
                                 <form action="#" class="d-flex flex-wrap custom_form">
                                     <div class="col-12 mb-3">
-                                        <input type="email" class="form-control" placeholder="Your Full Name" value=""
+                                        <input type="email" class="form-control" placeholder="Your Full Name *" value=""
                                             required="" autofocus="">
                                     </div>
                                     <div class="col-12 mb-3">
                                         <input type="email" class="form-control error" id="yourEmailid"
-                                            placeholder="Your Email Id" value="" required="">
+                                            placeholder="Your Email Id *" value="" required="">
                                         <div class="form_alert text-danger small">
                                             email id is required.
                                         </div>
                                     </div>
                                     <div class="col-12 mb-3">
-                                        <input type="email" class="form-control" id="Password" placeholder="Password"
+                                        <input type="email" class="form-control" id="Password" placeholder="Password *"
                                             value="" required="">
                                     </div>
                                     <div class="col-12 mb-3">
                                         <input type="email" class="form-control" id="ConfPassword"
-                                            placeholder="Confirm Password" value="" required="">
+                                            placeholder="Confirm Password *" value="" required="">
                                     </div>
                                     <div class="col-12 mb-3">
                                         <label class="small">By clicking Sign Up, you agree to our <a href="#">Privacy
@@ -681,14 +685,14 @@
                                 <!--Signin Form-->
                                 <form action="#" class="d-flex flex-wrap custom_form">
                                     <div class="col-12 mb-3">
-                                        <input type="email" class="form-control error" placeholder="Your Email Id"
+                                        <input type="email" class="form-control error" placeholder="Your Email Id *"
                                             value="" required="">
                                         <div class="form_alert text-danger small">
                                             email id is required.
                                         </div>
                                     </div>
                                     <div class="col-12 mb-3">
-                                        <input type="email" class="form-control" placeholder="Password" value=""
+                                        <input type="email" class="form-control" placeholder="Password *" value=""
                                             required="">
                                     </div>
                                     <div class="col-12 btn-steps_row">
@@ -714,7 +718,7 @@
                                     <!--Forgot Form-->
                                     <form action="#" class="d-flex flex-wrap custom_form">
                                         <div class="col-12 mb-3">
-                                            <input type="email" class="form-control error" placeholder="Your Email Id"
+                                            <input type="email" class="form-control error" placeholder="Your Email Id *"
                                                 value="" required="">
                                             <div class="form_alert text-danger small">
                                                 email id is required.
@@ -751,6 +755,88 @@
 
             </div>
         </div>
+
+        <div id="searchUpModel" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+
+                <!-- Modal content-->
+                <div class="modal-content bg-white">
+                    <span class="close position-absolute" style="right: 6px; font-size: 2rem; z-index: 1;" data-dismiss="modal" aria-label="Close">
+                        ×
+                    </span>
+                    <div class="modal-body">
+                        <div class="col-12 col-md-12 my-5">
+                            <h3 class="title-5">Where Would You Like to Go?</h3>
+                            <form action="">
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control-lg" placeholder="Search" name=""
+                                        id="">
+                                </div>
+                            </form>
+                        </div>
+                        <hr class="row">
+                        <div class="col-12 col-md-12 my-5">
+                            <h3 class="title-5">Our Popular Destinations</h3>
+                            <div class="grid grid-col-xs-2 grid-col-lg-4 style_text_on_img custom-card-with-caption">
+
+                                <div class="item">
+                                    <a href="#" class="card w-100">
+                                        <img src="dump/card/1.jpg" alt="1">
+                                        <div class="card-body">
+                                            <h5 class="title-6">Goa</h5>
+                                            <div class="cs-card-footer title-5">
+                                                <small>Starting from</small>
+                                                <p>₹ 8,199/-</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#" class="card w-100">
+                                        <img src="dump/card/2.jpg" alt="2">
+                                        <div class="card-body">
+                                            <h5 class="title-6">Kerala</h5>
+                                            <div class="cs-card-footer title-5">
+                                                <small>Starting from</small>
+                                                <p>₹ 8,199/-</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#" class="card w-100">
+                                        <img src="dump/card/3.jpg" alt="3">
+                                        <div class="card-body">
+                                            <h5 class="title-6">Uttarakhand</h5>
+                                            <div class="cs-card-footer title-5">
+                                                <small>Starting from</small>
+                                                <p>₹ 8,199/-</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#" class="card w-100">
+                                        <img src="dump/card/4.jpg" alt="3">
+                                        <div class="card-body">
+                                            <h5 class="title-6">Rajasthan</h5>
+                                            <div class="cs-card-footer title-5">
+                                                <small>Starting from</small>
+                                                <p>₹ 8,199/-</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
     </body>
 
 </html>
