@@ -754,19 +754,20 @@ a.nav-link {
   padding-left: 1rem;
 }
 
-.hero-caption::before {
-  position: absolute;
-  width: 70%;
-  height: 2px;
-  background-color: #fff;
-  content: "";
-}
-
-@media (min-width: 992px) {
-  .hero-caption::before {
-    height: 3px;
-    margin-top: 0px;
-  }
+.hero-caption {
+  /*  &::before {
+     position: absolute;
+     width: 70%;
+     height: 2px;
+     background-color: #fff;
+     content: ""; 
+   }
+   @media(min-width:992px){
+    &::before { 
+      height: 3px;
+      margin-top:0px;
+    }
+   } */
 }
 
 .hero-caption .t-large {
@@ -867,6 +868,7 @@ a.nav-link {
   background-color: #115e95;
   top: 0;
   left: 0;
+  content: "";
   position: absolute;
   opacity: 75%;
 }

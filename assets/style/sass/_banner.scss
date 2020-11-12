@@ -1,6 +1,6 @@
  .hero-caption {
 
-   &::before {
+  /*  &::before {
      position: absolute;
      width: 70%;
      height: 2px;
@@ -12,7 +12,7 @@
       height: 3px;
       margin-top:0px;
     }
-   }
+   } */
 
    .t-large {
      font-size: calc(1.2rem + 3vw);
@@ -94,7 +94,7 @@
        background-color: $c-cyan-light;
        top:0;
        left:0;
-      
+       content:"";
        position: absolute;
        opacity:75%;
      }
