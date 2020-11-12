@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>Explore World Holiday | Destination</title>
+
+        <link rel="stylesheet" href="assets/vendors/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="assets/vendors/fontawesone/css/all.min.css">
+        <link rel="stylesheet" href="assets/style/dist/css/theme.css">
+    </head>
+
+    <body>
+
+        <header class="ewh_header bg-white shadow fixedheader">
+            <section class="bg-primary py-2 subheader secondary-nav">
+                <div class="container">
+                    <div class="row justify-content-end px-3">
+                        <ul class="list-inline mb-0 small top_navbar">
+                            <!--Top Navigation nav-->
+                            <li class="list-inline-item">
+                                <a href="tel:+91-9022718677">
+                                    <i class="fa fa-phone"></i>
+                                    +91-9022718677
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="mailto:sales@exploreworldholidays">
+                                    <i class="fa fa-envelope"></i>
+                                    sales@exploreworldholidays.com
+                                </a>
+                            </li>
+                            <li class="list-inline-item dropdown">
+                                <!--Currency Dropdown-->
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">INR</a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
+                                    <a class="dropdown-item" href="#">
+                                        USD
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        EUR
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul
+                            class="list-inline mb-0 social-media smedia1 border-left pl-2 ml-2 d-none d-lg-inline-block">
+                            <!--Social media Top nav-->
+                            <li class="list-inline-item">Follow us</li>
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i> </a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i> </a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i> </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <div class="container px-0">
+                <nav class="navbar navbar-expand-lg primary-navbar py-lg-0">
+                    <!--Navigation Btn showing in mobile layout-->
+                    <button class="navbar-toggler ewh_nav_trigger mr-auto collapsed" type="button"
+                        data-toggle="collapse" data-target="#ewhNavigataion" aria-controls="ewhNavigataion"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="trigger_btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </button>
+
+                    <!--Logo col with 2 logos -->
+                    <div class="ewh_header_navbar-brand-wrapper ml-auto ml-lg-0">
+                        <a class="navbar-brand" href="index.html" aria-label="Space">
+                            <img src="assets/images/logo.svg" class="log_size" alt="Logo" width="120">
+                        </a>
+                    </div>
+
+                    <ul class="navbar-nav mobile-signup-nav ml-auto order-lg-1">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-lock"></i> <span>Login</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-primary" href="#" data-toggle="modal"
+                                data-target="#signUpModel">
+                                <b>
+                                    <i class="fa fa-user-plus"></i>
+                                    <span>Sign up</span>
+                                </b>
+                            </a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn px-3" href="#" data-toggle="modal" data-target="#searchUpModel">
+                                <b>
+                                    <i class="fa fa-search"></i>
+                                </b>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!--Navigation container-->
+                    <div class="collapse order-lg-0 navbar-collapse menu-bg-hero navbar_custom_style  justify-content-lg-end"
+                        id="ewhNavigataion" data-nav-type="js-navbar">
+                        <ul class="primary-nav navbar navbar-nav py-0" data-nabigation="primary">
+                            <li class="nav-item dropdown   position-relative">
+                                <a class="nav-link dropdown-toggle" href="#" role="button">
+                                    Destinations
+                                </a>
+                                <div class="dropdown-menu border-0 submenu">
+                                    <div class="w-100 py-3">
+                                        <!--  <h5 class="menu-heading">Destinations</h5> -->
+                                        <ul class="list-unstyled text-dark">
+                                            <li>
+                                                <a class="nav-link" href="destination.html">
+                                                    <span class="flag flag-id"></span>Bali
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link" href="destination.html">
+                                                    <span class="flag flag-kh"></span>Cambodia
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link" href="destination.html">
+                                                    <span class="flag flag-cn"></span>China
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link" href="destination.html">
+                                                    <span class="flag flag-in"></span>India
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link" href="destination.html">
+                                                    <span class="flag flag-my"></span>Malaysia
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link" href="destination.html">
+                                                    <span class="flag flag-np"></span>Nepal
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link" href="destination.html">
+                                                    <span class="flag flag-ph"></span>Philippines
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link" href="destination.html">
+                                                    <span class="flag flag-lk"></span>Sri
+                                                    Lanka
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link" href="destination.html">
+                                                    <span class="flag flag-th"></span>Thailand
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link" href="destination.html">
+                                                    <span class="flag flag-vn"></span>Vietnam
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" role="button">Concept Tours</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" role="button">Reviews</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="aboutus.html" role="button">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="faq.html" role="button">FAQ’s</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+
+            <section class="py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-9">
+                            <h1 class="title-3">Questions to Ask Yourself Before Volunteering Abroad During Gap Year
+                            </h1>
+
+                            <footer class="author-details">
+                                <article typeof="schema:Person" about="/govolunteerabroad_drupal/user/1">
+                                    <div>
+                                        <a href="/govolunteerabroad_drupal/user/1">
+                                            <img src="https://www.govolunteerabroad.org/sites/default/files/demo/dump/innerbg.jpg" width="100" height="100"
+                                                alt="Profile picture for user gva_master_admin" typeof="foaf:Image">
+                                        </a>
+                                    </div>
+                                </article>
+
+                                <div>
+                                    Submitted by
+                                    <span rel="schema:author">
+                                        <span lang="" about="/govolunteerabroad_drupal/user/1" typeof="schema:Person"
+                                            property="schema:name" datatype="">
+                                            Mukesh Dhiman
+                                        </span>
+                                    </span>
+                                    on
+                                    <span property="schema:dateCreated" content="2019-07-29T11:40:43+00:00">Mon,
+                                        07/29/2019 - 17:10</span>
+                                    <span property="schema:dateCreated" content="2019-07-29T11:40:43+00:00"
+                                        class="hidden"></span>
+                                </div>
+                            </footer>
+
+                            <div class="blog-single">
+                                <p><span style="font-weight: 400;">In this 21st Century, the concept of CSR (Corporate
+                                        Social Responsibility) has grown immensely and several multinational companies
+                                        like Google, Microsoft, KPMG, PwC, etc are encouraging their employees to
+                                        actively participate in CSR programs. This is not just to make an impact on
+                                        society and help the underprivileged people, but also for the growth of the
+                                        employees who end up gaining a wider worldview while working at the grassroots
+                                        level.</span>
+                                </p>
+                                <p><span style="font-weight: 400;">To put in simpler words, Corporate Volunteering
+                                        Abroad is the best way to keep the employees motivated, help them to work on
+                                        their skills beyond the office cubicles, connect more with their peers and enjoy
+                                        a few days doing something different. Also, as a team, they’ll get to contribute
+                                        towards the well being of others and thus, experience immense satisfaction which
+                                        might otherwise lack while they work sitting in front of the screens!</span>
+                                </p>
+                                <h2><b>Let’s take a quick look at the benefits of Corporate Volunteering and what impact
+                                        it has on
+                                        the employees!</b></h2>
+                                <p><img class="alignnone size-full wp-image-8490"
+                                        src="https://www.volunteeringsolutions.com/blog/wp-content/uploads/2019/07/spanish.jpg"
+                                        alt="" width="1000" height="669"
+                                        srcset="https://www.volunteeringsolutions.com/blog/wp-content/uploads/2019/07/spanish.jpg 1000w, https://www.volunteeringsolutions.com/blog/wp-content/uploads/2019/07/spanish-700x468.jpg 700w"
+                                        sizes="(max-width: 1000px) 100vw, 1000px"></p>
+                                <p><span style="font-weight: 400;">Being an employer, one must know that the company
+                                        runs on the efforts of the employees and who have their individual sets of
+                                        emotions and motivations, satisfaction as well as dissatisfactions. Being
+                                        humans, the employees do suffer from stress and are not able to perform up to
+                                        the mark at times. Thus, giving them a break and encouraging them to take part
+                                        in something as incredible as volunteering would make a lot of
+                                        difference.</span>
+                                </p>
+                                <p><b>Leadership Development</b></p>
+                                <p><span style="font-weight: 400;">In the office set-up, there’s usually a hierarchy
+                                        which is followed and respected. But when the team sets out for a volunteer
+                                        program, there’s no such distinction between the boss and the manager and the
+                                        intern! Everyone is at the same level, getting their hands dirty and working
+                                        together for a bigger goal. This, in a way, gives a chance for developing
+                                        leadership skills to all.</span>
+                                </p>
+                                <p><span style="font-weight: 400;">You never know, your intern might be extremely good
+                                        in communications and deal with the locals while volunteering for a community
+                                        program. Each one will give their best towards the program, make quick decisions
+                                        to solve situations of crisis. Some of them will be surprised seeing themselves,
+                                        as they will get to figure out that given the opportunity – they can also be
+                                        leaders who can multitask and stretch their limits to an extent that they never
+                                        knew about.</span>
+                                </p>
+                                <p><b>More Engaging Relationships Among All</b></p>
+                                <p><span style="font-weight: 400;">As mentioned earlier, a volunteering trip will
+                                        definitely encourage all employees to mingle together and create a better bond
+                                        among themselves. Not just that, but it’ll also enhance the relationship between
+                                        the employers and the employees.</span>
+                                </p>
+                                <p><span style="font-weight: 400;">Inside the office, the marketing team would seldom
+                                        talk to the sales team – but at the volunteering site, there’s no such team
+                                        distinction – and everyone has to work together, aiming for a common goal. This
+                                        would inculcate a sense of gratitude among all, which they’ll carry even after
+                                        they’re back to their regular work schedule.</span>
+                                </p>
+                                <p><b>Team Building &amp; Skill Exchange</b></p>
+                                <p><img class="alignnone size-full wp-image-7534"
+                                        src="https://www.volunteeringsolutions.com/blog/wp-content/uploads/2018/10/P1277758.jpg"
+                                        alt="volunteer travel in portugal" width="800" height="555"></p>
+                                <p><span style="font-weight: 400;">There can be no better strategy for Team Building
+                                        other than this! During this journey, all the team members will travel together,
+                                        work on new projects in different roles, as well as share their leisure moments.
+                                        Even big companies, like SalesForce, has created an Employment Engagement
+                                        Program, where employees can decide when, where and for what cause they wish to
+                                        volunteer.&nbsp; Microsoft, on the other hand, has designed this program called
+                                        Skills4Africa Initiative, which encourages employees to contribute their time
+                                        towards projects aiming at building a better future for Africa.</span>
+                                </p>
+                                <p><span style="font-weight: 400;">Volunteering abroad increases communication among the
+                                        employees, and there’s immense scope for peer learning and skills exchange.
+                                        Also, when they can relate to the cause they’re working for, it’s even
+                                        better!</span>
+                                </p>
+                                <p><b>Doing Something ‘Out-Of-The-Box’</b></p>
+                                <p><span style="font-weight: 400;">Sitting in the cubicles, doing the same set of work
+                                        for months might put a pause to the creative power of the employees. Even if
+                                        they aren’t physically tired, they would be mentally worn out and not be as
+                                        productive as expected from them.</span>
+                                </p>
+                                <p><span style="font-weight: 400;">A volunteer project would encourage them to break
+                                        free from the shackles of the four walls and do something that’s totally
+                                        different from their regular work schedule. It would give them a chance to use
+                                        their creativity and trust their gut feelings, whenever needed!</span>
+                                </p>
+                                <p><b>A Refreshing Learning Journey!</b></p>
+                                <p><span style="font-weight: 400;">While seminars and conferences do provide a lot of
+                                        scope for learning, a volunteer trip would turn out to be the most refreshing
+                                        learning journey ever! By the end of the trip, everyone will be supercharged,
+                                        turned into more humble &amp; compassionate people with less anxiety &amp;
+                                        stress.</span>
+                                </p>
+                                <h2><b>Let’s take a look at the best volunteering programs meant for corporate
+                                        groups.</b></h2>
+                                <p><img class="alignnone size-full wp-image-8458"
+                                        src="https://www.volunteeringsolutions.com/blog/wp-content/uploads/2019/06/1229_auckland___new_zealand_5.jpg"
+                                        alt="NZ 1 week" width="800" height="600"
+                                        srcset="https://www.volunteeringsolutions.com/blog/wp-content/uploads/2019/06/1229_auckland___new_zealand_5.jpg 800w, https://www.volunteeringsolutions.com/blog/wp-content/uploads/2019/06/1229_auckland___new_zealand_5-700x525.jpg 700w"
+                                        sizes="(max-width: 800px) 100vw, 800px"></p>
+                                <p><span style="font-weight: 400;">Volunteering Solutions has a wide range of programs
+                                        that aim towards creating a positive impact on society as well on the
+                                        participants who take time out of their busy schedule to work for the betterment
+                                        of others. We understand that employees do not have the liberty to spend 3-4
+                                        weeks volunteering abroad or locally, hence, we provide tailor-made programs for
+                                        corporate groups.&nbsp;</span>
+                                </p>
+                                <h3><a href="#/one-week-volunteer-abroad-programs" target="_blank" rel="noopener"><b>One
+                                            Week Volunteer Abroad Programs</b></a></h3>
+                                <p><span style="font-weight: 400;">If you’re planning to take your team out for a week’s
+                                        time, then we have some amazing programs curate for you! No matter whether you
+                                        are looking for a trip to Asia or Africa or maybe Australia, we have it all.
+                                        These volunteer programs are meant essentially for those who have a time crunch,
+                                        and would perfectly suit the corporate employees. One can a chance to work with
+                                        toddlers at childcare centers or be a part of a conservation program. There
+                                        would be time to explore the destination as well. This week will just pass by
+                                        the wink of an eye, and no matter how small your contribution might seem, your
+                                        efforts will be well appreciated.</span>
+                                </p>
+                                <h3><a href="#/short-term-volunteer-abroad-programs" target="_blank" rel="noopener"><b>2
+                                            Weeks’ Special Voluntours</b></a></h3>
+                                <p><span style="font-weight: 400;">For those who’re planning for a 2 weeks’ trip, this
+                                        would be the ultimate choice! Not only will you get to volunteer, but there will
+                                        be ample scope of traveling during the weekends. These projects are curated
+                                        keeping in mind the needs of the community as well as the desires of a traveler.
+                                        In a span of just 2 weeks, make a difference in the lives of strangers who
+                                        aren’t as blessed as you are and experience an incredible holiday with your
+                                        colleagues.</span>
+                                </p>
+                                <h3><a href="#/community-development" target="_blank" rel="noopener"><b>Community
+                                            Development Programs</b></a></h3>
+                                <p><img class="alignnone size-full wp-image-7095"
+                                        src="https://www.volunteeringsolutions.com/blog/wp-content/uploads/2018/01/20180314_120026.jpg"
+                                        alt="Volunteering Abroad Experience" width="4032" height="3024"></p>
+                                <p><span style="font-weight: 400;">Perfect for corporate volunteering, these community
+                                        development projects are available in South Africa, Spain, Portugal, Sri Lanka,
+                                        Cambodia, The Philippines, Uganda, Ghana, Morocco &amp; Thailand. Each of the
+                                        projects focuses on helping the underprivileged communities, and volunteers
+                                        would get the opportunity to take part in educational programs for children,
+                                        take up renovation and building work, work with local NGOs in areas of gender
+                                        empowerment, microfinance, and organize awareness drives.&nbsp;</span>
+                                </p>
+                                <h3><a href="#/construction-and-building-volunteer-projects" target="_blank"
+                                        rel="noopener"><b>Construction and Building Volunteer Programs</b></a></h3>
+                                <p><span style="font-weight: 400;">Take your team for the Construction &amp; Building
+                                        projects, where they can play an active role in building houses, schools,
+                                        community clubs and more. Not only will this help the host communities, but
+                                        you’ll also get to learn a lot from this program and also enhance the
+                                        relationship among the teammates working together for a common cause. There can
+                                        surely be nothing more satisfying than making a difference in someone else’s
+                                        life. Our Program Supervisor will be there, who’ll assist and guide you, telling
+                                        you what work needs to be done, and how you can offer your best help in the
+                                        situation.&nbsp;</span>
+                                </p>
+                                <p><span style="font-weight: 400;">If you are a business owner, HR Manager or
+                                        representative who wants to <a href="#/corporate-volunteering" target="_blank"
+                                            rel="noopener">be part of the corporate volunteering programs abroad or
+                                            locally</a>, feel free to drop us an email at </span><a
+                                        href="mailto:info@volunteeringsolutions.com"><span
+                                            style="font-weight: 400;">info@volunteeringsolutions.com</span></a><span
+                                        style="font-weight: 400;"> and we shall be glad to offer you the best
+                                        tailor-made opportunities that would suit your employees/ teams.</span>
+                                </p>
+                            </div>
+                        </div>
+                        <aside class="col-12 col-lg-3">
+                            <div class="stickyform-top">
+                                <h3 class="title-5">From the Blog</h3>
+                                <div class="w-100 bg-light p-2 mt-4">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="d-flex">
+                                            <figure class="mr-2">
+                                                <img src="https://www.govolunteerabroad.org/sites/default/files/demo/dump/gallery/australia.jpg" alt="" class="img-fluid"
+                                                    width="120">
+                                            </figure>
+                                            <a href="#">
+                                                <h4 class="title-6 small mb-0">Are you tired of just liking your
+                                                    friends’</h4>
+                                                <small class="text-muted">
+                                                    <span>10/july/2019</span>
+                                                </small>
+                                            </a>
+                                        </li>
+                                        <li class="d-flex">
+                                            <figure class="mr-2">
+                                                <img src="https://www.govolunteerabroad.org/sites/default/files/demo/dump/gallery/india.jpg" alt="" class="img-fluid" width="120">
+                                            </figure>
+                                            <a href="#">
+                                                <h4 class="title-6 small mb-0">Questions to Ask Yourself Before
+                                                    Volunteering...</h4>
+                                                <small class="text-muted">
+                                                    <span>10/july/2019</span>
+                                                </small>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+        <footer class="py-lg-6 py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 mb-5">
+                        <div class="w-100 d-flex align-items-center flex-wrap flex-lg-nowrap">
+                            <a href="index.html">
+                                <img src="assets/images/logo.svg" alt="logo" height="130">
+                            </a>
+                            <p class="mb-">
+                                Our Management team has over 15 years’ experience in the Tourism industry. Our
+                                experience and knowledge allow us to provide you with the best customer service
+                                possible….. <a href="#">Read more</a>
+                            </p>
+                        </div>
+                        <div class="w-100">
+                            <div class="d-flex w-75 justify-content-start mt-4">
+                                <a href="#" class="mr-3 text-dark">
+                                    <i class="fab fa-facebook fa-3x mr-3"></i>
+                                </a>
+                                <a href="#" class="mr-3 text-dark">
+                                    <i class="fab fa-instagram fa-3x mr-3"></i>
+                                </a>
+                                <a href="#" class="mr-3 text-dark">
+                                    <i class="fab fa-twitter fa-3x mr-3"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-5 offset-lg-1 mb-3">
+
+                        <h5 class="title-5">RESOURCES</h5>
+                        <ul class="list-unstyled d-flex flex-wrap footer-link">
+                            <li class="nav-item">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Concept Tours</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Tour</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Domestic Destinations</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">International Destinations</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center mt-3">
+                        <img src="assets/images/footer-trusted-badges.png" class="img-fluid" alt="footer">
+                    </div>
+                    <div class="col-12 text-center mt-2 small text-muted">
+                        <p> © 2020 exploreworldholidays..com. All Rights Reserved. CIN:U77777 XXXXXX******
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="assets/vendors/jquery/jquery.min.js"></script>
+        <script src="assets/vendors/bootstrap/dist/js/popper.min.js"></script>
+        <script async src="assets/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/style/dist/js/custom.js"></script>
+
+
+        <!--Owl Library-->
+        <link rel="stylesheet" href="assets/vendors/flag/flags.css">
+        <link rel="stylesheet" href="assets/vendors/owl/dist/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/vendors/owl/dist/assets/owl.theme.default.min.css">
+
+        <script src="assets/vendors/owl/dist/owl.carousel.min.js"></script>
+
+
+
+
+        <div id="signUpModel" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content overflow-hidden">
+                    <span class="close position-absolute" style="right: 6px; font-size: 2rem; z-index: 1;"
+                        data-dismiss="modal" aria-label="Close">
+                        ×
+                    </span>
+                    <div class="signin_container shadow w-100 d-flex flex-wrap login_bg">
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <!--SignUp tab Container-->
+                            <div id="signup" class="container tab-pane fade active show"><br>
+
+                                <h1 class="title-3 text-center w-100 mb-0">
+                                    Welcome!
+                                </h1>
+                                <form action="#" class="d-flex flex-wrap custom_form">
+                                    <div class="col-12 mb-3">
+                                        <input type="email" class="form-control" placeholder="Your Full Name *" value=""
+                                            required="" autofocus="">
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <input type="email" class="form-control error" id="yourEmailid"
+                                            placeholder="Your Email Id *" value="" required="">
+                                        <div class="form_alert text-danger small">
+                                            email id is required.
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <input type="email" class="form-control" id="Password" placeholder="Password *"
+                                            value="" required="">
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <input type="email" class="form-control" id="ConfPassword"
+                                            placeholder="Confirm Password *" value="" required="">
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <label class="small">By clicking Sign Up, you agree to our <a href="#">Privacy
+                                                Policy</a>.</label>
+                                    </div>
+                                    <div class="col-12 btn-steps_row">
+                                        <button class="btn btn-primary my-3 w-100" type="submit">
+                                            SIGN UP
+                                        </button>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <a type="button" href="#" class="underline">Already have an account</a>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!--SignIn tab Container-->
+                            <div id="signin" class="container tab-pane fade">
+
+
+                                <h1 class="title-3 text-center w-100 my-3">
+                                    Welcome!
+                                </h1>
+                                <!--Signin Form-->
+                                <form action="#" class="d-flex flex-wrap custom_form">
+                                    <div class="col-12 mb-3">
+                                        <input type="email" class="form-control error" placeholder="Your Email Id *"
+                                            value="" required="">
+                                        <div class="form_alert text-danger small">
+                                            email id is required.
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <input type="email" class="form-control" placeholder="Password *" value=""
+                                            required="">
+                                    </div>
+                                    <div class="col-12 btn-steps_row">
+                                        <button class="btn btn-primary my-3 w-100" type="submit">
+                                            Login
+                                        </button>
+                                    </div>
+
+
+                                    <div class="col-12 d-flex justify-content-lg-between flex-wrap">
+                                        <a type="button" href="#" class="underline text-dark" id="forgot_pwd">
+                                            Forgot Password
+                                        </a>
+                                        <a type="button" href="#" class="underline">Create An Account</a>
+                                    </div>
+                                </form>
+                                <!--FOrget PWD tab Container-->
+                                <div id="forgot_pwd_container" class="forgot_pwd_container d-none">
+                                    <h1 class="rwd_title text-center w-100 mb-3">
+                                        Forgot Password
+                                    </h1>
+
+                                    <!--Forgot Form-->
+                                    <form action="#" class="d-flex flex-wrap custom_form">
+                                        <div class="col-12 mb-3">
+                                            <input type="email" class="form-control error" placeholder="Your Email Id *"
+                                                value="" required="">
+                                            <div class="form_alert text-danger small">
+                                                email id is required.
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 btn-steps_row">
+                                            <button class="btn btn_custom my-3 w-100" type="submit">
+                                                Submit
+                                            </button>
+                                        </div>
+                                    </form>
+                                    <span class="close_form">X</span>
+                                </div>
+                            </div>
+
+                            <!--    <hr>
+                            <div class="container p-3 my-4 text-center">
+                                <div class="col-12">
+                                    <button class="btn rwd-font btn-facebook mb-3 btn-block">
+                                        <i class="fab fa-facebook-f title-5 text-white"></i> Login with Facebook
+                                    </button>
+
+                                    <button class="btn rwd-font btn-google mb-3 btn-block">
+                                        <i class="fab fa-google title-5 text-white"></i> Login with Google
+                                    </button>
+                                </div>
+                            </div> -->
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="searchUpModel" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+
+                <!-- Modal content-->
+                <div class="modal-content bg-white">
+                    <span class="close position-absolute" style="right: 6px; font-size: 2rem; z-index: 1;"
+                        data-dismiss="modal" aria-label="Close">
+                        ×
+                    </span>
+                    <div class="modal-body">
+                        <div class="col-12 col-md-12 my-5">
+                            <h3 class="title-5">Where Would You Like to Go?</h3>
+                            <form action="">
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control-lg" placeholder="Search" name=""
+                                        id="">
+                                </div>
+                            </form>
+                        </div>
+                        <hr class="row">
+                        <div class="col-12 col-md-12 my-5">
+                            <h3 class="title-5">Our Popular Destinations</h3>
+                            <div class="grid grid-col-xs-2 grid-col-lg-4 style_text_on_img custom-card-with-caption">
+
+                                <div class="item">
+                                    <a href="#" class="card w-100">
+                                        <img src="dump/card/1.jpg" alt="1">
+                                        <div class="card-body">
+                                            <h5 class="title-6">Goa</h5>
+                                            <div class="cs-card-footer title-5">
+                                                <small>Starting from</small>
+                                                <p>₹ 8,199/-</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#" class="card w-100">
+                                        <img src="dump/card/2.jpg" alt="2">
+                                        <div class="card-body">
+                                            <h5 class="title-6">Kerala</h5>
+                                            <div class="cs-card-footer title-5">
+                                                <small>Starting from</small>
+                                                <p>₹ 8,199/-</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#" class="card w-100">
+                                        <img src="dump/card/3.jpg" alt="3">
+                                        <div class="card-body">
+                                            <h5 class="title-6">Uttarakhand</h5>
+                                            <div class="cs-card-footer title-5">
+                                                <small>Starting from</small>
+                                                <p>₹ 8,199/-</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#" class="card w-100">
+                                        <img src="dump/card/4.jpg" alt="3">
+                                        <div class="card-body">
+                                            <h5 class="title-6">Rajasthan</h5>
+                                            <div class="cs-card-footer title-5">
+                                                <small>Starting from</small>
+                                                <p>₹ 8,199/-</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </body>
+
+</html>

@@ -1858,6 +1858,44 @@ iframe.embed-responsive-item {
           align-items: center;
 }
 
+.author-details {
+  margin: 20px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.author-details img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.author-details > div span {
+  display: block;
+  color: #8a8a8a;
+  font-size: 80%;
+}
+
+.author-details > div span:first-child {
+  display: inline-block;
+  color: #494e4e;
+  font-size: 100%;
+  font-weight: 600;
+}
+
+.author-details > div {
+  padding-left: 10px;
+}
+
+.blog-single img {
+  width: 100%;
+  height: auto;
+}
+
 .footer {
   background-color: #e1e5ee;
 }
