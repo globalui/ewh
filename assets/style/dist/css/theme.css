@@ -867,7 +867,6 @@ a.nav-link {
   background-color: #115e95;
   top: 0;
   left: 0;
-  content: "";
   position: absolute;
   opacity: 75%;
 }
