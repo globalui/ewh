@@ -955,11 +955,13 @@ a.nav-link {
   margin-bottom: 0pc;
 }
 
-.breadcrumb.ewh_custom_breadcrumb, .breadcrumb.ewh_custom_breadcrumb li, .breadcrumb.ewh_custom_breadcrumb li a {
+.breadcrumb.ewh_custom_breadcrumb,
+.breadcrumb.ewh_custom_breadcrumb li,
+.breadcrumb.ewh_custom_breadcrumb li a {
   background-color: transparent;
 }
 
-.c-list-style {
+.c-list-style ul {
   list-style: none;
   padding-left: 0px;
 }
