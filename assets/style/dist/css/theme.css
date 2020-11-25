@@ -1479,6 +1479,11 @@ iframe.embed-responsive-item {
   text-decoration: underline;
 }
 
+#toolbar-administration {
+  position: relative;
+  z-index: 99999;
+}
+
 .card-container {
   float: left;
   background: #fff;
