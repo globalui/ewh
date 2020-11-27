@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>Booking Page</title>
+
+        <link rel="stylesheet" href="assets/vendors/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="assets/vendors/fontawesone/css/all.min.css">
+        <link rel="stylesheet" href="assets/style/dist/css/theme.css">
+    </head>
+
+    <body>
+
+        <header class="ewh_header bg-white shadow fixedheader">
+
+            <div class="container px-0">
+                <nav class="navbar navbar-expand-lg primary-navbar py-lg-0">
+                    <!--Navigation Btn showing in mobile layout-->
+                    <button class="navbar-toggler ewh_nav_trigger mr-auto collapsed" type="button"
+                        data-toggle="collapse" data-target="#ewhNavigataion" aria-controls="ewhNavigataion"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="trigger_btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </button>
+
+                    <!--Logo col with 2 logos -->
+                    <div class="ewh_header_navbar-brand-wrapper ml-auto ml-lg-0">
+                        <a class="navbar-brand" href="index.html" aria-label="Space">
+                            <img src="assets/images/logo.svg" class="log_size" alt="Logo" width="120">
+                        </a>
+                    </div>
+
+                    <ul class="navbar-nav mobile-signup-nav ml-auto order-lg-1">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-lock"></i> <span>Login</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-primary" href="#" data-toggle="modal"
+                                data-target="#signUpModel">
+                                <b>
+                                    <i class="fa fa-user-plus"></i>
+                                    <span>Sign up</span>
+                                </b>
+                            </a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-12 mt-lg-5">
+                        <div class="row">
+                            <div class="stepwizard col-12 col-lg-8 my-3">
+                                <ul class="d-flex setup-panel" data-steps-countr="1">
+                                    <li class="stepwizard-step">
+                                        <a href="#Review" type="button" data-steps-action="true"
+                                            class="btn btn-success btn-circle">1</a>
+                                        <p>Review</p>
+                                    </li>
+                                    <li class="stepwizard-step">
+                                        <a href="#Travellers" type="button" data-steps-action="true"
+                                            class="btn btn-default btn-circle" disabled="disabled">2</a>
+                                        <p>Travellers</p>
+                                    </li>
+                                    <li class="stepwizard-step">
+                                        <a href="#Payment" type="button" data-steps-action="true"
+                                            class="btn btn-default btn-circle" disabled="disabled">3</a>
+                                        <p>Payment</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-8 col-xl-8">
+                        <div class="row">
+                            <div class="col-12">
+                                <form role="form" action="" method="post" class="step-container">
+                                    <div class="row setup-content" id="Review">
+                                        <div class="col-12">
+                                            <div class="card border mb-4">
+                                                <div class="card-header">
+                                                    <h6 class="mb-0">Hotel Details</h6>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="w-100">
+                                                        <b class="font-weight-bold">Hotel Details:</b>
+                                                        1 Room(s) | 2 Adult(s)
+                                                    </div>
+                                                    <article class="row mx-0 mt-4">
+                                                        <section class="col-lg-5">
+                                                            <div class="row flex-nowrap mb-3 align-items-center">
+                                                                <span class="calendar-card col-xs-4 col-md-4">
+                                                                    <label>Check-in</label>
+                                                                    <div class="calendar-card-body">
+                                                                        <span class="day">Thu</span>
+                                                                        <ul class="list-unstyled">
+                                                                            <li class="date">10</li>
+                                                                            <li class="lastLi month">Dec</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </span>
+                                                                <span class="col-xs-4 col-md-4 text-center">
+                                                                    <i class="fa fa-moon"></i>
+                                                                    <div>2 Night(s)</div>
+                                                                </span>
+                                                                <span class="calendar-card  col-xs-4 col-md-4">
+                                                                    <label>Check-out</label>
+                                                                    <div class="calendar-card-body">
+                                                                        <span class="day">Sat</span>
+                                                                        <ul class="list-unstyled">
+                                                                            <li class="date">12</li>
+                                                                            <li class="lastLi month">Dec</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </span>
+                                                            </div>
+                                                        </section>
+                                                        <ul class="list-unstyled col-lg-7">
+                                                            <li class="small">Shillong</li>
+                                                            <li class="font-weight-bold h5 mb-2">Polo Tower </li>
+                                                            <li>
+                                                                <div class="d-inline-block w-100 mb-2">
+                                                                    <b> Room 1:</b>
+                                                                    <span>
+                                                                        2 Adult(s)
+                                                                    </span>
+                                                                </div>
+                                                                <div class="d-inline-block w-100">
+                                                                    <b> Room Type:</b>
+                                                                    <span class="bg-light p-2">
+                                                                        Twin Sharing with Deluxe Room
+                                                                    </span>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </article>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="card border mb-4">
+                                                <div class="card-header">
+                                                    <h6 class="mb-0">Itinerary</h6>
+                                                </div>
+                                                <div class="card-body overflow-auto" style="max-height: 300px;">
+                                                    <h5>Day1 - Arrive Guwahati - Shillong (110 Kms / 3 Hrs approx)</h5>
+                                                    <div><b>Meals:</b> No Meals</div>
+                                                    <p>
+                                                        What sets this gorgeous property apart is an unmistakable air of
+                                                        serenity and the location. A five-hour drive whisks you away to
+                                                        this haven that is located in the small village of Dochi. You
+                                                        can treat yourself to splendid views, a romantic dinner, guided
+                                                        trekking tours, bird watching sessions and relaxed barbeque
+                                                        evenings.
+                                                    </p>
+                                                    <h5>Day2 - Arrive Guwahati - Shillong (110 Kms / 3 Hrs approx)</h5>
+                                                    <div><b>Meals:</b> No Meals</div>
+                                                    <p>
+                                                        What sets this gorgeous property apart is an unmistakable air of
+                                                        serenity and the location. A five-hour drive whisks you away to
+                                                        this haven that is located in the small village of Dochi. You
+                                                        can treat yourself to splendid views, a romantic dinner, guided
+                                                        trekking tours, bird watching sessions and relaxed barbeque
+                                                        evenings.
+                                                    </p>
+                                                    <h5>Day3 - Arrive Guwahati - Shillong (110 Kms / 3 Hrs approx)</h5>
+                                                    <div><b>Meals:</b> No Meals</div>
+                                                    <p>
+                                                        What sets this gorgeous property apart is an unmistakable air of
+                                                        serenity and the location. A five-hour drive whisks you away to
+                                                        this haven that is located in the small village of Dochi. You
+                                                        can treat yourself to splendid views, a romantic dinner, guided
+                                                        trekking tours, bird watching sessions and relaxed barbeque
+                                                        evenings.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="card border mb-4">
+                                                <div class="card-header">
+                                                    <h6 class="mb-0">What's Include?</h6>
+                                                </div>
+                                                <div class="card-body overflow-auto" style="max-height: 300px;">
+                                                    <div class="c-list-style animate-check">
+                                                        <ul>
+                                                            <li> All meals </li>
+                                                            <li> Candlelight dinner </li>
+                                                            <li> Room decor </li>
+                                                            <li> Access to an outdoor seating area </li>
+                                                            <li> Access to the common dining area </li>
+                                                            <li> Barbeque and bonfire in the evening </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card border mb-4">
+                                                <div class="card-header">
+                                                    <h6 class="mb-0">What's Include?</h6>
+                                                </div>
+                                                <div class="card-body overflow-auto" style="max-height: 300px;">
+                                                    <div class="c-list-style animate-close">
+                                                        <ul>
+                                                            <li> All expenses of personal nature</li>
+                                                            <li> Anything not mentioned above</li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card border mb-4">
+                                                <div class="card-header">
+                                                    <h6 class="mb-0">Sign In Now to Book Online</h6>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="form-group col-lg-6 px-0">
+                                                        <input type="email" class="form-control" id="yourEmailid"
+                                                            placeholder="Your Email Id *" value="">
+                                                        <div class="text-muted">
+                                                            Your booking details will be sent to this email address.
+                                                        </div>
+                                                    </div>
+
+                                                    <div
+                                                        class="form-group d-flex col-lg-6 px-0 position-relative align-items-center">
+                                                        <input type="checkbox" class="mr-2" id="EWHAccount">
+                                                        <label class="form-check-label" for="EWHAccount">I have a EWH
+                                                            Account.</label>
+                                                    </div>
+
+                                                    <div class="form-group col-lg-6 px-0">
+                                                        <div class="phone-list">
+
+                                                            <div class="input-group phone-input">
+                                                                <span class="input-group-btn">
+                                                                    <select name="" id="" class="form-control">
+                                                                        <option value="+91">+91</option>
+                                                                    </select>
+                                                                </span>
+                                                                <input type="hidden" name="phone[1][type]"
+                                                                    class="type-input" value="" />
+                                                                <input type="text" name="phone[1][number]"
+                                                                    class="form-control"
+                                                                    placeholder="+1 (999) 999 9999" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group col-lg-6 px-0">
+                                                        <input type="email" class="form-control"
+                                                            placeholder="Password *" value="" required="">
+                                                        <div class="text-muted">
+                                                            We'll use this number to send possible update alerts.
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group col-lg-6 px-0 mt-5">
+                                                        <button
+                                                            class="btn btn-success btn-block nextBtn pull-right btn_next-js"
+                                                            type="button">Book as Gust</button>
+                                                    </div>
+                                                    <!-- <div class="form-group col-lg-6 px-0 mt-5">
+                                                        <button class="btn btn-success btn-block nextBtn pull-right"
+                                                            type="button">Procced to Book</button>
+                                                    </div> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row setup-content" id="Travellers">
+                                        <div class="col-12">
+                                            <div class="card border mb-4">
+                                                <div class="card-header">
+                                                    <h6 class="mb-0">Passenger Details</h6>
+                                                </div>
+                                                <div class="card-body">
+
+                                                    <div class="w-100">
+                                                        <div class="form-group col-12 px-0 px-lg-3">
+                                                            <label class="required">Adult 1</label>
+                                                            <div class="d-flex">
+                                                                <select class="form-control w-25" name="adultTitle">
+                                                                    <option value="">Title</option>
+                                                                    <option value="1">Mr.</option>
+                                                                </select>
+                                                                <input type="text" class="form-control" name="fName"
+                                                                    placeholder="First Name">
+                                                                <input type="text" class="form-control" name="mName"
+                                                                    placeholder="Middle Name">
+                                                                <input type="text" class="form-control" name="lName"
+                                                                    placeholder="Last Name">
+                                                            </div>
+                                                            <small>Please ensure that the names of all passengers match
+                                                                as per Valid Govt Id Proof valid for Travel.</small>
+                                                        </div>
+                                                        <div class="form-group col-12 px-0 px-lg-3 col-lg-6">
+                                                            <label class="required">Date of Birth</label>
+                                                            <div class="d-flex">
+                                                                <select class="form-control" name="ddate">
+                                                                    <option value="">--</option>
+                                                                    <option value="1">01</option>
+                                                                </select>
+                                                                <select class="form-control" name="dmonth">
+                                                                    <option value="">--</option>
+                                                                    <option value="1">07</option>
+                                                                </select>
+                                                                <select class="form-control" name="dyear">
+                                                                    <option value="">--</option>
+                                                                    <option value="1">1989</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="w-100">
+                                                        <hr>
+                                                    </div>
+                                                    <div class="w-100">
+                                                        <div class="form-group col-12 px-0 px-lg-3">
+                                                            <label class="required">Adult 2</label>
+                                                            <div class="d-flex">
+                                                                <select class="form-control w-25" name="adultTitle">
+                                                                    <option value="">Title</option>
+                                                                    <option value="1">Mr.</option>
+                                                                </select>
+                                                                <input type="text" class="form-control" name="fName"
+                                                                    placeholder="First Name">
+                                                                <input type="text" class="form-control" name="mName"
+                                                                    placeholder="Middle Name">
+                                                                <input type="text" class="form-control" name="lName"
+                                                                    placeholder="Last Name">
+                                                            </div>
+                                                            <small>Please ensure that the names of all passengers match
+                                                                as per Valid Govt Id Proof valid for Travel.</small>
+                                                        </div>
+                                                        <div class="form-group col-12 px-0 px-lg-3 col-lg-6">
+                                                            <label class="required">Date of Birth</label>
+                                                            <div class="d-flex">
+                                                                <select class="form-control" name="ddate">
+                                                                    <option value="">--</option>
+                                                                    <option value="1">01</option>
+                                                                </select>
+                                                                <select class="form-control" name="dmonth">
+                                                                    <option value="">--</option>
+                                                                    <option value="1">07</option>
+                                                                </select>
+                                                                <select class="form-control" name="dyear">
+                                                                    <option value="">--</option>
+                                                                    <option value="1">1989</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="w-100">
+                                                        <hr>
+                                                    </div>
+                                                    <div class="w-100">
+                                                        <div class="form-group col-12 px-0 px-lg-3">
+                                                            <label class="required">Customer Details</label>
+                                                            <div class="d-flex">
+                                                                <input type="text" class="form-control mr-2"
+                                                                    name="fName" placeholder="First Name">
+                                                                <input type="text" class="form-control mr-2"
+                                                                    name="address" placeholder="Address">
+                                                                <input type="text" class="form-control" name="state"
+                                                                    placeholder="State">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+
+                                            <div class="card border mb-4">
+                                                <div class="card-header">
+                                                    <h6 class="mb-0">EWH T&C</h6>
+                                                </div>
+                                                <div class="card-body overflow-auto" style="max-height: 300px;">
+                                                    <h5> APPLICABILITY OF RATES </h5>
+                                                    <p>
+                                                        An initial payment is a non-refundable, non-transferable advance
+                                                        amount as stipulated under “Payment Terms” below is required to
+                                                        be
+                                                        made by you within the prescribed timelines for us to initiate
+                                                        the
+                                                        booking. Such amount shall stand forfeited and the Company shall
+                                                        be
+                                                        under no obligation to refund this amount in the event that you
+                                                        cancel your booking or fail to adhere to the prescribed payment
+                                                        schedule or fail to fulfill the documentary requirements or
+                                                        unable
+                                                        to obtain a valid visa or unable to travel for any reason
+                                                        whatsoever
+                                                        or any other such defaults/reasons attributable to you.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="card border mb-4">
+                                                <div class="card-header">
+                                                    <h6 class="mb-0">Disclaimer</h6>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="form-group d-flex px-0 position-relative">
+                                                        <input type="checkbox" class="mr-2 mt-1" id="Disclaimer">
+                                                        <label class="form-check-label" for="Disclaimer">
+                                                            I understand and accept the above T&C as being fair,
+                                                            reasonable and binding. Also, I agree to the price package
+                                                            details and name of the passenger shown above. Incase any
+                                                            itinerary or price discount is not mentioned above,
+                                                            EWH.com is not liable to provide the same.
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card border mb-4">
+                                                <div class="card-header">
+                                                    <h6 class="mb-0">Lead Consent</h6>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="form-group d-flex px-0 position-relative">
+                                                        <input type="checkbox" class="mr-2 mt-1" id="Lead">
+                                                        <label class="form-check-label" for="Lead">
+                                                            I am willing to be contacted by Yatra and its contracted
+                                                            partners before my date of travel, for sale and promotion of
+                                                            certain travel-related add-on products. I understand that
+                                                            for this Yatra would have to share my personal information
+                                                            like contact details, date of travel,etc.. I hereby allow
+                                                            Yatra to share this and allow its contracted partners to
+                                                            contact me for sale of certain travel-related add-on
+                                                            products.
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group col-lg-6 px-0 mt-5">
+                                                <button class="btn btn-success btn-block nextBtn pull-right btn_next-js"
+                                                    type="button">Continue</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row setup-content" id="Payment">
+                                        <div class="col-xs-6 col-md-offset-3">
+                                            <div class="col-md-12">
+                                                <h3>Payment</h3>
+                                                <button class="btn btn-success prevBtn pull-left"
+                                                    type="button">Previous</button>
+                                                <button class="btn btn-success pull-right" type="submit">Submit</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col offset-xxl-1">
+                        <div class="card border mb-4">
+                            <div class="card-header">
+                                <h6 class="mb-0">Booking Summary</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="border-bottom mb-2">
+                                    <b>Hotel</b>
+                                    <small class="float-lg-right">2 Adult(s) , 1 Room(s)</small>
+                                </div>
+                                <div>
+                                    <small>Shillong</small> <br>
+                                    <b>Polo TowerThu</b>, <br>
+                                    10 Dec - Sat, 12 Dec, 2020
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card border mb-4">
+                            <div class="card-header">
+                                <h6 class="mb-0">Payment Details</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="border-bottom mb-2">
+                                    <b>Base Price</b>
+                                    <span class="float-lg-right">₹29,989</span>
+                                </div> 
+                                <div class="border-bottom mb-2">
+                                    <b>GST</b>
+                                    <span class="float-lg-right">₹1,500</span>
+                                </div>
+                                <div class="mb-2 h4">
+                                    <b>You Pay</b>
+                                    <span class="float-lg-right">₹31,489</span>
+                                </div> 
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+
+        <footer class="py-lg-6 py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 mb-5">
+                        <div class="w-100 d-flex align-items-center flex-wrap flex-lg-nowrap">
+                            <a href="index.html">
+                                <img src="assets/images/logo.svg" alt="logo" height="130">
+                            </a>
+                            <p class="mb-">
+                                Our Management team has over 15 years’ experience in the Tourism industry. Our
+                                experience and knowledge allow us to provide you with the best customer service
+                                possible….. <a href="#">Read more</a>
+                            </p>
+                        </div>
+                        <div class="w-100">
+                            <div class="d-flex w-75 justify-content-start mt-4">
+                                <a href="#" class="mr-3 text-dark">
+                                    <i class="fab fa-facebook fa-3x mr-3"></i>
+                                </a>
+                                <a href="#" class="mr-3 text-dark">
+                                    <i class="fab fa-instagram fa-3x mr-3"></i>
+                                </a>
+                                <a href="#" class="mr-3 text-dark">
+                                    <i class="fab fa-twitter fa-3x mr-3"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-5 offset-lg-1 mb-3">
+
+                        <h5 class="title-5">RESOURCES</h5>
+                        <ul class="list-unstyled d-flex flex-wrap footer-link">
+                            <li class="nav-item">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Concept Tours</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Tour</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Domestic Destinations</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">International Destinations</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center mt-3">
+                        <img src="assets/images/footer-trusted-badges.png" class="img-fluid" alt="footer">
+                    </div>
+                    <div class="col-12 text-center mt-2 small text-muted">
+                        <p> © 2020 exploreworldholidays..com. All Rights Reserved. CIN:U77777 XXXXXX******
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="assets/vendors/jquery/jquery.min.js"></script>
+        <script src="assets/vendors/bootstrap/dist/js/popper.min.js"></script>
+        <script async src="assets/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/style/dist/js/custom.js"></script>
+
+
+        <!--Owl Library-->
+        <link rel="stylesheet" href="assets/vendors/flag/flags.css">
+
+        <script>
+            $(document).ready(function () {
+                var btnNext = $('.btn_next-js');
+
+
+                /* Hide all Containers accepts Firt Child */
+                $('.step-container').each(function () {
+                    $('.setup-content:not(:first-child)').hide();
+                });
+
+
+                $('[data-steps-action="true"]').on('click', function (e) {
+                    e.preventDefault();
+                    var getTriggerData = $(this).attr('href');
+                    var getTriggerText = $(this).text();
+
+                    $('.setup-content').hide();
+                    $('.setup-panel').attr('data-steps-countr', getTriggerText);
+                    $('.setup-content' + getTriggerData).show();
+                    console.log($(this).attr('href'));
+                });
+
+            });
+        </script>
+
+
+        <div id="signUpModel" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content overflow-hidden">
+                    <span class="close position-absolute" style="right: 6px; font-size: 2rem; z-index: 1;"
+                        data-dismiss="modal" aria-label="Close">
+                        ×
+                    </span>
+                    <div class="signin_container shadow w-100 d-flex flex-wrap login_bg">
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <!--SignUp tab Container-->
+                            <div id="signup" class="container tab-pane fade active show"><br>
+
+                                <h1 class="title-3 text-center w-100 mb-0">
+                                    Welcome!
+                                </h1>
+                                <form action="#" class="d-flex flex-wrap custom_form">
+                                    <div class="col-12 mb-3">
+                                        <input type="email" class="form-control" placeholder="Your Full Name *" value=""
+                                            required="" autofocus="">
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <input type="email" class="form-control error" id="yourEmailid"
+                                            placeholder="Your Email Id *" value="" required="">
+                                        <div class="form_alert text-danger small">
+                                            email id is required.
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <input type="email" class="form-control" id="Password" placeholder="Password *"
+                                            value="" required="">
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <input type="email" class="form-control" id="ConfPassword"
+                                            placeholder="Confirm Password *" value="" required="">
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <label class="small">By clicking Sign Up, you agree to our <a href="#">Privacy
+                                                Policy</a>.</label>
+                                    </div>
+                                    <div class="col-12 btn-steps_row">
+                                        <button class="btn btn-primary my-3 w-100" type="submit">
+                                            SIGN UP
+                                        </button>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <a type="button" href="#" class="underline">Already have an account</a>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!--SignIn tab Container-->
+                            <div id="signin" class="container tab-pane fade">
+
+
+                                <h1 class="title-3 text-center w-100 my-3">
+                                    Welcome!
+                                </h1>
+                                <!--Signin Form-->
+                                <form action="#" class="d-flex flex-wrap custom_form">
+                                    <div class="col-12 mb-3">
+                                        <input type="email" class="form-control error" placeholder="Your Email Id *"
+                                            value="" required="">
+                                        <div class="form_alert text-danger small">
+                                            email id is required.
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <input type="email" class="form-control" placeholder="Password *" value=""
+                                            required="">
+                                    </div>
+                                    <div class="col-12 btn-steps_row">
+                                        <button class="btn btn-primary my-3 w-100" type="submit">
+                                            Login
+                                        </button>
+                                    </div>
+
+
+                                    <div class="col-12 d-flex justify-content-lg-between flex-wrap">
+                                        <a type="button" href="#" class="underline text-dark" id="forgot_pwd">
+                                            Forgot Password
+                                        </a>
+                                        <a type="button" href="#" class="underline">Create An Account</a>
+                                    </div>
+                                </form>
+                                <!--FOrget PWD tab Container-->
+                                <div id="forgot_pwd_container" class="forgot_pwd_container d-none">
+                                    <h1 class="rwd_title text-center w-100 mb-3">
+                                        Forgot Password
+                                    </h1>
+
+                                    <!--Forgot Form-->
+                                    <form action="#" class="d-flex flex-wrap custom_form">
+                                        <div class="col-12 mb-3">
+                                            <input type="email" class="form-control error" placeholder="Your Email Id *"
+                                                value="" required="">
+                                            <div class="form_alert text-danger small">
+                                                email id is required.
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 btn-steps_row">
+                                            <button class="btn btn_custom my-3 w-100" type="submit">
+                                                Submit
+                                            </button>
+                                        </div>
+                                    </form>
+                                    <span class="close_form">X</span>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="searchUpModel" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+
+                <!-- Modal content-->
+                <div class="modal-content bg-white">
+                    <span class="close position-absolute" style="right: 6px; font-size: 2rem; z-index: 1;"
+                        data-dismiss="modal" aria-label="Close">
+                        ×
+                    </span>
+                    <div class="modal-body">
+                        <div class="col-12 col-md-12 my-5">
+                            <h3 class="title-5">Where Would You Like to Go?</h3>
+                            <form action="">
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control-lg" placeholder="Search" name=""
+                                        id="">
+                                </div>
+                            </form>
+                        </div>
+                        <hr class="row">
+                        <div class="col-12 col-md-12 my-5">
+                            <h3 class="title-5">Our Popular Destinations</h3>
+                            <div class="grid grid-col-xs-2 grid-col-lg-4 style_text_on_img custom-card-with-caption">
+
+                                <div class="item">
+                                    <a href="#" class="card w-100">
+                                        <img src="dump/card/1.jpg" alt="1">
+                                        <div class="card-body">
+                                            <h5 class="title-6">Goa</h5>
+                                            <div class="cs-card-footer title-5">
+                                                <small>Starting from</small>
+                                                <p>₹ 8,199/-</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#" class="card w-100">
+                                        <img src="dump/card/2.jpg" alt="2">
+                                        <div class="card-body">
+                                            <h5 class="title-6">Kerala</h5>
+                                            <div class="cs-card-footer title-5">
+                                                <small>Starting from</small>
+                                                <p>₹ 8,199/-</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#" class="card w-100">
+                                        <img src="dump/card/3.jpg" alt="3">
+                                        <div class="card-body">
+                                            <h5 class="title-6">Uttarakhand</h5>
+                                            <div class="cs-card-footer title-5">
+                                                <small>Starting from</small>
+                                                <p>₹ 8,199/-</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#" class="card w-100">
+                                        <img src="dump/card/4.jpg" alt="3">
+                                        <div class="card-body">
+                                            <h5 class="title-6">Rajasthan</h5>
+                                            <div class="cs-card-footer title-5">
+                                                <small>Starting from</small>
+                                                <p>₹ 8,199/-</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </body>
+
+</html>
