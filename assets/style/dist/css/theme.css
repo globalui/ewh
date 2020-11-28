@@ -3278,15 +3278,33 @@ body .calendar-day .day:not(.cs-calender-active):hover {
   background-color: #00538d;
 }
 
-.calendar-day .day.cs-calender-active .cs_date-type {
-  display: none;
-  font-size: 10px;
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  left: 0px;
-  color: #fff;
-  padding: 1px;
+@media (min-width: 992px) {
+  .calendar-day .day.cs-calender-active .cs_date-type {
+    display: none;
+    font-size: 10px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    left: 0px;
+    color: #fff;
+    padding: 1px;
+  }
+}
+
+@media (max-width: 992px) {
+  .calendar-day .day.cs-calender-active .cs_date-type {
+    display: none;
+    font-size: 10px;
+    position: absolute;
+    top: -24px;
+    white-space: nowrap;
+    padding: 1px 10px !important;
+    -webkit-box-shadow: 0px 3px 4px #0000002e;
+            box-shadow: 0px 3px 4px #0000002e;
+    padding: 1px;
+    border-radius: 40px;
+    color: #fff;
+  }
 }
 
 .calendar-day .day.cs-calender-active .cs-calender-price {
@@ -3298,6 +3316,23 @@ body .calendar-day .day:not(.cs-calender-active):hover {
   color: red;
   font-size: 9px;
   margin-right: 3px;
+}
+
+.calendar-inner {
+  overflow: auto;
+}
+
+@media (max-width: 992px) {
+  .cs-event-indicator .type-bullet > div {
+    width: 20px;
+    height: 2px !important;
+  }
+  .calendar-day .day.cs-calender-active .cs-calender-price del {
+    display: block;
+    font-size: 10px;
+    margin-top: 1px;
+    margin-right: 0px;
+  }
 }
 
 .cs-event-indicator {

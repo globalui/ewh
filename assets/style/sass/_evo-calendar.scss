@@ -15,12 +15,13 @@ body .calendar-day {
 }
 
 
-.calendar-day .day { 
-    display:flex;
+.calendar-day .day {
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
 }
+
 .calendar-day .day.cs-calender-active {
     font-weight: bold;
 
@@ -28,113 +29,165 @@ body .calendar-day {
         border: 1px solid !important;
         border-color: #164255 !important;
 
-        .cs_date-type{
-            display:block;
+        .cs_date-type {
+            display: block;
         }
     }
 
-    
+
 }
 
-.calendar-day .day.cs-calender-active{
-    &.cs-event-sold {
-        &:hover,&.calendar-active {
-            border-color: #dc3545 !important;
-            background-color: #f8d7da !important;
+.calendar-day .day.cs-calender-active {
 
-            .cs_date-type{
-                background-color: #dc3545;
-                display:block;
-            } 
-        } 
-        .type-sold {
-            background-color: #dc3545;
+
+    
+        &.cs-event-sold { 
+                &:hover,
+                &.calendar-active {
+                    border-color: #dc3545 !important;
+                    background-color: #f8d7da !important;
+
+                    .cs_date-type {
+                        background-color: #dc3545;
+                        display: block;
+                    }
+                }
+
+                .type-sold {
+                    background-color: #dc3545;
+                }
         }
-    }
 
-    &.cs-event-fast {
-        &:hover,&.calendar-active {
-            border-color: #ffc107 !important;
-            background-color: #fff3cd !important;
+        &.cs-event-fast {
 
-            .cs_date-type{
+            &:hover,
+            &.calendar-active {
+                border-color: #ffc107 !important;
+                background-color: #fff3cd !important;
+
+                .cs_date-type {
+                    background-color: #ffc107;
+                    display: block;
+                }
+            }
+
+            .type-fast {
                 background-color: #ffc107;
-                display:block;
-            } 
-        } 
-        .type-fast {
-            background-color: #ffc107;
+            }
         }
-    }
 
-    &.cs-event-low {
-        &:hover,&.calendar-active {
-            border-color: #28a745 !important;
-            background-color: #d4edda !important;
+        &.cs-event-low {
 
-            .cs_date-type{
+            &:hover,
+            &.calendar-active {
+                border-color: #28a745 !important;
+                background-color: #d4edda !important;
+
+                .cs_date-type {
+                    background-color: #28a745;
+                    display: block;
+                }
+            }
+
+            .type-low {
                 background-color: #28a745;
-                display:block;
-            } 
-        } 
-        .type-low {
-            background-color: #28a745;
+            }
         }
-    }
 
-    &.cs-event-regular {
-        &:hover,&.calendar-active {
-            border-color: #00538d !important;
-            background-color: #ccdde8 !important;
+        &.cs-event-regular {
 
-            .cs_date-type{
+            &:hover,
+            &.calendar-active {
+                border-color: #00538d !important;
+                background-color: #ccdde8 !important;
+
+                .cs_date-type {
+                    background-color: #00538d;
+                    display: block;
+                }
+            }
+
+            .type-regular {
                 background-color: #00538d;
-                display:block;
-            } 
-        } 
-        .type-regular {
-            background-color: #00538d;
+            }
+        }
+        @media (min-width:992px) {
+        .cs_date-type {
+            display: none;
+            font-size: 10px;
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            left: 0px;
+            color: #fff;
+            padding: 1px;
+    
         }
     }
 
-
-    .cs_date-type{
-        display: none;
-        font-size: 10px;
-        position: absolute;
-        bottom: 0px;
-        width: 100%;
-        left: 0px;
-        color: #fff;
-        padding: 1px;
-
+    @media (max-width:992px){
+        .cs_date-type {
+            display: none;
+            font-size: 10px;
+            position: absolute;
+            top: -24px;
+            white-space: nowrap;
+            padding: 1px 10px !important; 
+            box-shadow: 0px 3px 4px #0000002e; 
+            padding: 1px;
+            border-radius: 40px;  
+            color: #fff;
+        }
     }
 
-    .cs-calender-price{
-        font-size:11px;
-        del{
-            color:red;
-            font-size:9px;
-            margin-right:3px;
+   
+
+    .cs-calender-price {
+        font-size: 11px;
+
+        del {
+            color: red;
+            font-size: 9px;
+            margin-right: 3px;
         }
+
         margin-bottom: 10px;
     }
 }
 
-.cs-event-indicator{ 
-    display: inline-block;
-    width:100%;
 
-    .type-bullet>div{
-        width:20px;
-        height:4px;
+.calendar-inner{ 
+    overflow: auto;
+}
+@media (max-width:992px){
+    .cs-event-indicator .type-bullet > div {
+        width: 20px;
+        height: 2px !important;  
+    }
+    .calendar-day .day.cs-calender-active .cs-calender-price del{
+        display: block;
+        font-size: 10px; 
+        margin-top: 1px;
+        margin-right: 0px;
+    }
+   
+}
+
+
+.cs-event-indicator {
+    display: inline-block;
+    width: 100%;
+
+    .type-bullet>div {
+        width: 20px;
+        height: 4px;
         margin: auto;
     }
 }
 
-.cs-the-day{
-    line-height:1;
-    font-size:15px; 
+.cs-the-day {
+    line-height: 1;
+    font-size: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -142,11 +195,11 @@ body .calendar-day {
 
 
 
-.royal-navy .calendar-sidebar > .month-list > .calendar-months > li {
+.royal-navy .calendar-sidebar>.month-list>.calendar-months>li {
     padding: 5px 10px;
     border-radius: 0 25px 25px 0;
 
-    @media (min-width:992px){
-        padding: 5px 30px; 
+    @media (min-width:992px) {
+        padding: 5px 30px;
     }
 }
