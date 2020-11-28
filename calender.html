@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>Explore World Holiday | Trip Details</title>
+
+        <link rel="stylesheet" href="assets/vendors/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="assets/vendors/fontawesone/css/all.min.css">
+        <link rel="stylesheet" href="assets/style/dist/css/theme.css">
+
+    </head>
+
+    <body>
+
+        <main class="container my-5">
+            <div class="row">
+                <div class="col-12 col-lg-7">
+                    <div id="calendar" class="border"></div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div>
+                        <h6 class="mb-4 font-weight-bold">Check Price & Availability from New Delhi - Prices shown are
+                            without Flights</h6>
+                        <div>
+                            <span>Departure Date Selected -</span>
+                            <span id="datePriceContainer"></span>
+                        </div>
+                        <hr>
+                        <h6 class="mb-2 font-weight-bold">Rooms & Travellers:</h6>
+                        <div class="form-group col-12 px-0"> 
+                            <div class="d-flex justify-content-md-between align-items-center">
+                                <div class="text-nowrap mr-3">
+                                   <div> Room 1 </div>
+                                   <button class="btn btn-link btn-sm">  <i class="fa fa-trash"></i></button>
+
+                                </div>
+                                <div class="col">
+                                    <label for="Adult" class="small">Adult(s)</label>
+                                    <select class="form-control" name="Adult" id="Adult"> 
+                                        <option value="1">27</option>
+                                    </select>
+                                    <small class="text-muted">(12+ years)</small>
+                                </div>
+                                <div class="col">
+                                    <label for="Children" class="small">Children</label>
+                                    <select class="form-control" name="Children"> 
+                                        <option value="1">07</option>
+                                    </select>
+                                    <small class="text-muted">(Below 12 years)</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group col-12 px-0">  
+                            <button class="btn btn-link btn-sm">  +Add another room</button>
+                        </div>
+
+                        <div class="form-group col-12 px-0 mt-5">  
+                            <button class="btn btn-primary btn-block"> Proceed</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="assets/vendors/bootstrap/dist/js/popper.min.js"></script>
+        <script async src="assets/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/style/dist/js/custom.js"></script>
+
+
+
+        <script src="assets/vendors/evo-calendar/js/evo-calendar.js"></script>
+        <link rel="stylesheet" href="assets/vendors/evo-calendar/css/evo-calendar.css">
+        <link rel="stylesheet" href="assets/vendors/evo-calendar/css/evo-calendar.royal-navy.css">
+
+        <script>
+            $(document).ready(function () {
+
+
+                $('#calendar').evoCalendar({
+                    eventListToggler: false,
+                    sidebarToggler: false,
+                    'eventDisplayDefault': false,
+                    getActiveEvents: false,
+                    theme: 'Royal Navy',
+                    calendarEvents: [{
+                            id: 1,
+                            date: "Nov/29/2020",
+                            type: "sold",
+                            name: 'Sold Out',
+                            price: "$520",
+                            discount: ""
+                        },
+                        {
+                            id: 2,
+                            date: "Nov/24/2020",
+                            type: "fast",
+                            name: 'Selling Fast',
+                            price: "$820",
+                            discount: ""
+                        },
+                        {
+                            id: 3,
+                            date: "Nov/25/2020",
+                            type: "low",
+                            name: 'Low Price',
+                            price: "$1920",
+                            discount: "$1320"
+                        },
+                        {
+                            id: 4,
+                            date: "Nov/26/2020",
+                            type: "regular",
+                            name: 'Regular Price',
+                            price: "$520",
+                            discount: "$620"
+                        },
+                        {
+                            id: 4,
+                            date: "Nov/30/2020",
+                            type: "low",
+                            name: 'Low Price',
+                            price: "$520",
+                            discount: "$620"
+                        }
+                    ]
+
+                });
+
+                function customCalenderFunction() {
+                    var setStartYear = '2020';
+                    var setLastYear = '2021';
+
+                    var getCYear = $('.calendar-year').children('p').text();
+                    $('[data-year-val="prev"]').addClass('d-none');
+
+                    if (getCYear === setStartYear) {
+                        $('[data-year-val="prev"]').addClass('d-none');
+                        $('[data-year-val="next"]').removeClass('d-none');
+                    }
+                    if (getCYear != setStartYear) {
+                        $('[data-year-val="prev"]').removeClass('d-none');
+                        $('[data-year-val="next"]').removeClass('d-none');
+                    }
+                    if (getCYear === setLastYear) {
+                        $('[data-year-val="next"]').addClass('d-none');
+                        $('[data-year-val="prev"]').removeClass('d-none');
+                    }
+
+                }
+
+                customCalenderFunction();
+                $('.calendar-year button').on('click', function () {
+                    customCalenderFunction();
+                });
+            })
+
+
+            //mobile custom show moth list
+
+            $(document).ready(function () {
+                if ($(window).width() <= 1024) {
+                    $(document).on('click', '#monthTrigger', function () {
+                        $('#calendar').toggleClass('sidebar-hide');
+                    });
+
+                }
+
+
+                $(document).on('click', '.calendar-active', function () {
+                    var __getDate = $(this).data('date-val');
+                    var __getPrice = $(this).data('price-val');
+                    var __getType = $(this);
+                    var __markup = "";
+
+                    if (typeof __getPrice !== "undefined") {
+                        __markup += '<span class="mb-0 font-weight-bold">' + __getDate + '</span>';
+                        $('#datePriceContainer').empty().append(__markup);
+                    }
+                    if ( __getType.hasClass('cs-event-sold') == true) { 
+                        $('#datePriceContainer').empty();
+                    }
+
+
+                });
+            });
+        </script>
+    </body>
+
+</html>

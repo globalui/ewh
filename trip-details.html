@@ -348,7 +348,8 @@
                                     </ul>
 
                                     <h3 class="title-7">Why should you book this deal?</h3>
-                                    <ul class="c-list-style animate-check-o">
+                                    <div  class="c-list-style animate-check-o">
+                                    <ul>
                                         <li> Unbeatable deals: Book this deal anytime till 31 August 2020. The voucher
                                             is applicable for a maximum of two adults sharing a room.
                                         </li>
@@ -360,6 +361,7 @@
                                         </li>
                                         <li> Experiences: Make the most of your vacation with memorable experiences</li>
                                     </ul>
+                                </div>
                                 </div>
                                 <div class="col-12 mt-3">
                                     <div id="custom-accordion" class="c-style-accordion">
@@ -460,9 +462,10 @@
                                                                         </div>
 
                                                                         <div class="review-block-name">
-                                                                            <a href="#"> Hotel Nahargarh Ranthambhore</a> |
+                                                                            <a href="#"> Hotel Nahargarh
+                                                                                Ranthambhore</a> |
                                                                             <span><i class="fa fa-map-marker-alt"></i>
-                                                                                Ranthambore</span> 
+                                                                                Ranthambore</span>
                                                                         </div>
 
                                                                         <div class="review-block-name">
@@ -474,7 +477,7 @@
                                                                             We drove in from Jaipur for a night. Nice
                                                                             and neat property that is located close to
                                                                             the Park. The front desk was polite and
-                                                                            helpful. 
+                                                                            helpful.
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -652,7 +655,8 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <a class="btn btn-block btn-success btn-md" href="#">Book Now </a>
+                                        <a class="btn btn-block btn-success btn-md" href="#" data-toggle="modal"
+                                            data-target="#bookingModel" data-backdrop="static" data-keyboard="false">Book Now </a>
                                         <span class="small text-primary d-block">Take less than 5 minutes. You won't be
                                             charged
                                             yet.</span>
@@ -782,7 +786,9 @@
 
             <div class="col-12 bg-white shadow fixed-mb-bottom p-2">
                 <div class="d-flex justify-content-start">
-                    <a href="#" data-apply="true" class="btn btn-success w-100 mr-1"><span>Book Now</span> <i
+                    <a href="#" href="#" data-toggle="modal"
+                    data-target="#bookingModel" data-backdrop="static" data-keyboard="false" 
+                    data-apply="true" class="btn btn-success w-100 mr-1"><span>Book Now</span> <i
                             class="fa fa-paper-plane"></i></a>
                     <button class="btn btn-info"><i class="fa fa-question"></i></button>
                 </div>
@@ -859,7 +865,7 @@
             </div>
         </footer>
 
-        <script src="assets/vendors/jquery/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="assets/vendors/bootstrap/dist/js/popper.min.js"></script>
         <script async src="assets/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="assets/style/dist/js/custom.js"></script>
@@ -1026,20 +1032,6 @@
                                 </div>
                             </div>
 
-                            <!--    <hr>
-                            <div class="container p-3 my-4 text-center">
-                                <div class="col-12">
-                                    <button class="btn rwd-font btn-facebook mb-3 btn-block">
-                                        <i class="fab fa-facebook-f title-5 text-white"></i> Login with Facebook
-                                    </button>
-
-                                    <button class="btn rwd-font btn-google mb-3 btn-block">
-                                        <i class="fab fa-google title-5 text-white"></i> Login with Google
-                                    </button>
-                                </div>
-                            </div> -->
-
-
                         </div>
                     </div>
                 </div>
@@ -1129,6 +1121,185 @@
             </div>
         </div>
 
+        <div id="bookingModel" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-xl p-0">
+
+                <!-- Modal content-->
+                <div class="modal-content bg-white p-0">
+                    <span class="close position-absolute" style="right: 6px; font-size: 2rem; z-index: 1;"
+                        data-dismiss="modal" aria-label="Close">
+                        ×
+                    </span>
+                    <div class="modal-body row mx-0 mt-3 mt-lg-0">
+                        <div class="col-12 col-lg-8 px-0 mb-5">
+                            <div id="calendar" class="border"></div>
+                        </div>  
+                        <div class="col-12 col-lg-4 px-0 px-lg-3">
+                            <div>
+                                <h6 class="mb-4 font-weight-bold">Check Price & Availability from New Delhi - Prices shown are
+                                    without Flights</h6>
+                                <div>
+                                    <span>Departure Date Selected -</span>
+                                    <span id="datePriceContainer"></span>
+                                </div>
+                                <hr>
+                                <h6 class="mb-2 font-weight-bold">Rooms & Travellers:</h6>
+                                <div class="form-group col-12 px-0"> 
+                                    <div class="d-flex justify-content-md-between align-items-center">
+                                        <div class="text-nowrap mr-3">
+                                           <div> Room 1 </div>
+                                           <button class="btn btn-link btn-sm">  <i class="fa fa-trash"></i></button>
+        
+                                        </div>
+                                        <div class="col">
+                                            <label for="Adult" class="small">Adult(s)</label>
+                                            <select class="form-control" name="Adult" id="Adult"> 
+                                                <option value="1">27</option>
+                                            </select>
+                                            <small class="text-muted">(12+ years)</small>
+                                        </div>
+                                        <div class="col">
+                                            <label for="Children" class="small">Children</label>
+                                            <select class="form-control" name="Children"> 
+                                                <option value="1">07</option>
+                                            </select>
+                                            <small class="text-muted">(Below 12 years)</small>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="form-group col-12 px-0">  
+                                    <button class="btn btn-link btn-sm">  +Add another room</button>
+                                </div>
+        
+                                <div class="form-group col-12 px-0 mt-5">  
+                                    <button class="btn btn-primary btn-block"> Proceed</button>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <script src="assets/vendors/evo-calendar/js/evo-calendar.js"></script>
+        <link rel="stylesheet" href="assets/vendors/evo-calendar/css/evo-calendar.css">
+        <link rel="stylesheet" href="assets/vendors/evo-calendar/css/evo-calendar.royal-navy.css">
+
+        <script>
+            $(document).ready(function () {
+
+
+                $('#calendar').evoCalendar({
+                    eventListToggler: false,
+                    sidebarToggler: false,
+                    'eventDisplayDefault': false,
+                    getActiveEvents: false,
+                    theme: 'Royal Navy',
+                    calendarEvents: [{
+                            id: 1,
+                            date: "Nov/29/2020",
+                            type: "sold",
+                            name: 'Sold Out',
+                            price: "$520",
+                            discount: ""
+                        },
+                        {
+                            id: 2,
+                            date: "Nov/24/2020",
+                            type: "fast",
+                            name: 'Selling Fast',
+                            price: "$820",
+                            discount: ""
+                        },
+                        {
+                            id: 3,
+                            date: "Nov/25/2020",
+                            type: "low",
+                            name: 'Low Price',
+                            price: "$1920",
+                            discount: "$1320"
+                        },
+                        {
+                            id: 4,
+                            date: "Nov/21/2020",
+                            type: "regular",
+                            name: 'Regular Price',
+                            price: "$520",
+                            discount: "$620"
+                        },
+                        {
+                            id: 4,
+                            date: "Nov/30/2020",
+                            type: "low",
+                            name: 'Low Price',
+                            price: "$520",
+                            discount: "$620"
+                        }
+                    ]
+
+                });
+
+                function customCalenderFunction() {
+                    var setStartYear = '2020';
+                    var setLastYear = '2021';
+
+                    var getCYear = $('.calendar-year').children('p').text();
+                    $('[data-year-val="prev"]').addClass('d-none');
+
+                    if (getCYear === setStartYear) {
+                        $('[data-year-val="prev"]').addClass('d-none');
+                        $('[data-year-val="next"]').removeClass('d-none');
+                    }
+                    if (getCYear != setStartYear) {
+                        $('[data-year-val="prev"]').removeClass('d-none');
+                        $('[data-year-val="next"]').removeClass('d-none');
+                    }
+                    if (getCYear === setLastYear) {
+                        $('[data-year-val="next"]').addClass('d-none');
+                        $('[data-year-val="prev"]').removeClass('d-none');
+                    }
+
+                }
+
+                customCalenderFunction();
+                $('.calendar-year button').on('click', function () {
+                    customCalenderFunction();
+                });
+            })
+
+
+            //mobile custom show moth list
+
+            $(document).ready(function () {
+                if ($(window).width() <= 1024) {
+                    $(document).on('click', '#monthTrigger', function () {
+                        $('#calendar').toggleClass('sidebar-hide');
+                    });
+
+                }
+
+
+                $(document).on('click', '.calendar-active', function () {
+                    var __getDate = $(this).data('date-val');
+                    var __getPrice = $(this).data('price-val');
+                    var __getType = $(this);
+                    var __markup = "";
+
+                    if (typeof __getPrice !== "undefined") {
+                        __markup += '<span class="mb-0 font-weight-bold">' + __getDate + '</span>';
+                        $('#datePriceContainer').empty().append(__markup);
+                    }
+                    if ( __getType.hasClass('cs-event-sold') == true) { 
+                        $('#datePriceContainer').empty();
+                    }
+
+
+                });
+            });
+        </script>
     </body>
 
 </html>

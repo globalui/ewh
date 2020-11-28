@@ -1,0 +1,152 @@
+body .calendar-day {
+    .day:not(.cs-calender-active) {
+        color: #cacaca !important;
+        cursor: not-allowed !important;
+
+
+        &.calendar-active {
+            border-color: transparent !important;
+        }
+
+        &:hover {
+            background-color: transparent !important;
+        }
+    }
+}
+
+
+.calendar-day .day { 
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.calendar-day .day.cs-calender-active {
+    font-weight: bold;
+
+    &:hover {
+        border: 1px solid !important;
+        border-color: #164255 !important;
+
+        .cs_date-type{
+            display:block;
+        }
+    }
+
+    
+}
+
+.calendar-day .day.cs-calender-active{
+    &.cs-event-sold {
+        &:hover,&.calendar-active {
+            border-color: #dc3545 !important;
+            background-color: #f8d7da !important;
+
+            .cs_date-type{
+                background-color: #dc3545;
+                display:block;
+            } 
+        } 
+        .type-sold {
+            background-color: #dc3545;
+        }
+    }
+
+    &.cs-event-fast {
+        &:hover,&.calendar-active {
+            border-color: #ffc107 !important;
+            background-color: #fff3cd !important;
+
+            .cs_date-type{
+                background-color: #ffc107;
+                display:block;
+            } 
+        } 
+        .type-fast {
+            background-color: #ffc107;
+        }
+    }
+
+    &.cs-event-low {
+        &:hover,&.calendar-active {
+            border-color: #28a745 !important;
+            background-color: #d4edda !important;
+
+            .cs_date-type{
+                background-color: #28a745;
+                display:block;
+            } 
+        } 
+        .type-low {
+            background-color: #28a745;
+        }
+    }
+
+    &.cs-event-regular {
+        &:hover,&.calendar-active {
+            border-color: #00538d !important;
+            background-color: #ccdde8 !important;
+
+            .cs_date-type{
+                background-color: #00538d;
+                display:block;
+            } 
+        } 
+        .type-regular {
+            background-color: #00538d;
+        }
+    }
+
+
+    .cs_date-type{
+        display: none;
+        font-size: 10px;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        left: 0px;
+        color: #fff;
+        padding: 1px;
+
+    }
+
+    .cs-calender-price{
+        font-size:11px;
+        del{
+            color:red;
+            font-size:9px;
+            margin-right:3px;
+        }
+        margin-bottom: 10px;
+    }
+}
+
+.cs-event-indicator{ 
+    display: inline-block;
+    width:100%;
+
+    .type-bullet>div{
+        width:20px;
+        height:4px;
+        margin: auto;
+    }
+}
+
+.cs-the-day{
+    line-height:1;
+    font-size:15px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.royal-navy .calendar-sidebar > .month-list > .calendar-months > li {
+    padding: 5px 10px;
+    border-radius: 0 25px 25px 0;
+
+    @media (min-width:992px){
+        padding: 5px 30px; 
+    }
+}
