@@ -2554,6 +2554,10 @@ form.form-label-placeholder input[type="date"]::-webkit-calendar-picker-indicato
   font-size: 10px;
 }
 
+.btn-outline-primary:hover a.button {
+  color: #fff;
+}
+
 .wifi, .bed, .calender, .age, .money-bag, .taxi, .cutlery {
   background-repeat: no-repeat;
   width: 18px;

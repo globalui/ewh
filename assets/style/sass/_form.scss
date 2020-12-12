@@ -550,3 +550,10 @@ form.form-label-placeholder {
     font-size: 10px;
   }
 }
+
+
+.btn-outline-primary{
+  &:hover a.button{  
+    color:#fff;
+  }
+}
