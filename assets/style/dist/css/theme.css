@@ -1483,6 +1483,35 @@ iframe.embed-responsive-item {
   z-index: 99999;
 }
 
+.sorting-component {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sorting-component ul {
+  list-style: none;
+  padding: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0px;
+}
+
+.sorting-component ul a {
+  padding: 5px 10px;
+  color: #222222;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.sorting-component ul a.active {
+  color: #e40a1f;
+}
+
 .card-container {
   float: left;
   background: #fff;
@@ -2460,6 +2489,7 @@ form.form-label-placeholder input[type="search"],
 form.form-label-placeholder input[type="date"],
 form.form-label-placeholder input[type="email"],
 form.form-label-placeholder input[type="number"],
+form.form-label-placeholder input[type="tel"],
 form.form-label-placeholder textarea {
   font-size: 12px;
   background-color: transparent;
@@ -2472,6 +2502,7 @@ form.form-label-placeholder input[type="search"]:focus,
 form.form-label-placeholder input[type="date"]:focus,
 form.form-label-placeholder input[type="email"]:focus,
 form.form-label-placeholder input[type="number"]:focus,
+form.form-label-placeholder input[type="tel"]:focus,
 form.form-label-placeholder textarea:focus {
   background-color: transparent;
   border-color: #fff;
@@ -2486,6 +2517,7 @@ form.form-label-placeholder input[type="search"]:focus + label,
 form.form-label-placeholder input[type="date"]:focus + label,
 form.form-label-placeholder input[type="email"]:focus + label,
 form.form-label-placeholder input[type="number"]:focus + label,
+form.form-label-placeholder input[type="tel"]:focus + label,
 form.form-label-placeholder textarea:focus + label {
   color: #fff;
 }

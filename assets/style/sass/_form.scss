@@ -44,7 +44,7 @@ label {
 
     &:focus {
       outline: none;
-    }
+    } 
   }
 
   select,
@@ -499,6 +499,7 @@ form.form-label-placeholder {
   input[type="date"],
   input[type="email"],
   input[type="number"],
+  input[type="tel"],
   textarea {
     font-size: 12px;
     background-color: transparent;

@@ -462,3 +462,24 @@ iframe.embed-responsive-item{
 }
 
 
+.sorting-component{
+  display:flex;
+   justify-content: space-between;
+  ul{
+    list-style: none;
+    padding:10px 0px;
+    display:flex;
+    margin-bottom:0px;
+
+    a{
+      padding:5px 10px;
+      color: #222222;
+      font-weight: 600;
+      font-size: 13px;
+
+      &.active{ 
+        color: #e40a1f;
+      }
+    }
+  }
+}
