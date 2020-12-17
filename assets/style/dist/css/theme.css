@@ -1,12 +1,13 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:900,900i&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800;900&family=Ovo&display=swap");
 :root {
-  --systemFont:calc(0.7rem + 0.2vw);
+  --systemFont:calc(0.8rem + 0.2vw);
   --smllFont:calc(0.6rem + 0.1vw);
   --link-text:calc(0.9rem + 0.3vh);
   --leadfont:calc(14px + 0.3vh);
   --form-text:calc(12px + 0.3vh);
   --card-heading:calc(0.9 + 0.2vh);
   --card-icon:calc(10px + 0.2vh);
+  font-size: 16px;
 }
 
 .text-star {
@@ -267,8 +268,9 @@ html {
 }
 
 body {
-  font-family: "soleil", sans-serif;
+  font-family: "Muli", sans-serif;
   font-size: var(--systemFont);
+  letter-spacing: .4px;
   overflow-x: hidden;
 }
 
@@ -888,43 +890,43 @@ a.nav-link {
 
 .title-1 {
   font-size: calc(2rem + 1vw);
-  font-weight: 600;
+  font-weight: 800;
   color: #232323;
 }
 
 .title-2 {
   font-size: calc(1.8rem + 0.8vw);
-  font-weight: 600;
+  font-weight: 800;
   color: #232323;
 }
 
 .title-3 {
   font-size: calc(1.6rem + 0.6vw);
-  font-weight: 600;
+  font-weight: 800;
   color: #232323;
 }
 
 .title-4 {
   font-size: calc(1.4rem + 0.5vw);
-  font-weight: 600;
+  font-weight: 800;
   color: #232323;
 }
 
 .title-5 {
   font-size: calc(1.2rem + 0.2vw);
-  font-weight: 600;
+  font-weight: 800;
   color: #232323;
 }
 
 .title-6 {
   font-size: calc(0.8rem + 0.1vw);
-  font-weight: 600;
+  font-weight: 800;
   color: #232323;
 }
 
 .title-7 {
   font-size: calc(1.1rem + 0.1vw);
-  font-weight: 600;
+  font-weight: 800;
   color: #232323;
 }
 
@@ -1012,7 +1014,7 @@ a.nav-link {
   font-weight: 900;
   font-style: italic;
   letter-spacing: -2px;
-  font-family: "Lato", sans-serif;
+  font-family: "Muli", sans-serif;
   color: #232323;
 }
 

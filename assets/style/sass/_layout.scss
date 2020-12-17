@@ -6,8 +6,9 @@ html {
 }
 
 body {
-  font-family: $themeFont;
+  font-family: $latoFont;
   font-size: var(--systemFont);
+  letter-spacing: .4px;
 
   overflow-x: hidden;
 }
