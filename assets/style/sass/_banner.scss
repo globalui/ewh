@@ -1,14 +1,29 @@
- .hero-caption {  
+ .hero-caption {
    .t-large {
      font-size: calc(1.2rem + 3vw);
      font-weight: 600;
      text-transform: uppercase;
      margin-bottom: 0;
-   } 
-   .t-small { 
+   }
+
+   .t-small {
      font-size: calc(0.8rem + 1.2vw);
      margin-bottom: 0;
-     padding:0px;
+     padding: 0px;
+     text-shadow:0px 0px 20px #000;
+
+     p {
+       &:first-child {
+         font-size: calc(1.2rem + 1vw);
+         margin-bottom: 0px;
+         font-weight: 800 !important;
+         text-transform: uppercase;
+       }
+       &:last-child {
+        font-size: calc(0.8rem + 0.8vw);
+        font-weight: 600;
+       }
+     }
    }
  }
 
@@ -52,35 +67,35 @@
 
    &.owl-theme .owl-dots .owl-dot span,
    &.owl-theme .owl-dots .owl-dot span {
-     background:transparent;
-     border:2px solid #D6D6D6;
+     background: transparent;
+     border: 2px solid #D6D6D6;
    }
 
    &.owl-theme .owl-dots .owl-dot.active span,
    &.owl-theme .owl-dots .owl-dot:hover span {
      background: $c-orange;
-     border:2px solid $c-orange;
+     border: 2px solid $c-orange;
    }
  }
 
- .hero.inner-banner{
+ .hero.inner-banner {
    position: relative;
    overflow: hidden;
 
-   picture{ 
-    @include wh(100%,100%);
-    top:0;
-    left:0;
-    z-index: -1;
+   picture {
+     @include wh(100%, 100%);
+     top: 0;
+     left: 0;
+     z-index: -1;
 
-     &:before{
-       @include wh(100%,100%);
+     &:before {
+       @include wh(100%, 100%);
        background-color: $c-cyan-light;
-       top:0;
-       left:0;
-       content:"";
+       top: 0;
+       left: 0;
+       content: "";
        position: absolute;
-       opacity:75%;
+       opacity: 75%;
      }
    }
  }

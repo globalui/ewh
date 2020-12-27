@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800;900&family=Ovo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap");
 :root {
   --systemFont:calc(0.8rem + 0.2vw);
   --smllFont:calc(0.6rem + 0.1vw);
@@ -268,7 +268,7 @@ html {
 }
 
 body {
-  font-family: "Muli", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: var(--systemFont);
   letter-spacing: .4px;
   overflow-x: hidden;
@@ -766,6 +766,19 @@ a.nav-link {
   font-size: calc(0.8rem + 1.2vw);
   margin-bottom: 0;
   padding: 0px;
+  text-shadow: 0px 0px 20px #000;
+}
+
+.hero-caption .t-small p:first-child {
+  font-size: calc(1.2rem + 1vw);
+  margin-bottom: 0px;
+  font-weight: 800 !important;
+  text-transform: uppercase;
+}
+
+.hero-caption .t-small p:last-child {
+  font-size: calc(0.8rem + 0.8vw);
+  font-weight: 600;
 }
 
 .hero .hero-owl.owl-carousel {
@@ -890,43 +903,43 @@ a.nav-link {
 
 .title-1 {
   font-size: calc(2rem + 1vw);
-  font-weight: 800;
+  font-weight: 600;
   color: #232323;
 }
 
 .title-2 {
   font-size: calc(1.8rem + 0.8vw);
-  font-weight: 800;
+  font-weight: 600;
   color: #232323;
 }
 
 .title-3 {
   font-size: calc(1.6rem + 0.6vw);
-  font-weight: 800;
+  font-weight: 600;
   color: #232323;
 }
 
 .title-4 {
   font-size: calc(1.4rem + 0.5vw);
-  font-weight: 800;
+  font-weight: 600;
   color: #232323;
 }
 
 .title-5 {
   font-size: calc(1.2rem + 0.2vw);
-  font-weight: 800;
+  font-weight: 600;
   color: #232323;
 }
 
 .title-6 {
   font-size: calc(0.8rem + 0.1vw);
-  font-weight: 800;
+  font-weight: 600;
   color: #232323;
 }
 
 .title-7 {
   font-size: calc(1.1rem + 0.1vw);
-  font-weight: 800;
+  font-weight: 600;
   color: #232323;
 }
 
@@ -1014,7 +1027,7 @@ a.nav-link {
   font-weight: 900;
   font-style: italic;
   letter-spacing: -2px;
-  font-family: "Muli", sans-serif;
+  font-family: "Rubik", sans-serif;
   color: #232323;
 }
 
