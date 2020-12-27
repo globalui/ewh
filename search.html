@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>Explore World Holiday | Destination</title>
+
+        <link rel="stylesheet" href="assets/vendors/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="assets/vendors/fontawesone/css/all.min.css">
+        <link rel="stylesheet" href="assets/style/dist/css/theme.css">
+    </head>
+
+    <body>
+
+        <header class="ewh_header bg-white shadow fixedheader">
+            <section class="bg-primary py-2 subheader secondary-nav">
+                <div class="container">
+                    <div class="row justify-content-end px-3">
+                        <ul class="list-inline mb-0 small top_navbar">
+                            <!--Top Navigation nav-->
+                            <li class="list-inline-item">
+                                <a href="tel:+91-9022718677">
+                                    <i class="fa fa-phone"></i>
+                                    +91-9022718677
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="mailto:sales@exploreworldholidays">
+                                    <i class="fa fa-envelope"></i>
+                                    sales@exploreworldholidays.com
+                                </a>
+                            </li>
+                            <li class="list-inline-item dropdown">
+                                <!--Currency Dropdown-->
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">INR</a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
+                                    <a class="dropdown-item" href="#">
+                                        USD
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        EUR
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul
+                            class="list-inline mb-0 social-media smedia1 border-left pl-2 ml-2 d-none d-lg-inline-block">
+                            <!--Social media Top nav-->
+                            <li class="list-inline-item">Follow us</li>
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i> </a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i> </a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i> </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <div class="container px-0">
+                <nav class="navbar navbar-expand-lg primary-navbar py-lg-0">
+                    <!--Navigation Btn showing in mobile layout-->
+                    <button class="navbar-toggler ewh_nav_trigger mr-auto collapsed" type="button"
+                        data-toggle="collapse" data-target="#ewhNavigataion" aria-controls="ewhNavigataion"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="trigger_btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </button>
+
+                    <!--Logo col with 2 logos -->
+                    <div class="ewh_header_navbar-brand-wrapper ml-auto ml-lg-0">
+                        <a class="navbar-brand" href="index.html" aria-label="Space">
+                            <img src="assets/images/logo.svg" class="log_size" alt="Logo" width="120">
+                        </a>
+                    </div>
+
+                    <ul class="navbar-nav mobile-signup-nav ml-auto order-lg-1">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-lock"></i> <span>Login</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-primary" href="#" data-toggle="modal"
+                                data-target="#signUpModel">
+                                <b>
+                                    <i class="fa fa-user-plus"></i>
+                                    <span>Sign up</span>
+                                </b>
+                            </a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn px-3" href="#" data-toggle="modal" data-target="#searchUpModel">
+                                <b>
+                                    <i class="fa fa-search"></i>
+                                </b>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!--Navigation container-->
+                    <div class="collapse order-lg-0 navbar-collapse menu-bg-hero navbar_custom_style  justify-content-lg-end"
+                        id="ewhNavigataion" data-nav-type="js-navbar">
+                        <ul class="primary-nav navbar navbar-nav py-0" data-nabigation="primary">
+                            <li class="nav-item dropdown   position-relative">
+                                <a class="nav-link dropdown-toggle" href="#" role="button">
+                                    Destinations
+                                </a>
+                                <div class="dropdown-menu border-0 submenu">
+                                    <div class="w-100 py-3">
+                                        <!--  <h5 class="menu-heading">Destinations</h5> -->
+                                        <ul class="list-unstyled text-dark">
+                                            <li>
+                                                <a class="nav-link" href="destination.html">
+                                                    <span class="flag flag-id"></span>Bali
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link" href="destination.html">
+                                                    <span class="flag flag-kh"></span>Cambodia
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link" href="destination.html">
+                                                    <span class="flag flag-cn"></span>China
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link" href="destination.html">
+                                                    <span class="flag flag-in"></span>India
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link" href="destination.html">
+                                                    <span class="flag flag-my"></span>Malaysia
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link" href="destination.html">
+                                                    <span class="flag flag-np"></span>Nepal
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link" href="destination.html">
+                                                    <span class="flag flag-ph"></span>Philippines
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link" href="destination.html">
+                                                    <span class="flag flag-lk"></span>Sri
+                                                    Lanka
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link" href="destination.html">
+                                                    <span class="flag flag-th"></span>Thailand
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link" href="destination.html">
+                                                    <span class="flag flag-vn"></span>Vietnam
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" role="button">Concept Tours</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" role="button">Reviews</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="aboutus.html" role="button">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="faq.html" role="button">FAQ’s</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+
+            <section class="hero inner-banner py-5">
+                <div class="container position-relative">
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <h1 class="title-2 text-white">Vietnam</h1>
+                            <p class="h3 text-white">Epic Adventures, Breathtaling Scenery And Delicious Food!</p>
+                        </div>
+                    </div>
+                </div>
+                <picture class="position-absolute shadow-on-element">
+                    <source media="(min-width: 992px)" srcset="dump/hero/innerbanner.jpg">
+                    <img src="dump/blog/1.jpg" alt="hero" width="100%">
+                </picture>
+            </section>
+            <!--Banner Section-->
+
+
+
+            <section class="bg-light">
+                <div class="container py-5">
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <h3 class="title-4">Most Recommended Trips in Vietnam</h3>
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <div class="card p-3 shadow z-index-1">
+                                <form method="post" class="p-1">
+
+                                    <section class="mb-2">
+                                        <span class="font-weight-bold">Category</span>
+                                        <div class="col-12">
+                                            <div class="form-group mb-1 ml-1">
+                                                <input class="form-check-input" type="checkbox" value="" id="categorya">
+                                                <label class="form-check-label" for="categorya">
+                                                    Category A
+                                                </label>
+                                            </div>
+                                            <div class="form-group mb-1 ml-1">
+                                                <input class="form-check-input" type="checkbox" value="" id="categoryb">
+                                                <label class="form-check-label" for="categoryb">
+                                                    Category B
+                                                </label>
+                                            </div>
+                                            <div class="form-group mb-1 ml-1">
+                                                <input class="form-check-input" type="checkbox" value="" id="categoryc">
+                                                <label class="form-check-label" for="categoryc">
+                                                    Category C
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="mb-2">
+                                        <span class="font-weight-bold">Category</span>
+                                        <div class="col-12">
+                                            <div class="form-group mb-1 ml-1">
+                                                <input class="form-check-input" type="checkbox" value="" id="categorya">
+                                                <label class="form-check-label" for="categorya">
+                                                    Category A
+                                                </label>
+                                            </div>
+                                            <div class="form-group mb-1 ml-1">
+                                                <input class="form-check-input" type="checkbox" value="" id="categoryb">
+                                                <label class="form-check-label" for="categoryb">
+                                                    Category B
+                                                </label>
+                                            </div>
+                                            <div class="form-group mb-1 ml-1">
+                                                <input class="form-check-input" type="checkbox" value="" id="categoryc">
+                                                <label class="form-check-label" for="categoryc">
+                                                    Category C
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <section class="mt-2">
+                                        <span class="font-weight-bold">Price Range</span>
+                                        <div class="d-flex">
+                                            <div class="w-100">
+                                                <label for="SortBy" class="small">Sort by</label>
+                                                <select name="" class="form-control" id="SortBy">
+                                                    <option value="">Cost</option>
+                                                </select>
+                                            </div>
+                                            <div class="w-100">
+                                                <label for="Order" class="small">Order</label>
+                                                <select name="" class="form-control" id="Order">
+                                                    <option value="">Asc</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="mt-2">
+                                        <button class="btn btn-primary btn-sm btn-block">Filter</button>
+                                    </section>
+                                </form>
+                            </div>
+                            <div class="bg-info-dark p-4 radius-4 mt-4">
+                                <form class="w-100 form-label-placeholder" action="" method="post">
+                                    <h4 class="title-5 text-white mb-4">Have a Question?</h4>
+                                    <div class="w-100">
+                                        <div class="form-group error-input">
+                                            <div class="custom-bdr">
+                                                <input type="text" id="yourName" class="form-control form-control-lg">
+                                                <label for="yourName"> Your Full Name</label>
+                                            </div>
+                                            <span class="error">Please fill this feild</span>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class=" custom-bdr">
+                                                <input type="email" id="yourEmail" class="form-control form-control-lg">
+                                                <label for="yourEmail">Email Address</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class=" custom-bdr">
+                                                <input type="tel" id="yourNumber" class="form-control form-control-lg">
+                                                <label for="yourNumber">Phone Number</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class=" custom-bdr">
+                                                <input type="date" id="yourDate" class="form-control form-control-lg">
+                                                <label for="yourDate">Travel Date</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class=" custom-bdr">
+                                                <textarea name="" id="Query" cols="30" rows="3"
+                                                    class="form-control form-control-lg"></textarea>
+                                                <label for="Query">Query <small> (Optional) </small></label>
+                                            </div>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="PrivacyPolicy">
+                                            <label class="form-check-label text-white" for="PrivacyPolicy">I agree
+                                                to
+                                                Privacy Policy</label>
+                                        </div>
+                                        <div class="form-group mt-3 text-center mt-5">
+                                            <button class="btn  btn-success px-lg-6">Submit Your Query</button>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-9">
+                            <div class="w-100">
+                                <div class="sorting-component bg-white shadow-sm align-items-center px-2 mb-4">
+                                    <span class="font-weight-bold">Sort by:</span>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="active">
+                                                Popular
+                                                <span class="fa fa-arrow-down"></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Duration
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Price
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Recently Added
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="grid grid-col-xxl-1 grid-col-sm-2 grid-col-xl-2 listing-view active">
+
+                                <article class="card-container d-flex justify-content-start flex-wrap flex-xxl-nowrap">
+                                    <div class="card-thumbnail d-flex p-2">
+                                        <div class=" radius-4 overflow-hidden position-relative">
+                                            <button class="btn-wishlist remove"><i class="fa fa-heart"></i></button>
+                                            <div
+                                                class="listing-cmpny-profile p-3 bg-info-dark text-white radius-30 d-flex align-items-center">
+                                                14 days/15 nights
+                                            </div>
+                                            <picture class="d-flex bg-dark-shade">
+                                                <source media="(min-width: 950px)" srcset="dump/card/1.jpg"
+                                                    alt="Banner">
+                                                <img src="dump/card/1.jpg" alt="">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="card-caption">
+                                        <div class="caption-header">
+                                            <h4 class="title-5">Family Adventure Tour In Vietnam</h4>
+                                            <ul class="location-slag list-unstyled w-100 d-flex flex-wrap my-3">
+                                                <li>
+                                                    <span><i class="fa fa-map-marker-alt"></i>
+                                                        Hanoi. Vietnam</span>
+                                                </li>
+                                            </ul>
+                                            <p class="text-muted">
+                                                If you've been planning a family holiday to Vietnam, travel across the
+                                                different cities in a span of 12 days and make the most of your annual
+                                                family vacation! Visit the UNESCO World Heritage Sites of Vietnam and
+                                                brush up your knowledge.
+                                            </p>
+                                            <!--   <ul class="icons-slag list-unstyled w-100 d-flex flex-wrap mb-2"> 
+                                                <li>
+                                                    <i class="calender"></i>
+                                                    <span>4-12 weeks</span>
+                                                </li>
+                                                <li>
+                                                    <i class="age"></i>
+                                                    <span>18 +</span>
+                                                </li>
+                                                <li>
+                                                    <i class="taxi"></i>
+                                                    <span>Airport Pickup</span>
+                                                </li>
+                                                <li>
+                                                    <i class="wifi"></i>
+                                                    <span>Internet</span>
+                                                </li>
+                                                <li>
+                                                    <i class="bed"></i>
+                                                    <span>Housing</span>
+                                                </li>
+                                                <li>
+                                                    <i class="cutlery"></i>
+                                                    <span>Food</span>
+                                                </li>
+                                            </ul> -->
+                                        </div>
+                                        <div class="caption-footer d-flex justify-content-start">
+                                            <div class="mr-3">
+                                                <div class="d-block title-5 mb-2">Rs. 76 010</div>
+                                                <p> Starting price per adult</p>
+                                            </div>
+                                            <div>
+                                                <a href="trip-details.html" class="btn btn-primary">View Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="card-container d-flex justify-content-start flex-wrap flex-xxl-nowrap">
+                                    <div class="card-thumbnail d-flex p-2">
+                                        <div class=" radius-4 overflow-hidden position-relative">
+                                            <button class="btn-wishlist remove"><i class="fa fa-heart"></i></button>
+                                            <div
+                                                class="listing-cmpny-profile p-3 bg-info-dark text-white radius-30 d-flex align-items-center">
+                                                14 days/15 nights
+                                            </div>
+                                            <picture class="d-flex bg-dark-shade">
+                                                <source media="(min-width: 950px)" srcset="dump/card/2.jpg"
+                                                    alt="Banner">
+                                                <img src="dump/card/2.jpg" alt="">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="card-caption">
+                                        <div class="caption-header">
+                                            <h4 class="title-5">Family Adventure Tour In Vietnam</h4>
+                                            <ul class="location-slag list-unstyled w-100 d-flex flex-wrap my-3">
+                                                <li>
+                                                    <span><i class="fa fa-map-marker-alt"></i>
+                                                        Hanoi. Vietnam</span>
+                                                </li>
+                                            </ul>
+                                            <p class="text-muted">
+                                                If you've been planning a family holiday to Vietnam, travel across the
+                                                different cities in a span of 12 days and make the most of your annual
+                                                family vacation! Visit the UNESCO World Heritage Sites of Vietnam and
+                                                brush up your knowledge.
+                                            </p>
+                                        </div>
+                                        <div class="caption-footer d-flex justify-content-start">
+                                            <div class="mr-3">
+                                                <div class="d-block title-5 mb-2">Rs. 76 010</div>
+                                                <p> Starting price per adult</p>
+                                            </div>
+                                            <div>
+                                                <a href="trip-details.html" class="btn btn-primary">View Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+
+                                <article class="card-container d-flex justify-content-start flex-wrap flex-xxl-nowrap">
+                                    <div class="card-thumbnail d-flex p-2">
+                                        <div class=" radius-4 overflow-hidden position-relative">
+                                            <button class="btn-wishlist remove"><i class="fa fa-heart"></i></button>
+                                            <div
+                                                class="listing-cmpny-profile p-3 bg-info-dark text-white radius-30 d-flex align-items-center">
+                                                14 days/15 nights
+                                            </div>
+                                            <picture class="d-flex bg-dark-shade">
+                                                <source media="(min-width: 950px)" srcset="dump/card/3.jpg"
+                                                    alt="Banner">
+                                                <img src="dump/card/3.jpg" alt="">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="card-caption">
+                                        <div class="caption-header">
+                                            <h4 class="title-5">Family Adventure Tour In Vietnam</h4>
+                                            <ul class="location-slag list-unstyled w-100 d-flex flex-wrap my-3">
+                                                <li>
+                                                    <span><i class="fa fa-map-marker-alt"></i>
+                                                        Hanoi. Vietnam</span>
+                                                </li>
+                                            </ul>
+                                            <p class="text-muted">
+                                                If you've been planning a family holiday to Vietnam, travel across the
+                                                different cities in a span of 12 days and make the most of your annual
+                                                family vacation! Visit the UNESCO World Heritage Sites of Vietnam and
+                                                brush up your knowledge.
+                                            </p>
+                                        </div>
+                                        <div class="caption-footer d-flex justify-content-start">
+                                            <div class="mr-3">
+                                                <div class="d-block title-5 mb-2">Rs. 76 010</div>
+                                                <p> Starting price per adult</p>
+                                            </div>
+                                            <div>
+                                                <a href="trip-details.html" class="btn btn-primary">View Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+
+                                <article class="card-container d-flex justify-content-start flex-wrap flex-xxl-nowrap">
+                                    <div class="card-thumbnail d-flex p-2">
+                                        <div class=" radius-4 overflow-hidden position-relative">
+                                            <button class="btn-wishlist remove"><i class="fa fa-heart"></i></button>
+                                            <div
+                                                class="listing-cmpny-profile p-3 bg-info-dark text-white radius-30 d-flex align-items-center">
+                                                14 days/15 nights
+                                            </div>
+                                            <picture class="d-flex bg-dark-shade">
+                                                <source media="(min-width: 950px)" srcset="dump/card/4.jpg"
+                                                    alt="Banner">
+                                                <img src="dump/card/4.jpg" alt="">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="card-caption">
+                                        <div class="caption-header">
+                                            <h4 class="title-5">Family Adventure Tour In Vietnam</h4>
+                                            <ul class="location-slag list-unstyled w-100 d-flex flex-wrap my-3">
+                                                <li>
+                                                    <span><i class="fa fa-map-marker-alt"></i>
+                                                        Hanoi. Vietnam</span>
+                                                </li>
+                                            </ul>
+                                            <p class="text-muted">
+                                                If you've been planning a family holiday to Vietnam, travel across the
+                                                different cities in a span of 12 days and make the most of your annual
+                                                family vacation! Visit the UNESCO World Heritage Sites of Vietnam and
+                                                brush up your knowledge.
+                                            </p>
+                                        </div>
+                                        <div class="caption-footer d-flex justify-content-start">
+                                            <div class="mr-3">
+                                                <div class="d-block title-5 mb-2">Rs. 76 010</div>
+                                                <p> Starting price per adult</p>
+                                            </div>
+                                            <div>
+                                                <a href="trip-details.html" class="btn btn-primary">View Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+
+                            </div>
+                            <div class="col-12 p-3 mb-4 text-center">
+                                <ul class="js-pager__items pager" data-drupal-views-infinite-scroll-pager="">
+                                    <li class="pager__item btn btn-md btn-outline-primary">
+                                        <a class="button"
+                                            href="?field_cities_target_id=All&amp;sort_by=field_weight_value&amp;sort_order=DESC&amp;page=1"
+                                            title="Go to next page" rel="next">Load More</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="bg-picture-banner py-lg-5 py-4 position-relative overflow-hidden">
+                <div class="container position-relative z-index-1 pt-3 text-center">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="title-3 mt-3 text-white">Join us for News, Deals &amp; More! </h3>
+                        </div>
+                        <div class="col-12 col-lg-8 mx-auto my-3 my-lg-4 px-lg-6">
+                            <form class="d-flex flex-wrap flex-lg-nowrap mb-3" action="">
+                                <input type="text" class="form-control mr-lg-2 mb-1 mb-lg-0" placeholder="Your Name">
+                                <input type="text" class="form-control mr-lg-2 mb-2 mb-lg-0"
+                                    placeholder="Your Email Id">
+                                <button class="btn btn-primary px-lg-5 btn-block col-lg-3">Subscribe</button>
+                            </form>
+                            <p class="title-info-text light-peragraph text-white">
+                                By subscribing to our mailing list you are agreeing to our
+                                <a href="#" class="text-white font-weight-bold text-underline">Privacy Policy</a>.
+                                You can unsubscribe at any time
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <picture class="position-absolute position-left-top-0 shadow-on-element">
+                    <source media="(min-width: 768px)" srcset="dump/newletter.jpg">
+                    <img src="dump/newletter-sm.jpg" alt="hero" width="100%">
+                </picture>
+            </section>
+
+        </main>
+
+
+        <footer class="py-lg-6 py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 mb-5">
+                        <div class="w-100 d-flex align-items-center flex-wrap flex-lg-nowrap">
+                            <a href="index.html">
+                                <img src="assets/images/logo.svg" alt="logo" height="130">
+                            </a>
+                            <p class="mb-">
+                                Our Management team has over 15 years’ experience in the Tourism industry. Our
+                                experience and knowledge allow us to provide you with the best customer service
+                                possible….. <a href="#">Read more</a>
+                            </p>
+                        </div>
+                        <div class="w-100">
+                            <div class="d-flex w-75 justify-content-start mt-4">
+                                <a href="#" class="mr-3 text-dark">
+                                    <i class="fab fa-facebook fa-3x mr-3"></i>
+                                </a>
+                                <a href="#" class="mr-3 text-dark">
+                                    <i class="fab fa-instagram fa-3x mr-3"></i>
+                                </a>
+                                <a href="#" class="mr-3 text-dark">
+                                    <i class="fab fa-twitter fa-3x mr-3"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-5 offset-lg-1 mb-3">
+
+                        <h5 class="title-5">RESOURCES</h5>
+                        <ul class="list-unstyled d-flex flex-wrap footer-link">
+                            <li class="nav-item">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Concept Tours</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Tour</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Domestic Destinations</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">International Destinations</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center mt-3">
+                        <img src="assets/images/footer-trusted-badges.png" class="img-fluid" alt="footer">
+                    </div>
+                    <div class="col-12 text-center mt-2 small text-muted">
+                        <p> © 2020 exploreworldholidays..com. All Rights Reserved. CIN:U77777 XXXXXX******
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="assets/vendors/jquery/jquery.min.js"></script>
+        <script src="assets/vendors/bootstrap/dist/js/popper.min.js"></script>
+        <script async src="assets/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/style/dist/js/custom.js"></script>
+
+
+        <!--Owl Library-->
+        <link rel="stylesheet" href="assets/vendors/flag/flags.css">
+        <link rel="stylesheet" href="assets/vendors/owl/dist/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/vendors/owl/dist/assets/owl.theme.default.min.css">
+
+        <script src="assets/vendors/owl/dist/owl.carousel.min.js"></script>
+
+
+
+
+        <div id="signUpModel" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content overflow-hidden">
+                    <span class="close position-absolute" style="right: 6px; font-size: 2rem; z-index: 1;"
+                        data-dismiss="modal" aria-label="Close">
+                        ×
+                    </span>
+                    <div class="signin_container shadow w-100 d-flex flex-wrap login_bg">
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <!--SignUp tab Container-->
+                            <div id="signup" class="container tab-pane fade active show"><br>
+
+                                <h1 class="title-3 text-center w-100 mb-0">
+                                    Welcome!
+                                </h1>
+                                <form action="#" class="d-flex flex-wrap custom_form">
+                                    <div class="col-12 mb-3">
+                                        <input type="email" class="form-control" placeholder="Your Full Name *" value=""
+                                            required="" autofocus="">
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <input type="email" class="form-control error" id="yourEmailid"
+                                            placeholder="Your Email Id *" value="" required="">
+                                        <div class="form_alert text-danger small">
+                                            email id is required.
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <input type="email" class="form-control" id="Password" placeholder="Password *"
+                                            value="" required="">
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <input type="email" class="form-control" id="ConfPassword"
+                                            placeholder="Confirm Password *" value="" required="">
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <label class="small">By clicking Sign Up, you agree to our <a href="#">Privacy
+                                                Policy</a>.</label>
+                                    </div>
+                                    <div class="col-12 btn-steps_row">
+                                        <button class="btn btn-primary my-3 w-100" type="submit">
+                                            SIGN UP
+                                        </button>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <a type="button" href="#" class="underline">Already have an account</a>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!--SignIn tab Container-->
+                            <div id="signin" class="container tab-pane fade">
+
+
+                                <h1 class="title-3 text-center w-100 my-3">
+                                    Welcome!
+                                </h1>
+                                <!--Signin Form-->
+                                <form action="#" class="d-flex flex-wrap custom_form">
+                                    <div class="col-12 mb-3">
+                                        <input type="email" class="form-control error" placeholder="Your Email Id *"
+                                            value="" required="">
+                                        <div class="form_alert text-danger small">
+                                            email id is required.
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <input type="email" class="form-control" placeholder="Password *" value=""
+                                            required="">
+                                    </div>
+                                    <div class="col-12 btn-steps_row">
+                                        <button class="btn btn-primary my-3 w-100" type="submit">
+                                            Login
+                                        </button>
+                                    </div>
+
+
+                                    <div class="col-12 d-flex justify-content-lg-between flex-wrap">
+                                        <a type="button" href="#" class="underline text-dark" id="forgot_pwd">
+                                            Forgot Password
+                                        </a>
+                                        <a type="button" href="#" class="underline">Create An Account</a>
+                                    </div>
+                                </form>
+                                <!--FOrget PWD tab Container-->
+                                <div id="forgot_pwd_container" class="forgot_pwd_container d-none">
+                                    <h1 class="rwd_title text-center w-100 mb-3">
+                                        Forgot Password
+                                    </h1>
+
+                                    <!--Forgot Form-->
+                                    <form action="#" class="d-flex flex-wrap custom_form">
+                                        <div class="col-12 mb-3">
+                                            <input type="email" class="form-control error" placeholder="Your Email Id *"
+                                                value="" required="">
+                                            <div class="form_alert text-danger small">
+                                                email id is required.
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 btn-steps_row">
+                                            <button class="btn btn_custom my-3 w-100" type="submit">
+                                                Submit
+                                            </button>
+                                        </div>
+                                    </form>
+                                    <span class="close_form">X</span>
+                                </div>
+                            </div>
+
+                            <!--    <hr>
+                            <div class="container p-3 my-4 text-center">
+                                <div class="col-12">
+                                    <button class="btn rwd-font btn-facebook mb-3 btn-block">
+                                        <i class="fab fa-facebook-f title-5 text-white"></i> Login with Facebook
+                                    </button>
+
+                                    <button class="btn rwd-font btn-google mb-3 btn-block">
+                                        <i class="fab fa-google title-5 text-white"></i> Login with Google
+                                    </button>
+                                </div>
+                            </div> -->
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="searchUpModel" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+
+                <!-- Modal content-->
+                <div class="modal-content bg-white">
+                    <span class="close position-absolute" style="right: 6px; font-size: 2rem; z-index: 1;"
+                        data-dismiss="modal" aria-label="Close">
+                        ×
+                    </span>
+                    <div class="modal-body">
+                        <div class="col-12 col-md-12 my-5">
+                            <h3 class="title-5">Where Would You Like to Go?</h3>
+                            <form action="">
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control-lg" placeholder="Search" name=""
+                                        id="">
+                                </div>
+                            </form>
+                        </div>
+                        <hr class="row">
+                        <div class="col-12 col-md-12 my-5">
+                            <h3 class="title-5">Our Popular Destinations</h3>
+                            <div class="grid grid-col-xs-2 grid-col-lg-4 style_text_on_img custom-card-with-caption">
+
+                                <div class="item">
+                                    <a href="#" class="card w-100">
+                                        <img src="dump/card/1.jpg" alt="1">
+                                        <div class="card-body">
+                                            <h5 class="title-6">Goa</h5>
+                                            <div class="cs-card-footer title-5">
+                                                <small>Starting from</small>
+                                                <p>₹ 8,199/-</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#" class="card w-100">
+                                        <img src="dump/card/2.jpg" alt="2">
+                                        <div class="card-body">
+                                            <h5 class="title-6">Kerala</h5>
+                                            <div class="cs-card-footer title-5">
+                                                <small>Starting from</small>
+                                                <p>₹ 8,199/-</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#" class="card w-100">
+                                        <img src="dump/card/3.jpg" alt="3">
+                                        <div class="card-body">
+                                            <h5 class="title-6">Uttarakhand</h5>
+                                            <div class="cs-card-footer title-5">
+                                                <small>Starting from</small>
+                                                <p>₹ 8,199/-</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#" class="card w-100">
+                                        <img src="dump/card/4.jpg" alt="3">
+                                        <div class="card-body">
+                                            <h5 class="title-6">Rajasthan</h5>
+                                            <div class="cs-card-footer title-5">
+                                                <small>Starting from</small>
+                                                <p>₹ 8,199/-</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </body>
+
+</html>
