@@ -108,8 +108,10 @@ function mobileNavigation() {
     $('[data-nav-type="js-navbar"]').prepend('<div role="button"><span data-subnav="js-navbar" role="button"><i class="fa fa-arrow-left"></i> Close Menu</span></div>');
     $('[data-nabigation="primary"] li.dropdown').each(function () {
         var getNavHeadingName = $(this).children('a').text();
+        var getNavHeadingNameHref = $(this).children('a').attr('href');
+        $(this).children('a').attr('href','#');
         $(this).attr('data-menu-type', 'dropdown');
-        $(this).children('.dropdown-menu').prepend('<div role="button"><span role="button" data-subnav="heading"><i class="fa fa-arrow-left"></i>' + getNavHeadingName + '</span></div>');
+        $(this).children('.dropdown-menu').prepend('<div role="button" class="header-trigger d-flex justify-content-between"><span role="button" data-subnav="heading" data-nav-dismiss="true"><i class="fa fa-arrow-left"></i>' + getNavHeadingName + '</span> <a class="text-white underline d-none" href="'+getNavHeadingNameHref+'">View All</a></div>');
     });
 };
 
@@ -133,6 +135,7 @@ $(document).on('touchend click', '[data-subnav="js-navbar"]', function (e) {
     $('[data-nav-type="js-navbar"]').removeClass('show');
     $('.trigger_btn').removeClass('open');
 });
+ 
 
 
 //Snticky Header
