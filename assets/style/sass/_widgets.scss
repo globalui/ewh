@@ -1,23 +1,26 @@
 /*Home*/
 
 .welcome-text:before,
-.blog-branding:before{
+.blog-branding:before {
   position: absolute;
   left: 0px;
   content: "";
   top: 0px;
   @include wh(100%, 50%);
-  min-height:300px;
+  min-height: 300px;
 }
-.welcome-text:before{
-   background-color:$c-info;
+
+.welcome-text:before {
+  background-color: $c-info;
 }
-.blog-branding:before{
-   background-color: #fff;
+
+.blog-branding:before {
+  background-color: #fff;
 }
 
 .bg-absolute-orange {
   position: relative;
+
   &:after {
     background-color: $ewh-color1;
     position: absolute;
@@ -47,15 +50,15 @@
 }
 
 .owl-carousel .owl-nav button.owl-next,
-.owl-carousel .owl-nav button.owl-prev { 
+.owl-carousel .owl-nav button.owl-prev {
   width: 30px;
   height: 30px;
   background-color: #fff !important;
   border-radius: 50%;
 
-  @media(min-width:992px){ 
-  width: 50px;
-  height: 50px;
+  @media(min-width:992px) {
+    width: 50px;
+    height: 50px;
   }
 }
 
@@ -65,8 +68,8 @@
   text-decoration: none;
 }
 
-.owl-theme .owl-stage{
-  padding-left:0px !important;
+.owl-theme .owl-stage {
+  padding-left: 0px !important;
 }
 
 //Map
@@ -158,14 +161,56 @@
   fill: #4191cf
 }
 
-.indonesia, .nepal, .india, .australia, .peru, .china, .sri-lanka, .thailand, .vietnam, .cambodia, .philippines, .singapore, .south-africa, .ecuador, .ghana, .morocco, .tanzania, .kenya, .uganda, .spain, .costa-rica, .guatemala {
+.indonesia,
+.nepal,
+.india,
+.australia,
+.peru,
+.china,
+.sri-lanka,
+.thailand,
+.vietnam,
+.cambodia,
+.philippines,
+.singapore,
+.south-africa,
+.ecuador,
+.ghana,
+.morocco,
+.tanzania,
+.kenya,
+.uganda,
+.spain,
+.costa-rica,
+.guatemala {
   -moz-transition: all .2s;
   -o-transition: all .2s;
   -webkit-transition: all .2s;
   transition: all .2s
 }
 
-.nepal:hover, indonesia:hover, .india:hover, .australia:hover, .peru:hover, .china:hover, .sri-lanka:hover, .thailand:hover, .vietnam:hover, .cambodia:hover, .philippines:hover, .singapore:hover, .south-africa:hover, .ecuador:hover, .ghana:hover, .morocco:hover, .tanzania:hover, .kenya:hover, .uganda:hover, .spain:hover, .costa-rica:hover, .guatemala:hover {
+.nepal:hover,
+indonesia:hover,
+.india:hover,
+.australia:hover,
+.peru:hover,
+.china:hover,
+.sri-lanka:hover,
+.thailand:hover,
+.vietnam:hover,
+.cambodia:hover,
+.philippines:hover,
+.singapore:hover,
+.south-africa:hover,
+.ecuador:hover,
+.ghana:hover,
+.morocco:hover,
+.tanzania:hover,
+.kenya:hover,
+.uganda:hover,
+.spain:hover,
+.costa-rica:hover,
+.guatemala:hover {
   -moz-transition: all .2s;
   -o-transition: all .2s;
   -webkit-transition: all .2s;
@@ -174,41 +219,44 @@
   stroke-width: .8
 }
 
-path.cursor{
+path.cursor {
   cursor: pointer;
 }
-path{
+
+path {
   position: relative;
-&:before{
-  position: absolute;
-  content: '';
-  background-color: #000;
-}
-}
 
-.bt-2{
-  border-top:2px solid $ewh-color1;
-}
-
-.owl-section{
-    [class*="radius-"]{
-    -webkit-border-radius:0px;
-    -moz-border-radius:0px;
-    border-radius:0px;
+  &:before {
+    position: absolute;
+    content: '';
+    background-color: #000;
   }
 }
+
+.bt-2 {
+  border-top: 2px solid $ewh-color1;
+}
+
+.owl-section {
+  [class*="radius-"] {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+  }
+}
+
 @media (min-width: 992px) {
-  .owl-section{
-    [class*="radius-"]{
-      -webkit-border-radius:3px;
-      -moz-border-radius:3px;
-      border-radius:3px;
+  .owl-section {
+    [class*="radius-"] {
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
     }
   }
 }
 
 
-.btn-wishlist{
+.btn-wishlist {
   position: absolute;
   right: 10px;
   top: 10px;
@@ -218,24 +266,29 @@ path{
   font-size: 1.5rem;
   color: rgba(0, 0, 0, 0.6);
   transition: all 0.2s ease;
-  &:focus{
+
+  &:focus {
     outline: none;
   }
-  &.added{
+
+  &.added {
     color: var(--danger);
-    -webkit-animation: bubble-motion  0.2s ease; /* Safari 4.0 - 8.0 */
-    animation: bubble-motion 0.2s ease ;
+    -webkit-animation: bubble-motion 0.2s ease;
+    /* Safari 4.0 - 8.0 */
+    animation: bubble-motion 0.2s ease;
   }
 }
 
 
-.costing-table{
+.costing-table {
   max-height: 400px;
-  td{
-    padding:5px;
+
+  td {
+    padding: 5px;
   }
 }
-@media (min-width: 1200px)  {
+
+@media (min-width: 1200px) {
   .costing-table {
     max-height: unset;
   }
@@ -252,9 +305,11 @@ path{
 .sa-icon.sa-success {
   border-color: transparent \9;
 }
+
 .sa-icon.sa-success {
   border-color: #4CAF50;
 }
+
 .sa-icon {
   width: 80px;
   height: 80px;
@@ -279,6 +334,7 @@ path{
   -webkit-transform-origin: 60px 60px;
   transform-origin: 60px 60px;
 }
+
 .sa-icon.sa-success.animate::after {
   -webkit-animation: rotatePlaceholder 4.25s ease-in;
   animation: rotatePlaceholder 4.25s ease-in;
@@ -294,7 +350,9 @@ path{
   -webkit-transform-origin: 0px 60px;
   transform-origin: 0px 60px;
 }
-.sa-icon.sa-success::before, .sa-icon.sa-success::after {
+
+.sa-icon.sa-success::before,
+.sa-icon.sa-success::after {
   content: '';
   -webkit-border-radius: 40px;
   border-radius: 40px;
@@ -305,6 +363,7 @@ path{
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
 .sa-icon.sa-success .sa-line.sa-long {
   width: 47px;
   right: 8px;
@@ -312,6 +371,7 @@ path{
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
+
 .sa-icon.sa-success .sa-line.sa-tip {
   width: 25px;
   left: 14px;
@@ -323,6 +383,7 @@ path{
 .sa-icon.sa-success .sa-line.sa-long {
   -ms-transform: rotate(-45deg) \9;
 }
+
 .sa-icon.sa-success .sa-line {
   height: 5px;
   background-color: #4CAF50;
@@ -331,6 +392,7 @@ path{
   position: absolute;
   z-index: 2;
 }
+
 .animateSuccessLong {
   -webkit-animation: animateSuccessLong 0.75s;
   animation: animateSuccessLong 0.75s;
@@ -365,27 +427,32 @@ path{
 
 //video section
 .video-box {
-  figure{ 
-    overflow:hidden;
-    position:relative;
+  figure {
+    overflow: hidden;
+    position: relative;
     display: flex;
     justify-content: center;
-    align-items: center; 
-    }
-   img.video-icon {
-      position: absolute;
-      width: 2rem;
-      @media (min-width: 992px) {
-        width: 5rem;
-      }
+    align-items: center;
   }
-  img:not(.video-icon) { 
+
+  img.video-icon {
+    position: absolute;
+    width: 2rem;
+
+    @media (min-width: 992px) {
+      width: 5rem;
+    }
+  }
+
+  img:not(.video-icon) {
     width: 100%;
+  }
 }
-}
+
 [role=button] {
   cursor: pointer;
 }
+
 .video-close {
   width: 30px !important;
   height: 30px;
@@ -399,29 +466,30 @@ path{
   top: 10px;
 }
 
-iframe.embed-responsive-item{
-  width:100%;
-  height:220px;
+iframe.embed-responsive-item {
+  width: 100%;
+  height: 220px;
 
-  @media (min-width: 992px) { 
-    height:480px;
+  @media (min-width: 992px) {
+    height: 480px;
   }
 }
 
 //blog-section
-.blog-section{
-  article{ 
-    figure{
-      overflow:hidden;
+.blog-section {
+  article {
+    figure {
+      overflow: hidden;
       border-radius: 10px;
-      margin-bottom:0px;
-      height:100px;
+      margin-bottom: 0px;
+      height: 100px;
 
-      @media (min-width: 992px) { 
-        height:250px;
+      @media (min-width: 992px) {
+        height: 250px;
       }
-      img{ 
-        width:100%;
+
+      img {
+        width: 100%;
       }
     }
   }
@@ -441,17 +509,18 @@ iframe.embed-responsive-item{
     height: 100%;
     background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0)), color-stop(0%, rgba(0, 0, 0, 0.7)));
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 0%);
+  }
 }
-}
+
 .z-index-1 {
   z-index: 1;
 }
 
 
-.footer-link{
-  a{
-    color:$c-links;
-    padding:10px;
+.footer-link {
+  a {
+    color: $c-links;
+    padding: 10px;
     text-decoration: underline;
   }
 }
@@ -462,24 +531,48 @@ iframe.embed-responsive-item{
 }
 
 
-.sorting-component{
-  display:flex;
-   justify-content: space-between;
-  ul{
-    list-style: none;
-    padding:10px 0px;
-    display:flex;
-    margin-bottom:0px;
+.sorting-component {
+  display: flex;
+  justify-content: space-between;
 
-    a{
-      padding:5px 10px;
+  ul {
+    list-style: none;
+    padding: 10px 0px;
+    display: flex;
+    margin-bottom: 0px;
+
+    a {
+      padding: 5px 10px;
       color: #222222;
       font-weight: 600;
       font-size: 13px;
 
-      &.active{ 
+      &.active {
         color: #e40a1f;
       }
     }
+  }
+}
+
+.filari-pre-loader-fixed {
+  overflow: hidden;
+}
+
+.filari-pre-loader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999999999;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+
+  &.active { 
+    display: block;
+  }
+
+  &.pre-dark {
+    background-color: rgba(0, 0, 0, 0.4);
   }
 }

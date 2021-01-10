@@ -636,10 +636,11 @@
                                     <div class="form-group">
 
                                         <p>
-                                            Trip Code - <span class="radius-30 font-weight-bold py-1 px-2 alert alert-info">
+                                            Trip Code - <span
+                                                class="radius-30 font-weight-bold py-1 px-2 alert alert-info">
                                                 EWH-I-MLD-010
                                             </span>
-                                        </p>    
+                                        </p>
                                         <div
                                             class="d-block badge badge-custom-price p-3 d-flex justify-content-between">
 
@@ -1181,7 +1182,13 @@
                                     <button class="btn btn-link btn-sm"> +Add another room</button>
                                 </div>
 
-                                <div class="form-group col-12 px-0 mt-5">
+                                <div class="d-block badge badge-custom-price p-3 d-flex justify-content-between mt-5">
+                                    <div class="text-left">
+                                        <del class="d-block title-6 text-danger">₹ 74,074</del>
+                                        <span class="title-5"> ₹ 71,074</span>
+                                    </div>
+                                </div>
+                                <div class="form-group col-12 px-0 mt-3">
                                     <a href="booking.html" class="btn btn-primary btn-block"> Proceed</a>
                                 </div>
                             </div>
@@ -1209,7 +1216,7 @@
                     theme: 'Royal Navy',
                     calendarEvents: [{
                             id: 1,
-                            date: "Nov/29/2020",
+                            date: "Jan/29/2021",
                             type: "sold",
                             name: 'Sold Out',
                             price: "$520",
@@ -1217,7 +1224,7 @@
                         },
                         {
                             id: 2,
-                            date: "Nov/24/2020",
+                            date: "Jan/24/2021",
                             type: "fast",
                             name: 'Selling Fast',
                             price: "$820",
@@ -1225,7 +1232,7 @@
                         },
                         {
                             id: 3,
-                            date: "Nov/25/2020",
+                            date: "Jan/25/2021",
                             type: "low",
                             name: 'Low Price',
                             price: "$1920",
@@ -1233,7 +1240,7 @@
                         },
                         {
                             id: 4,
-                            date: "Nov/21/2020",
+                            date: "Jan/21/2021",
                             type: "regular",
                             name: 'Regular Price',
                             price: "$520",
@@ -1241,7 +1248,7 @@
                         },
                         {
                             id: 4,
-                            date: "Nov/30/2020",
+                            date: "Jan/30/2021",
                             type: "low",
                             name: 'Low Price',
                             price: "$520",
@@ -1310,6 +1317,26 @@
                 });
             });
         </script>
+
+
+
+        <!-- 
+            Add this class in body Tag when spining opens    
+            "filari-pre-loader-fixed" 
+            and toggle "active" class in filari-pre-loader
+        -->
+        <div class="filari-pre-loader">
+            <div class=" d-flex justify-content-center align-items-center h-100 w-100">
+                <div class="text-white text-center">
+                    <i class="fa fa-2x fa-spinner fa-spin"></i>
+                    <p class="small">Please Wait...</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
     </body>
 
 </html>
