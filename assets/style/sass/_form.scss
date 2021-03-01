@@ -557,3 +557,36 @@ form.form-label-placeholder {
     color:#fff;
   }
 }
+
+
+.search-book{
+  position: relative;
+  z-index: 2;
+  .on-focus-dropdown{
+    top:100%;
+    opacity: 0;  
+    z-index: -1;
+    overflow: hidden;
+    height: 0 !important;
+    padding: 0px !important;
+
+    &.active{
+      opacity: 1;
+      height:auto;
+      z-index: 999; 
+      overflow: autto;
+      height: auto !important;
+      padding: 1rem !important;
+    }
+  }
+}
+
+
+[data-destination="true"],[data-dateYear="true"],[data-dateMonth="true"]{ 
+  border-bottom:2px solid transparent;
+  cursor: pointer;
+  &.active{
+    border-bottom:2px solid $c-orange;
+    color:$c-orange;
+  }
+}

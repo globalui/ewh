@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    svgMap();//Function is using on SVG MAP
+    svgMap(); //Function is using on SVG MAP
     mobileNavigation();
     formComplete();
     $('[data-toggle="tooltip"]').tooltip();
@@ -8,18 +8,72 @@ $(document).ready(function () {
 function svgMap() {
     var myArray = [];
     var websiteUrl = "#";
-    var haveCountries = [
-        {'iso': 'IN', 'name': 'India', 'total': '20', 'url': 'volunteer-in-india'},
-        {'iso': 'ZA', 'name': 'South Africa', 'total': '2', 'url': 'volunteer-in-australia'},
-        {'iso': 'KH', 'name': 'Cambodia', 'total': '15', 'url': 'volunteer-in-thailand'},
-        {'iso': 'IE', 'name': 'Ireland', 'total': '2', 'url': 'volunteer-in-australia'},
-        {'iso': 'NP', 'name': 'Nepal', 'total': '20', 'url': 'volunteer-in-india'},
-        {'iso': 'TH', 'name': 'Thailand', 'total': '15', 'url': 'volunteer-in-thailand'},
-        {'iso': 'AU', 'name': 'Australia', 'total': '2', 'url': 'volunteer-in-australia'},
-        {'iso': 'PE', 'name': 'Peru', 'total': '2', 'url': 'volunteer-in-australia'},
-        {'iso': 'ES', 'name': 'Spain', 'total': '15', 'url': 'volunteer-in-thailand'},
-        {'iso': 'DZ', 'name': 'Spain', 'total': '1', 'url': 'volunteer-in-thailand'},
-        {'iso': 'CN', 'name': 'China', 'total': '20', 'url': 'volunteer-in-china'}
+    var haveCountries = [{
+            'iso': 'IN',
+            'name': 'India',
+            'total': '20',
+            'url': 'volunteer-in-india'
+        },
+        {
+            'iso': 'ZA',
+            'name': 'South Africa',
+            'total': '2',
+            'url': 'volunteer-in-australia'
+        },
+        {
+            'iso': 'KH',
+            'name': 'Cambodia',
+            'total': '15',
+            'url': 'volunteer-in-thailand'
+        },
+        {
+            'iso': 'IE',
+            'name': 'Ireland',
+            'total': '2',
+            'url': 'volunteer-in-australia'
+        },
+        {
+            'iso': 'NP',
+            'name': 'Nepal',
+            'total': '20',
+            'url': 'volunteer-in-india'
+        },
+        {
+            'iso': 'TH',
+            'name': 'Thailand',
+            'total': '15',
+            'url': 'volunteer-in-thailand'
+        },
+        {
+            'iso': 'AU',
+            'name': 'Australia',
+            'total': '2',
+            'url': 'volunteer-in-australia'
+        },
+        {
+            'iso': 'PE',
+            'name': 'Peru',
+            'total': '2',
+            'url': 'volunteer-in-australia'
+        },
+        {
+            'iso': 'ES',
+            'name': 'Spain',
+            'total': '15',
+            'url': 'volunteer-in-thailand'
+        },
+        {
+            'iso': 'DZ',
+            'name': 'Spain',
+            'total': '1',
+            'url': 'volunteer-in-thailand'
+        },
+        {
+            'iso': 'CN',
+            'name': 'China',
+            'total': '20',
+            'url': 'volunteer-in-china'
+        }
     ];
     var getColor = [
         "#ff8f00",
@@ -40,10 +94,10 @@ function svgMap() {
 
     if (getSvgAttr == 'true') {
 
-        $.each(haveCountries, function (k, v) {//get available countries Code and Value
+        $.each(haveCountries, function (k, v) { //get available countries Code and Value
 
             $('[data-program-marker="true"] path').each(function () {
-                var dataCode = $(this).attr('data-code');//get SVG countries Code
+                var dataCode = $(this).attr('data-code'); //get SVG countries Code
                 var a = myArray.indexOf(dataCode);
 
                 if (i == 9) {
@@ -52,7 +106,7 @@ function svgMap() {
                 i++;
                 //  console.log(a);
                 var rendomColor = getColor[i];
-                if (dataCode == v['iso']) {//Match Country COde
+                if (dataCode == v['iso']) { //Match Country COde
                     $(this).attr('fill', rendomColor);
                     $(this).attr('class', 'cursor');
                     $(this).attr('title', v['name'] + ', ' + v['total'] + ' Programs');
@@ -109,9 +163,9 @@ function mobileNavigation() {
     $('[data-nabigation="primary"] li.dropdown').each(function () {
         var getNavHeadingName = $(this).children('a').text();
         var getNavHeadingNameHref = $(this).children('a').attr('href');
-        $(this).children('a').attr('href','#');
+        $(this).children('a').attr('href', '#');
         $(this).attr('data-menu-type', 'dropdown');
-        $(this).children('.dropdown-menu').prepend('<div role="button" class="header-trigger d-flex justify-content-between"><span role="button" data-subnav="heading" data-nav-dismiss="true"><i class="fa fa-arrow-left"></i>' + getNavHeadingName + '</span> <a class="text-white underline d-none" href="'+getNavHeadingNameHref+'">View All</a></div>');
+        $(this).children('.dropdown-menu').prepend('<div role="button" class="header-trigger d-flex justify-content-between"><span role="button" data-subnav="heading" data-nav-dismiss="true"><i class="fa fa-arrow-left"></i>' + getNavHeadingName + '</span> <a class="text-white underline d-none" href="' + getNavHeadingNameHref + '">View All</a></div>');
     });
 };
 
@@ -135,7 +189,7 @@ $(document).on('touchend click', '[data-subnav="js-navbar"]', function (e) {
     $('[data-nav-type="js-navbar"]').removeClass('show');
     $('.trigger_btn').removeClass('open');
 });
- 
+
 
 
 //Snticky Header
@@ -182,18 +236,18 @@ $(".btn-wishlist").click(function () {
 
 //apply form
 
-function formComplete(){
+function formComplete() {
 
     var formData = $('form').attr('data-form_complete');
-    if(formData=='true'){
+    if (formData == 'true') {
         var totalLgt = 0;
 
         elementTypes = ['input', 'textarea', 'select'];
-        $.each(elementTypes, function(index, _el) {
+        $.each(elementTypes, function (index, _el) {
             totalLgt += $(_el).length;
             // console.log(index, _el);
         });
-        $('.form-control').on('focusout',function(){
+        $('.form-control').on('focusout', function () {
             var inputLgt = 0;
             var selectLgt = 0;
             var textareaLgt = 0;
@@ -201,40 +255,70 @@ function formComplete(){
             var getFormVal = $(this).val();
             //console.log(getFormVal);
 
-            $('input').each(function(){
-                if($(this).val()==""){
+            $('input').each(function () {
+                if ($(this).val() == "") {
                     inputLgt += $(this).length;
                 }
             });
             //console.log('Input:',inputLgt);
 
-            $('.form-control').each(function(){
-                if ($(this).children('option:selected').val()==""){
+            $('.form-control').each(function () {
+                if ($(this).children('option:selected').val() == "") {
                     selectLgt += $(this).length;
                 }
             });
             // console.log('Select:',selectLgt);
 
-            $('textarea').each(function(){
-                if($(this).val()==""){
+            $('textarea').each(function () {
+                if ($(this).val() == "") {
                     textareaLgt += $(this).length;
                 }
             });
             // console.log('textarea:',textareaLgt);
 
-            var getAllNumber = inputLgt+selectLgt+textareaLgt;
+            var getAllNumber = inputLgt + selectLgt + textareaLgt;
             //console.log('total:',getAllNumber);
             // console.log('total lgt:',totalLgt);
-            var formulaData = getAllNumber/totalLgt*100;
+            var formulaData = getAllNumber / totalLgt * 100;
             // console.log('total lgt:',100-formulaData);
-            var formulaDataPercentage = 100-formulaData;
+            var formulaDataPercentage = 100 - formulaData;
 
-            $('#ProgressEvent').css({'width':formulaDataPercentage+'%'});
+            $('#ProgressEvent').css({
+                'width': formulaDataPercentage + '%'
+            });
             $('#ProgressEvent span').show();
-            $('#ProgressEvent span').text(+Math.round(formulaDataPercentage)+'%');
+            $('#ProgressEvent span').text(+Math.round(formulaDataPercentage) + '%');
 
         });
         //console.log(inputLgt,selectLgt);
     }
 }
 
+
+
+$(document).click(function (e) {
+    if (!$('.search-book .form-container').is(e.target) && $('.search-book .form-container').has(e.target).length === 0) {
+        $('.search-book .form-group').find('div').removeClass('active');
+        //alert();
+    }
+})
+
+$('.search-book [type="search"]').on('click', function (e) {
+    $('.search-book [type="search"]').next('div').removeClass('active'); 
+    $(this).next('div').toggleClass('active'); 
+});
+
+
+$('[data-destination="true"]').on('click',function(){
+    $('[data-destination="true"]').removeClass('active');
+    $(this).addClass('active');
+    var _getVal = $(this).attr('destination-value');
+    $('[destination-input="true"]').val(_getVal);
+});
+
+$('[date-input="true"="true"]').on('click',function(){
+    $('[date-input="true"]').removeClass('active');
+    $(this).addClass('active');
+    var _getVal = $(this).attr('destination-value');
+    $('[destination-input="true"]').val(_getVal);
+});

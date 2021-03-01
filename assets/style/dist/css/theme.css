@@ -2689,6 +2689,39 @@ form.form-label-placeholder input[type="date"]::-webkit-calendar-picker-indicato
   color: #fff;
 }
 
+.search-book {
+  position: relative;
+  z-index: 2;
+}
+
+.search-book .on-focus-dropdown {
+  top: 100%;
+  opacity: 0;
+  z-index: -1;
+  overflow: hidden;
+  height: 0 !important;
+  padding: 0px !important;
+}
+
+.search-book .on-focus-dropdown.active {
+  opacity: 1;
+  height: auto;
+  z-index: 999;
+  overflow: autto;
+  height: auto !important;
+  padding: 1rem !important;
+}
+
+[data-destination="true"], [data-dateYear="true"], [data-dateMonth="true"] {
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+}
+
+[data-destination="true"].active, [data-dateYear="true"].active, [data-dateMonth="true"].active {
+  border-bottom: 2px solid #e40a1f;
+  color: #e40a1f;
+}
+
 .wifi, .bed, .calender, .age, .money-bag, .taxi, .cutlery {
   background-repeat: no-repeat;
   width: 18px;
