@@ -302,7 +302,7 @@ $(document).click(function (e) {
         //alert();
     }
 })
-
+ 
 $('.search-book [type="search"]').on('click', function (e) {
     $('.search-book [type="search"]').next('div').removeClass('active'); 
     $(this).next('div').toggleClass('active'); 
